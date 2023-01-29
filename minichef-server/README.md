@@ -1,7 +1,7 @@
 # MiniChef Server Job
 
 ## Needs
-- docker
+- docker or local python3 setup
 
 ## Build
 make build
