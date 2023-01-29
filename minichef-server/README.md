@@ -1,4 +1,4 @@
-# MiniChef Servers Job
+# MiniChef Server Job
 
 ## Needs
 - docker
