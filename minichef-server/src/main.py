@@ -32,7 +32,7 @@ def main():
     print("Could not connect to mainnet RPC")
     return RuntimeError
 
-  if (w3.eth.gasPrice > 3e9 )
+  if (w3.eth.gasPrice > 3e9 ):
     print(f"Gas price is too high: {w3.eth.gasPrice}")
     return RuntimeError
 
