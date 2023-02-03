@@ -31,9 +31,9 @@ NO_DATA_SERVER_ADDRESSES = {
 
 DATA_SERVER_ADDRESS = {
     "arbitrum": "0xA0347f683BF2e64b5fF54Ca9Ffc2215E7413DB76",
-    "arbitrum-nova": "0x1cF5bbfEC4783651a90ddF148c94D622Ac05e4a0",
-    "boba": "0x8207B70432211EeeB0445E666F3201C42d38F7f5",
-    "metis": "0xAa9A2D4a7f4BB7a037911d52a05eF6600fC0cB81"
+    "arbitrum-nova": "0x1ef64eb2c8e4CE8521d4EC0203142C832d7ea7b9",
+    "boba": "0x4FaE4CAc37d985C316c039802B170F53E984BbEE",
+    "metis": "0x27aC12ac94cE5e4BD6355b1Ba9d24Ef84f98232A"
 }
 
 
@@ -135,24 +135,65 @@ def bridge_data_servers(w3):
     for server_key in DATA_SERVER_ADDRESS:
         match server_key:
             case "arbitrum":
-                bridge_arbitrum(w3)
-            # case "arbitrum-nova":
-            #    serve_nova()
-            # case "boba":
-            #    serve_boba()
-            # case "metis":
-            #    serve_metis()
+                i = 12
+            # bridge_arbitrum(w3, False)
+            case "arbitrum-nova":
+                i = 14
+                # bridge_arbitrum(w3, True)
+            case "boba":
+                i = 15
+                # bridge_boba(w3, server_key)
+            case "metis":
+                bridge_op_style(w3, server_key)
             case _:
                 return
 
 
-def bridge_arbitrum(w3):
-    print(f"Serving arbitrum Server...")
+def bridge_op_style(w3, key):
+    if key == "boba":
+        boba_sushi_token = "0x5fFccc55C0d2fd6D3AC32C26C020B3267e933F1b"
+        l2_gas = 1300000
+        bridge_data = encode(['address', 'uint32', 'bytes'], [
+            boba_sushi_token, l2_gas, Web3.toBytes(text='')])
+    elif key == "metis":
+        l2_gas = 200000
+        bridge_data = encode(['uint32', 'bytes'], [
+            l2_gas, Web3.toBytes(text='')])
+    print(f"Serving {key} Server...")
     server_contract = w3.eth.contract(w3.toChecksumAddress(
-        DATA_SERVER_ADDRESS["arbitrum"]), abi=DATA_SERVER_ABI)
+        DATA_SERVER_ADDRESS[key]), abi=DATA_SERVER_ABI)
+
+    tx_data = server_contract.functions.bridge(Web3.toHex(bridge_data)).build_transaction({
+        "chainId": 1,
+        "from": OPS_ADDRESS,
+        "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+        "value": 0
+    })
+    tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
+    tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
+    try:
+        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+    except:
+        print(
+            f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}")
+        time.sleep(180)
+        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+
+    logs = server_contract.events.BridgedSushi(
+    ).processReceipt(tx_receipt, errors=DISCARD)
+    print(f"Server for {key} served in tx: {tx_hash.hex()}")
+    print(
+        f"Sushi Harvested & Bridged: {logs[0]['args']['amount'] / 1e18} SUSHI")
+
+
+def bridge_arbitrum(w3, isNova):
+    key = "arbitrum-nova" if isNova else "arbitrum"
+    print(f"Serving {key} Server...")
+    server_contract = w3.eth.contract(w3.toChecksumAddress(
+        DATA_SERVER_ADDRESS[key]), abi=DATA_SERVER_ABI)
     l2_transfer_gas_limit = 96190
-    gas_price_bid = gas_price_arbitrum()
-    max_submission_fee = get_arbitrum_retryable_submission_fee()
+    gas_price_bid = gas_price_arbitrum(isNova)
+    max_submission_fee = get_arbitrum_retryable_submission_fee(isNova)
     eth_to_send = (l2_transfer_gas_limit * gas_price_bid) / \
         1e16 * 0.6 + (l2_transfer_gas_limit * gas_price_bid) / 1e16
     extra_data = encode(['uint256', 'bytes'], [
@@ -160,7 +201,7 @@ def bridge_arbitrum(w3):
     bridge_data = encode(['address', 'uint256', 'uint256', 'bytes'], [
         OPS_ADDRESS, l2_transfer_gas_limit, gas_price_bid, extra_data])
 
-    tx_data = server_contract.functions.harvestAndBridge(Web3.toHex(bridge_data)).build_transaction({
+    tx_data = server_contract.functions.bridge(Web3.toHex(bridge_data)).build_transaction({
         "chainId": 1,
         "from": OPS_ADDRESS,
         "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
@@ -178,7 +219,7 @@ def bridge_arbitrum(w3):
 
     logs = server_contract.events.BridgedSushi(
     ).processReceipt(tx_receipt, errors=DISCARD)
-    print(f"Server for arbitrum served in tx: {tx_hash.hex()}")
+    print(f"Server for {key} served in tx: {tx_hash.hex()}")
     print(
         f"Sushi Harvested & Bridged: {logs[0]['args']['amount'] / 1e18} SUSHI")
 
