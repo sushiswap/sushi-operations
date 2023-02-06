@@ -53,17 +53,17 @@ def main():
         print("Could not connect to mainnet RPC")
         return RuntimeError
 
-    # if (w3.eth.gasPrice > 30e9):
-    #    print(f"Gas price is too high: {w3.eth.gasPrice}")
-    #    return RuntimeError
+    if (w3.eth.gasPrice > 30e9):
+        print(f"Gas price is too high: {w3.eth.gasPrice}")
+        return RuntimeError
 
     print(f"Current block is: {w3.eth.blockNumber}")
 
     print("Serving Old MiniChef Servers...")
-    # bridge_old_servers(w3)
+    bridge_old_servers(w3)
 
     print("Serving No Data MiniChef Servers...")
-    # bridge_nodata_servers(w3)
+    bridge_nodata_servers(w3)
 
     print("Serving Data MiniChef Servers...")
     bridge_data_servers(w3)
@@ -135,14 +135,11 @@ def bridge_data_servers(w3):
     for server_key in DATA_SERVER_ADDRESS:
         match server_key:
             case "arbitrum":
-                i = 12
-            # bridge_arbitrum(w3, False)
+                bridge_arbitrum(w3, False)
             case "arbitrum-nova":
-                i = 14
-                # bridge_arbitrum(w3, True)
+                bridge_arbitrum(w3, True)
             case "boba":
-                i = 15
-                # bridge_boba(w3, server_key)
+                bridge_op_style(w3, server_key)
             case "metis":
                 bridge_op_style(w3, server_key)
             case _:
