@@ -2,9 +2,9 @@ import sys
 import os
 import json
 import time
+import math
 from web3 import Web3, HTTPProvider
 from web3.logs import DISCARD
-from web3.gas_strategies.time_based import fast_gas_price_strategy
 from eth_abi import encode
 
 from utils.gas import gas_price_arbitrum, get_arbitrum_retryable_submission_fee
@@ -25,22 +25,25 @@ OLD_SERVER_ADDRESSES = {
 
 NO_DATA_SERVER_ADDRESSES = {
     "bttc": "0xc4D1dE66c678580A84008441c44AF8276cd2E0F9",
-    "bsc": "0xC45A496BcC9ba69FFB45303f7515739C3F6FF921",
-    "kava": "0x2595CbF29caCdac30c192bD2B7B4f011DeF910aD"
+    "bsc": "0x993cb187344747374750d8Bc1dBB50845400A638",
+    "kava": "0xf0ACd9fc9c752e6ee46aE166aeD27faa7a159F21"
 }
 
 DATA_SERVER_ADDRESS = {
-    "arbitrum": "0xA0347f683BF2e64b5fF54Ca9Ffc2215E7413DB76",
-    "arbitrum-nova": "0x1ef64eb2c8e4CE8521d4EC0203142C832d7ea7b9",
-    "boba": "0x4FaE4CAc37d985C316c039802B170F53E984BbEE",
-    "metis": "0x27aC12ac94cE5e4BD6355b1Ba9d24Ef84f98232A"
+    "arbitrum": "0xE0A6e30B676ef084d7Ed6495dE55e59a7fd2bCbe",
+    "arbitrum-nova": "0xFFd482298a65D0E16198ccdCEFE2360c7b47990B",
+    "boba": "0xd8108F6546222ebf42020e2f213AC8785AF99488",
+    "metis": "0xBd91B3BeF78787f3b4bc5251E830BBE7dF93168E"
 }
 
+MULTICALL_ADDRESS = "0xcA11bde05977b3631167028862bE2a173976CA11"
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/OldServer.json")) as f:
     OLD_SERVER_ABI = json.load(f)
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/BaseServer.json")) as f:
     DATA_SERVER_ABI = json.load(f)
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/Multicall3.json")) as f:
+    MULTICALL_ABI = json.load(f)
 
 
 def main():
@@ -48,55 +51,74 @@ def main():
     print(f"Starting Task #{TASK_INDEX}, Atempt #{TASK_ATTEMPT}...")
 
     w3 = Web3(Web3.HTTPProvider(MAINNET_RPC_URL))
-    w3.eth.set_gas_price_strategy(fast_gas_price_strategy)
     if not w3.isConnected:
         print("Could not connect to mainnet RPC")
         return RuntimeError
 
-    if (w3.eth.gasPrice > 30e9):
-        print(f"Gas price is too high: {w3.eth.gasPrice}")
+    last_block = w3.eth.get_block('latest')
+    next_gas_price = math.ceil(last_block.get('baseFeePerGas') * 1.125)
+
+    if (next_gas_price > 40e9):
+        print(f"Gas price is too high: {next_gas_price}")
         return RuntimeError
+
+    calls_to_make = []
+    multicall_contract = w3.eth.contract(
+        w3.toChecksumAddress(MULTICALL_ADDRESS), abi=MULTICALL_ABI)
 
     print(f"Current block is: {w3.eth.blockNumber}")
 
     print("Serving Old MiniChef Servers...")
-    bridge_old_servers(w3)
+    calls_to_make.extend(bridge_old_servers(w3))
 
     print("Serving No Data MiniChef Servers...")
-    bridge_nodata_servers(w3)
+    calls_to_make.extend(bridge_nodata_servers(w3))
 
     print("Serving Data MiniChef Servers...")
-    bridge_data_servers(w3)
+    calls_to_make.extend(bridge_data_servers(w3))
+
+    # add up eth to send for each val in calls_to_make
+    total_eth_to_send = sum(calls['value'] for calls in calls_to_make)
+
+    tx_data = multicall_contract.functions.aggregate3Value(calls_to_make).build_transaction({
+        "chainId": 1,
+        "from": OPS_ADDRESS,
+        "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+        "maxFeePerGas": next_gas_price,
+        "gas": 2000000,
+        "value": total_eth_to_send
+    })
+    tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
+    tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
+
+    try:
+        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash, timeout=600)
+    except:
+        print(
+            f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}")
+        time.sleep(180)
+        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+
+    print(f'Servers served in tx: {tx_hash.hex()}')
 
     print(f"Completed Task #{TASK_INDEX}.")
 
 
 def bridge_old_servers(w3):
+    calls_to_make = []
     for server_key in OLD_SERVER_ADDRESSES:
         print(f"Serving {server_key} Server...")
         server_contract = w3.eth.contract(w3.toChecksumAddress(
             OLD_SERVER_ADDRESSES[server_key]), abi=OLD_SERVER_ABI)
-        tx_data = server_contract.functions.harvestAndBridge().build_transaction({
-            "chainId": 1,
-            "from": OPS_ADDRESS,
-            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
-        })
-        tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
-        tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
-
-        try:
-            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        except:
-            print(
-                f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}")
-            time.sleep(180)
-            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-
-        logs = server_contract.events.BridgedSushi(
-        ).processReceipt(tx_receipt, errors=DISCARD)
-        print(f"Server for {server_key} served in tx: {tx_hash.hex()}")
-        print(
-            f"Sushi Harvested & Bridged: {logs[0]['args']['amount'] / 1e18} SUSHI")
+        calls_to_make.append(
+            {
+                "target": server_contract.address,
+                "allowFailure": True,
+                "value": 0,
+                "callData": server_contract.encodeABI(fn_name="harvestAndBridge")
+            }
+        )
+    return calls_to_make
 
 
 def bridge_eoa_servers(w3):
@@ -104,46 +126,38 @@ def bridge_eoa_servers(w3):
 
 
 def bridge_nodata_servers(w3):
+    calls_to_make = []
     for server_key in NO_DATA_SERVER_ADDRESSES:
         print(f"Serving {server_key} Server...")
         server_contract = w3.eth.contract(w3.toChecksumAddress(
             NO_DATA_SERVER_ADDRESSES[server_key]), abi=DATA_SERVER_ABI)
-        tx_data = server_contract.functions.bridge('0x').build_transaction({
-            "chainId": 1,
-            "from": OPS_ADDRESS,
-            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
-        })
-        tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
-        tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
-
-        try:
-            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-        except:
-            print(
-                f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}")
-            time.sleep(180)
-            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-
-        logs = server_contract.events.BridgedSushi(
-        ).processReceipt(tx_receipt, errors=DISCARD)
-        print(f"Server for {server_key} served in tx: {tx_hash.hex()}")
-        print(
-            f"Sushi Harvested & Bridged: {logs[0]['args']['amount'] / 1e18} SUSHI")
+        calls_to_make.append(
+            {
+                "target": server_contract.address,
+                "allowFailure": True,
+                "value": 0,
+                "callData": server_contract.encodeABI(fn_name="harvestAndBridge", args=['0x'])
+            }
+        )
+    return calls_to_make
 
 
 def bridge_data_servers(w3):
+    calls_to_make = []
     for server_key in DATA_SERVER_ADDRESS:
         match server_key:
             case "arbitrum":
-                bridge_arbitrum(w3, False)
+                calls_to_make.append(bridge_arbitrum(w3, False))
             case "arbitrum-nova":
-                bridge_arbitrum(w3, True)
+                calls_to_make.append(bridge_arbitrum(w3, True))
             case "boba":
-                bridge_op_style(w3, server_key)
+                calls_to_make.append(bridge_op_style(w3, server_key))
             case "metis":
-                bridge_op_style(w3, server_key)
+                calls_to_make.append(bridge_op_style(w3, server_key))
             case _:
-                return
+                continue
+
+    return calls_to_make
 
 
 def bridge_op_style(w3, key):
@@ -160,27 +174,12 @@ def bridge_op_style(w3, key):
     server_contract = w3.eth.contract(w3.toChecksumAddress(
         DATA_SERVER_ADDRESS[key]), abi=DATA_SERVER_ABI)
 
-    tx_data = server_contract.functions.bridge(Web3.toHex(bridge_data)).build_transaction({
-        "chainId": 1,
-        "from": OPS_ADDRESS,
-        "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
-        "value": 0
-    })
-    tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
-    tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
-    try:
-        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-    except:
-        print(
-            f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}")
-        time.sleep(180)
-        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-
-    logs = server_contract.events.BridgedSushi(
-    ).processReceipt(tx_receipt, errors=DISCARD)
-    print(f"Server for {key} served in tx: {tx_hash.hex()}")
-    print(
-        f"Sushi Harvested & Bridged: {logs[0]['args']['amount'] / 1e18} SUSHI")
+    return {
+        "target": server_contract.address,
+        "allowFailure": True,
+        "value": 0,
+        "callData": server_contract.encodeABI(fn_name="harvestAndBridge", args=[Web3.toHex(bridge_data)])
+    }
 
 
 def bridge_arbitrum(w3, isNova):
@@ -198,34 +197,19 @@ def bridge_arbitrum(w3, isNova):
     bridge_data = encode(['address', 'uint256', 'uint256', 'bytes'], [
         OPS_ADDRESS, l2_transfer_gas_limit, gas_price_bid, extra_data])
 
-    tx_data = server_contract.functions.bridge(Web3.toHex(bridge_data)).build_transaction({
-        "chainId": 1,
-        "from": OPS_ADDRESS,
-        "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
-        "value": Web3.toWei(eth_to_send, 'ether')
-    })
-    tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
-    tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
-    try:
-        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-    except:
-        print(
-            f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}")
-        time.sleep(180)
-        tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-
-    logs = server_contract.events.BridgedSushi(
-    ).processReceipt(tx_receipt, errors=DISCARD)
-    print(f"Server for {key} served in tx: {tx_hash.hex()}")
-    print(
-        f"Sushi Harvested & Bridged: {logs[0]['args']['amount'] / 1e18} SUSHI")
+    return {
+        "target": server_contract.address,
+        "allowFailure": True,
+        "value": Web3.toWei(eth_to_send, 'ether'),
+        "callData": server_contract.encodeABI(fn_name="bridge", args=[Web3.toHex(bridge_data)])
+    }
 
 
 if __name__ == "__main__":
-    # try:
-    main()
-    # except Exception as err:
-    #    message = f"Task #{TASK_INDEX}, " \
-    #        + f"Attempt #{TASK_ATTEMPT} failed: {str(err)}"
-    #    print(json.dumps({"message": message, "severity": "ERROR"}))
-    #    sys.exit(1)  # Retry Job Task by exiting the process
+    try:
+        main()
+    except Exception as err:
+        message = f"Task #{TASK_INDEX}, " \
+            + f"Attempt #{TASK_ATTEMPT} failed: {str(err)}"
+        print(json.dumps({"message": message, "severity": "ERROR"}))
+        sys.exit(1)  # Retry Job Task by exiting the process
