@@ -3,6 +3,7 @@ import os
 import json
 import time
 import math
+import argparse
 from web3 import Web3, HTTPProvider
 from web3.logs import DISCARD
 from eth_abi import encode
@@ -12,6 +13,7 @@ from utils.gas import gas_price_arbitrum, get_arbitrum_retryable_submission_fee
 # Retrieve job-defined env vars
 TASK_INDEX = os.getenv("CLOUD_RUN_TASK_INDEX", 0)
 TASK_ATTEMPT = os.getenv("CLOUD_RUN_TASK_ATTEMPT", 0)
+RUN_PRIORITY = False
 # Retrieve user-defined env vars
 MAINNET_RPC_URL = os.environ["MAINNET_RPC_URL"]
 OPS_ADDRESS = os.environ["OPS_ADDRESS"]
@@ -35,6 +37,10 @@ DATA_SERVER_ADDRESS = {
     "boba": "0x64ef00FE309C099A8D4acB128279C15d13C10291",
     "metis": "0x02c1A7194102595876F736c61B99278513DFB285",
     "optimism": "0x129D696D578B3b96cc89A7EC5ea2084c6bdbfdfB"
+}
+
+PRIORITY_CHAINS = {
+    'arbitrum'
 }
 
 MULTICALL_ADDRESS = "0x38a7826A128aF56963713E224640495a3B4Fc5FC"
@@ -81,7 +87,7 @@ def main():
     # add up eth to send for each val in calls_to_make
     total_eth_to_send = sum(calls['value'] for calls in calls_to_make)
 
-    tx_data = multicall_contract.functions.aggregate3Value(calls_to_make).build_transaction({
+    '''tx_data = multicall_contract.functions.aggregate3Value(calls_to_make).build_transaction({
         "chainId": 1,
         "from": OPS_ADDRESS,
         "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
@@ -100,7 +106,7 @@ def main():
         time.sleep(180)
         tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
 
-    print(f'Servers served in tx: {tx_hash.hex()}')
+    print(f'Servers served in tx: {tx_hash.hex()}')'''
 
     print(f"Completed Task #{TASK_INDEX}.")
 
@@ -108,6 +114,8 @@ def main():
 def bridge_old_servers(w3):
     calls_to_make = []
     for server_key in OLD_SERVER_ADDRESSES:
+        if RUN_PRIORITY and server_key not in PRIORITY_CHAINS:
+            continue
         print(f"Serving {server_key} Server...")
         server_contract = w3.eth.contract(w3.toChecksumAddress(
             OLD_SERVER_ADDRESSES[server_key]), abi=OLD_SERVER_ABI)
@@ -129,6 +137,8 @@ def bridge_eoa_servers(w3):
 def bridge_nodata_servers(w3):
     calls_to_make = []
     for server_key in NO_DATA_SERVER_ADDRESSES:
+        if RUN_PRIORITY and server_key not in PRIORITY_CHAINS:
+            continue
         print(f"Serving {server_key} Server...")
         server_contract = w3.eth.contract(w3.toChecksumAddress(
             NO_DATA_SERVER_ADDRESSES[server_key]), abi=DATA_SERVER_ABI)
@@ -146,6 +156,8 @@ def bridge_nodata_servers(w3):
 def bridge_data_servers(w3):
     calls_to_make = []
     for server_key in DATA_SERVER_ADDRESS:
+        if RUN_PRIORITY and server_key not in PRIORITY_CHAINS:
+            continue
         match server_key:
             case "arbitrum":
                 calls_to_make.append(bridge_arbitrum(w3, False))
@@ -154,6 +166,8 @@ def bridge_data_servers(w3):
             case "boba":
                 calls_to_make.append(bridge_op_style(w3, server_key))
             case "metis":
+                calls_to_make.append(bridge_op_style(w3, server_key))
+            case "optimism":
                 calls_to_make.append(bridge_op_style(w3, server_key))
             case _:
                 continue
@@ -166,11 +180,18 @@ def bridge_op_style(w3, key):
         boba_sushi_token = "0x5fFccc55C0d2fd6D3AC32C26C020B3267e933F1b"
         l2_gas = 1300000
         bridge_data = encode(['address', 'uint32', 'bytes'], [
-            boba_sushi_token, l2_gas, Web3.toBytes(text='')])
+            boba_sushi_token, l2_gas, Web3.toBytes(text='')
+        ])
     elif key == "metis":
         l2_gas = 200000
         bridge_data = encode(['uint32', 'bytes'], [
-            l2_gas, Web3.toBytes(text='')])
+            l2_gas, Web3.toBytes(text='')
+        ])
+    elif key == "optimism":
+        l2_gas = 200000
+        bridge_data = encode(['uint32', 'bytes'], [
+            l2_gas, Web3.toBytes(text='')
+        ])
     print(f"Serving {key} Server...")
     server_contract = w3.eth.contract(w3.toChecksumAddress(
         DATA_SERVER_ADDRESS[key]), abi=DATA_SERVER_ABI)
@@ -207,6 +228,12 @@ def bridge_arbitrum(w3, isNova):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--priority", required=False,
+                        action='store_true')
+    args = parser.parse_args()
+    RUN_PRIORITY = args.priority
+
     try:
         main()
     except Exception as err:

@@ -6,5 +6,8 @@ build:
 run-image:
 	docker run --env-file .env -it --rm sushi-operations-minichef-server-job
 
+run-image-priority:
+	docker run --env-file .env -it --rm sushi-operations-minichef-server-job --priority
+
 run:
 	python main.py
