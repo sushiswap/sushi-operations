@@ -14,6 +14,7 @@ from utils.gas import gas_price_arbitrum, get_arbitrum_retryable_submission_fee
 TASK_INDEX = os.getenv("CLOUD_RUN_TASK_INDEX", 0)
 TASK_ATTEMPT = os.getenv("CLOUD_RUN_TASK_ATTEMPT", 0)
 RUN_PRIORITY = False
+RUN_NON_PRIORITY = False
 # Retrieve user-defined env vars
 MAINNET_RPC_URL = os.environ["MAINNET_RPC_URL"]
 OPS_ADDRESS = os.environ["OPS_ADDRESS"]
@@ -41,6 +42,18 @@ DATA_SERVER_ADDRESS = {
 
 PRIORITY_CHAINS = {
     'arbitrum'
+}
+NON_PRIORITY_CHAINS = {
+    'polygon',
+    'celo',
+    'gnosis',
+    'bttc',
+    'bsc',
+    'kava',
+    'arbitrum-nova',
+    'boba',
+    'metis',
+    'optimism'
 }
 
 MULTICALL_ADDRESS = "0x38a7826A128aF56963713E224640495a3B4Fc5FC"
@@ -87,7 +100,7 @@ def main():
     # add up eth to send for each val in calls_to_make
     total_eth_to_send = sum(calls['value'] for calls in calls_to_make)
 
-    '''tx_data = multicall_contract.functions.aggregate3Value(calls_to_make).build_transaction({
+    tx_data = multicall_contract.functions.aggregate3Value(calls_to_make).build_transaction({
         "chainId": 1,
         "from": OPS_ADDRESS,
         "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
@@ -106,7 +119,7 @@ def main():
         time.sleep(180)
         tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
 
-    print(f'Servers served in tx: {tx_hash.hex()}')'''
+    print(f'Servers served in tx: {tx_hash.hex()}')
 
     print(f"Completed Task #{TASK_INDEX}.")
 
@@ -139,6 +152,8 @@ def bridge_nodata_servers(w3):
     for server_key in NO_DATA_SERVER_ADDRESSES:
         if RUN_PRIORITY and server_key not in PRIORITY_CHAINS:
             continue
+        if RUN_NON_PRIORITY and server_key not in PRIORITY_CHAINS:
+            continue
         print(f"Serving {server_key} Server...")
         server_contract = w3.eth.contract(w3.toChecksumAddress(
             NO_DATA_SERVER_ADDRESSES[server_key]), abi=DATA_SERVER_ABI)
@@ -157,6 +172,8 @@ def bridge_data_servers(w3):
     calls_to_make = []
     for server_key in DATA_SERVER_ADDRESS:
         if RUN_PRIORITY and server_key not in PRIORITY_CHAINS:
+            continue
+        if RUN_NON_PRIORITY and server_key not in PRIORITY_CHAINS:
             continue
         match server_key:
             case "arbitrum":
@@ -231,8 +248,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--priority", required=False,
                         action='store_true')
+    parser.add_argument("-np", "--non", required=False,)
     args = parser.parse_args()
     RUN_PRIORITY = args.priority
+    RUN_NON_PRIORITY = args.non
 
     try:
         main()
