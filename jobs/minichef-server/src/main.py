@@ -15,6 +15,7 @@ TASK_INDEX = os.getenv("CLOUD_RUN_TASK_INDEX", 0)
 TASK_ATTEMPT = os.getenv("CLOUD_RUN_TASK_ATTEMPT", 0)
 RUN_PRIORITY = False
 RUN_NON_PRIORITY = False
+IGNORE_GAS = False
 # Retrieve user-defined env vars
 MAINNET_RPC_URL = os.environ["MAINNET_RPC_URL"]
 OPS_ADDRESS = os.environ["OPS_ADDRESS"]
@@ -78,7 +79,7 @@ def main():
     last_block = w3.eth.get_block('latest')
     next_gas_price = math.ceil(last_block.get('baseFeePerGas') * 1.125)
 
-    if (next_gas_price > 40e9):
+    if (next_gas_price > 40e9 and not IGNORE_GAS):
         print(f"Gas price is too high: {next_gas_price}")
         return RuntimeError
 
@@ -248,10 +249,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-p", "--priority", required=False,
                         action='store_true')
-    parser.add_argument("-np", "--non", required=False,)
+    parser.add_argument("-np", "--nonPriority", required=False,)
+    parser.add_argument("-ig", "--ignoreGas",
+                        required=False, action='store_true')
     args = parser.parse_args()
     RUN_PRIORITY = args.priority
-    RUN_NON_PRIORITY = args.non
+    RUN_NON_PRIORITY = args.nonPriority
+    IGNORE_GAS = args.ignoreGas
 
     try:
         main()
