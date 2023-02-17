@@ -38,11 +38,12 @@ DATA_SERVER_ADDRESS = {
     "arbitrum-nova": "0xEb542F7f1231b1a1f44b5f59e438dC7fC25E7747",
     "boba": "0xc77E3964eE518868EF9183D9C9F8597ec2D4fA03",
     "metis": "0x86EDBC22c1Ad7C7b6D200E1117A782947DFFF221",
-    "optimism": "0xF5f6bb5FABeE1976172b7C149A4F63F6C7019970"
+    "optimism": "0x8C9f9F374C278dfD219e651b12267a0378029b69"
 }
 
 PRIORITY_CHAINS = {
-    'arbitrum'
+    'arbitrum',
+    'optimism',
 }
 NON_PRIORITY_CHAINS = {
     'polygon',
@@ -195,10 +196,9 @@ def bridge_data_servers(w3):
 
 def bridge_op_style(w3, key):
     if key == "boba":
-        boba_sushi_token = "0x5fFccc55C0d2fd6D3AC32C26C020B3267e933F1b"
         l2_gas = 1300000
-        bridge_data = encode(['address', 'uint32', 'bytes'], [
-            boba_sushi_token, l2_gas, Web3.toBytes(text='')
+        bridge_data = encode(['uint32', 'bytes'], [
+            l2_gas, Web3.toBytes(text='')
         ])
     elif key == "metis":
         l2_gas = 200000
@@ -241,7 +241,7 @@ def bridge_arbitrum(w3, isNova):
         "target": server_contract.address,
         "allowFailure": True,
         "value": Web3.toWei(eth_to_send, 'ether'),
-        "callData": server_contract.encodeABI(fn_name="bridge", args=[Web3.toHex(bridge_data)])
+        "callData": server_contract.encodeABI(fn_name="harvestAndBridge", args=[Web3.toHex(bridge_data)])
     }
 
 
