@@ -29,12 +29,12 @@ OLD_SERVER_ADDRESSES = {
 
 NO_DATA_SERVER_ADDRESSES = {
     "bttc": "0xDcB84Ce8149ea67F7Fe2505bc1A388De1624ae90",
-    # "bsc": "0xB66D5F330E42D200C68f23f984D0e4b501968216",
-    # "kava": "0x70Cdc282F66800C680acb4dEd10579C6DDFA45DF"
+    "bsc": "0xB66D5F330E42D200C68f23f984D0e4b501968216",
+    "kava": "0x70Cdc282F66800C680acb4dEd10579C6DDFA45DF"
 }
 
 DATA_SERVER_ADDRESS = {
-    "arbitrum": "0xA0347f683BF2e64b5fF54Ca9Ffc2215E7413DB76",
+    # "arbitrum": "0xA0347f683BF2e64b5fF54Ca9Ffc2215E7413DB76",
     "arbitrum-nova": "0xEb542F7f1231b1a1f44b5f59e438dC7fC25E7747",
     "boba": "0xc77E3964eE518868EF9183D9C9F8597ec2D4fA03",
     "metis": "0x86EDBC22c1Ad7C7b6D200E1117A782947DFFF221",
@@ -107,7 +107,7 @@ def main():
         "from": OPS_ADDRESS,
         "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
         "maxFeePerGas": next_gas_price,
-        "gas": 2000000,
+        "gas": 5000000,
         "value": total_eth_to_send
     })
     tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
