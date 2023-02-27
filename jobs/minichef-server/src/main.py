@@ -227,9 +227,11 @@ def bridge_arbitrum(w3, isNova):
     print(f"Serving {key} Server...")
     server_contract = w3.eth.contract(w3.toChecksumAddress(
         DATA_SERVER_ADDRESS[key]), abi=DATA_SERVER_ABI)
-    l2_transfer_gas_limit = 96190
+    l2_transfer_gas_limit = 200000
     gas_price_bid = gas_price_arbitrum(isNova)
-    max_submission_fee = get_arbitrum_retryable_submission_fee(isNova)
+    retryable_submission_fee = get_arbitrum_retryable_submission_fee(isNova)
+    max_submission_fee = int(retryable_submission_fee *
+                             0.2 + retryable_submission_fee)
     eth_to_send = (l2_transfer_gas_limit * gas_price_bid) / \
         1e16 * 0.6 + (l2_transfer_gas_limit * gas_price_bid) / 1e16
     extra_data = encode(['uint256', 'bytes'], [

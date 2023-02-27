@@ -43,4 +43,4 @@ def get_arbitrum_retryable_submission_fee(isNova):
     inbox_contract = w3.eth.contract(
         w3.toChecksumAddress(inbox_address), abi=inbox_abi)
     # passing 0 uses last block base fee for the calculation
-    return inbox_contract.functions.calculateRetryableSubmissionFee(740, gas_price_mainnet()).call()
+    return inbox_contract.functions.calculateRetryableSubmissionFee(800, 0).call()
