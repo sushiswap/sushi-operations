@@ -13,4 +13,4 @@ run-image-priority:
 	docker run --env-file .env -it --rm sushi-operations-minichef-server-job --priority
 
 run:
-	python main.py
+	python src/main.py
