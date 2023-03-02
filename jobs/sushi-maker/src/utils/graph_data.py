@@ -20,6 +20,12 @@ def fetch_lp_tokens(address, chain):
           totalSupply
           reserveUSD
           trackedReserveETH
+          token0 {
+            id
+          }
+          token1 {
+            id
+          }
         }
         liquidityTokenBalance
         }

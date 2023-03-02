@@ -9,6 +9,7 @@ from web3.logs import DISCARD
 from eth_abi import encode
 
 from utils.graph_data import fetch_lp_tokens
+from utils.token_list import fetch_whitelisted_tokens
 
 # Retrieve job-defined env vars
 TASK_INDEX = os.getenv("CLOUD_RUN_TASK_INDEX", 0)
@@ -55,7 +56,13 @@ def main(chain):
         WETH_SERVER_ADDRESSES[chain], chain)
     print(f"Fetched {len(lp_tokens_data)} LP tokens to burn...")
 
-    burn_lp_tokens(w3, lp_tokens_data)
+    print("Fetching token list for chain {chain}...")
+    whitelisted_tokens = fetch_whitelisted_tokens(chain)
+    filtered_lp_tokens_data = [
+        lp_token for lp_token in lp_tokens_data if lp_token['pair']['token0']['id'] in whitelisted_tokens and lp_token['pair']['token1']['id'] in whitelisted_tokens
+    ]
+
+    burn_lp_tokens(w3, filtered_lp_tokens_data)
 
     # fetch all lp tokens maker is holding
 
@@ -65,7 +72,7 @@ def main(chain):
 
     # sell all tokens for weth, watch for no bridge set and large slippage that should revert tx
 
-    unwind_lp_tokens(w3)
+    # unwind_lp_tokens(w3)
 
 
 def burn_lp_tokens(w3, lp_tokens_data):
