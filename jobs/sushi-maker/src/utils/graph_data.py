@@ -22,9 +22,13 @@ def fetch_lp_tokens(address, chain):
           trackedReserveETH
           token0 {
             id
+            name
+            symbol
           }
           token1 {
             id
+            name
+            symbol
           }
         }
         liquidityTokenBalance
