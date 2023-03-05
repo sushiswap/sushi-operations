@@ -31,23 +31,30 @@ CHAIN_MAP = {
 }
 
 RPC_URL = {
+    "mainnet": MAINNET_RPC_URL,
     "arbitrum": ARBITRUM_RPC_URL,
 }
 
 WETH_SERVER_ADDRESSES = {
+    "mainnet": "0x5ad6211CD3fdE39A9cECB5df6f380b8263d1e277",
     "arbitrum": "0xa19b3b22f29E23e4c04678C94CFC3e8f202137d8",
 }
 
 WETH_ADDRESS = {
+    "mainnet": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
     "arbitrum": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
 }
 
 MIN_USD_VA = {
+    "mainnet": 100,
     "arbitrum": 10
 }
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/WethMaker.json")) as f:
     WETH_MAKER_ABI = json.load(f)
+
+with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/Pair.json")) as f:
+    PAIR_ABI = json.load(f)
 
 
 def main(chain, args):
@@ -67,7 +74,7 @@ def main(chain, args):
     print("Fetching LP token balances...")
     lp_tokens_data = fetch_lp_tokens(
         WETH_SERVER_ADDRESSES[chain], chain)
-    print(f"Fetched {len(lp_tokens_data)} LP tokens to burn...")
+    print(f"Fetched {len(lp_tokens_data)} LP tokens to process...")
 
     print("Fetching token list for chain {chain}...")
     whitelisted_tokens = fetch_whitelisted_tokens(chain)
@@ -78,9 +85,9 @@ def main(chain, args):
     if args.burn:
         print("Burning LP tokens...")
         burn_lp_tokens(w3, lp_tokens_data)
-    elif args.unwind:
+    elif args.full:
         print("Unwinding LP tokens...")
-        unwind_lp_tokens(w3, chain, lp_tokens_data)
+        full_breakdown(w3, chain, lp_tokens_data)
 
     # fetch all lp tokens maker is holding
 
@@ -106,23 +113,35 @@ def burn_lp_tokens(w3, lp_tokens_data):
         print("\n")
 
 
-def unwind_lp_tokens(w3, chain, lp_tokens_data):
+def full_breakdown(w3, chain, lp_tokens_data):
     maker_contract = w3.eth.contract(
         w3.toChecksumAddress(WETH_SERVER_ADDRESSES[chain]),
         abi=WETH_MAKER_ABI
     )
 
-    tokensA = []
-    tokensB = []
-    amounts = []
-    minimumOuts = []
+    unwinds_tokensA = []
+    unwinds_tokensB = []
+    unwinds_amounts = []
+    unwinds_minimumOuts = []
+
+    burns_lpTokens = []
+    burns_amounts = []
+    burns_minimumOuts0 = []
+    burns_minimumOuts1 = []
+
+    total_usd_unwind = 0
+    total_usd_burn = 0
 
     for lp_token in lp_tokens_data:
-        if lp_token['pair']['trackedReserveETH'] == '0':
-            print(f"Bunk pair: {lp_token['pair']['name']}")
-            continue
+        # fetch up to date liquidity token balance
+        pair_contract = w3.eth.contract(
+            w3.toChecksumAddress(lp_token['pair']['id']),
+            abi=PAIR_ABI
+        )
+        lp_token_balance = pair_contract.functions.balanceOf(
+            w3.toChecksumAddress(WETH_SERVER_ADDRESSES[chain])).call()
 
-        ratio = float(lp_token['liquidityTokenBalance']) / \
+        ratio = float(lp_token_balance / 1e18) / \
             float(lp_token['pair']['totalSupply'])
         usd_value = float(lp_token['pair']['reserveUSD']) * ratio
         token0_amount = float(lp_token['pair']['reserve0']) * ratio
@@ -130,9 +149,6 @@ def unwind_lp_tokens(w3, chain, lp_tokens_data):
 
         if usd_value < MIN_USD_VA[chain]:
             break
-
-        print(f"Unwinding ${usd_value} worth of {lp_token['pair']['name']}")
-        # print(lp_token['pair']['id'])
 
         unwind_data = {
             "tokenA": "",
@@ -144,65 +160,26 @@ def unwind_lp_tokens(w3, chain, lp_tokens_data):
 
         # Remove liquidity, and sell tokensB[i] for tokensA[i]
         if lp_token['pair']['token1']['id'] == WETH_ADDRESS[chain]:
-            '''print(f"TokenA: {lp_token['pair']['token1']['id']}")
-            print(f"TokenB: {lp_token['pair']['token0']['id']}")
-
-            print(
-                f"TokenB: {token0_amount} {lp_token['pair']['token0']['symbol']}")
-            print(
-                f"LP Amount: {w3.toWei(lp_token['liquidityTokenBalance'], 'ether')}")
-            print(
-                f"TokenA(0.1%): {w3.toWei(token1_amount - (token1_amount * 0.001), 'ether')} {lp_token['pair']['token1']['symbol']}")
-            print(
-                f"TokenA(10%): {w3.toWei(token1_amount - (token1_amount * 0.1), 'ether')} {lp_token['pair']['token1']['symbol']}")
-            '''
             unwind_data['tokenA'] = lp_token['pair']['token1']['id']
             unwind_data['tokenB'] = lp_token['pair']['token0']['id']
-            unwind_data['amount'] = w3.toWei(
-                lp_token['liquidityTokenBalance'], 'ether')
+            unwind_data['amount'] = lp_token_balance
             unwind_data['minOut_lowSlippage'] = w3.toWei(
                 token1_amount - (token1_amount * 0.001), 'ether')
             unwind_data['minOut_highSlippage'] = w3.toWei(
                 token1_amount - (token1_amount * 0.1), 'ether')
 
         elif lp_token['pair']['token0']['id'] == WETH_ADDRESS[chain]:
-            '''print(f"TokenA: {lp_token['pair']['token0']['id']}")
-            print(f"TokenB: {lp_token['pair']['token1']['id']}")
-
-            print(
-                f"TokenB: {token1_amount} {lp_token['pair']['token1']['symbol']}")
-            print(
-                f"LP Amount: {w3.toWei(lp_token['liquidityTokenBalance'], 'ether')}")
-            print(
-                f"TokenA(0.1%): {w3.toWei(token0_amount - (token0_amount * 0.001), 'ether')} {lp_token['pair']['token0']['symbol']}")
-            print(
-                f"TokenA(10%): {w3.toWei(token0_amount - (token0_amount * 0.1), 'ether')} {lp_token['pair']['token0']['symbol']}")
-
-            '''
-
             unwind_data['tokenA'] = lp_token['pair']['token0']['id']
             unwind_data['tokenB'] = lp_token['pair']['token1']['id']
-            unwind_data['amount'] = w3.toWei(
-                lp_token['liquidityTokenBalance'], 'ether')
+            unwind_data['amount'] = lp_token_balance
             unwind_data['minOut_lowSlippage'] = w3.toWei(
-                token0_amount - (token0_amount * 0.001), 'ether')
+                token0_amount - (token0_amount * 0.005), 'ether')
             unwind_data['minOut_highSlippage'] = w3.toWei(
                 token0_amount - (token0_amount * 0.1), 'ether')
 
         else:
             print(f"NOT A WETH PAIR: {lp_token['pair']['name']}")
             continue
-            '''print(f"TokenA: {lp_token['pair']['token0']['id']}")
-            print(f"TokenB: {lp_token['pair']['token1']['id']}")
-
-            print(
-                f"TokenA: {token0_amount} {lp_token['pair']['token0']['symbol']}")
-            print(
-                f"LP Amount: {w3.toWei(lp_token['liquidityTokenBalance'], 'ether')}")
-            print(
-                f"TokenB(0.1%): {w3.toWei(token1_amount - (token1_amount * 0.001), 'ether')} {lp_token['pair']['token1']['symbol']}")
-            print(
-                f"TokenB(10%): {w3.toWei(token1_amount - (token1_amount * 0.1), 'ether')} {lp_token['pair']['token1']['symbol']}")'''
 
         # estimate gas, to check which slippage to use
         last_block = w3.eth.get_block('latest')
@@ -220,10 +197,13 @@ def unwind_lp_tokens(w3, chain, lp_tokens_data):
                 "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
             })
 
-            tokensA.append(unwind_data['tokenA'])
-            tokensB.append(unwind_data['tokenB'])
-            amounts.append(unwind_data['amount'])
-            minimumOuts.append(unwind_data['minOut_lowSlippage'])
+            print(
+                f"Unwinding(low slippage) ${usd_value} worth of {lp_token['pair']['name']}")
+            total_usd_unwind += usd_value
+            unwinds_tokensA.append(w3.toChecksumAddress(unwind_data['tokenA']))
+            unwinds_tokensB.append(w3.toChecksumAddress(unwind_data['tokenB']))
+            unwinds_amounts.append(unwind_data['amount'])
+            unwinds_minimumOuts.append(unwind_data['minOut_lowSlippage'])
 
         except Exception as err:
             # try again with max slippage
@@ -239,34 +219,115 @@ def unwind_lp_tokens(w3, chain, lp_tokens_data):
                     "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
                 })
 
-                tokensA.append(unwind_data['tokenA'])
-                tokensB.append(unwind_data['tokenB'])
-                amounts.append(unwind_data['amount'])
-                minimumOuts.append(unwind_data['minOut_highSlippage'])
-            except Exception as err:
                 print(
-                    f"Likely Bunk Token, Should Burn: {lp_token['pair']['name']}")
-                continue
+                    f"Unwinding (high slippage) ${usd_value} worth of {lp_token['pair']['name']}")
+                total_usd_unwind += usd_value
+                unwinds_tokensA.append(
+                    w3.toChecksumAddress(unwind_data['tokenA']))
+                unwinds_tokensB.append(
+                    w3.toChecksumAddress(unwind_data['tokenB']))
+                unwinds_amounts.append(unwind_data['amount'])
+                unwinds_minimumOuts.append(unwind_data['minOut_highSlippage'])
+            except Exception as err:
+                try:
+                    estimate_result = maker_contract.functions.burnPairs(
+                        [w3.toChecksumAddress(lp_token['pair']['id'])],
+                        [int(unwind_data['amount'])],
+                        [0],
+                        [0],
+                    ).estimate_gas({
+                        "chainId": CHAIN_MAP[chain],
+                        "from": OPS_ADDRESS,
+                        "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
+                    })
+
+                    print(f"Burning {lp_token['pair']['name']}")
+                    total_usd_burn += usd_value
+                    burns_lpTokens.append(
+                        w3.toChecksumAddress(lp_token['pair']['id']))
+                    burns_amounts.append(unwind_data['amount'])
+                    burns_minimumOuts0.append(0)
+                    burns_minimumOuts1.append(0)
+
+                except Exception as err:
+                    print(
+                        f"Likely Bunk Token, can't Unwind/Burn: {lp_token['pair']['name']}")
+                    print("\n")
+                    print('-- Needs possible manual actions --')
+                    print(f"{lp_token['pair']['name']}")
+                    print(f"LP Token: {lp_token['pair']['id']}")
+                    print(f"TokenA: {unwind_data['tokenA']}")
+                    print(f"TokenB: {unwind_data['tokenB']}")
+                    print(f"Amount: {unwind_data['amount']}")
+                    print(
+                        f"TokenA Out(low): {unwind_data['minOut_lowSlippage']}")
+                    print(
+                        f"TokenA Out(high): {unwind_data['minOut_highSlippage']}")
+                    print("\n")
+
+                    continue
 
     print("Length of unwind data")
-    print(f"Number of pairs: {len(tokensA)}")
+    print(f"Number of pairs: {len(unwinds_tokensA)}")
+    print(f"Value of unwinds: ${total_usd_unwind}")
+    print(f"Value of burns: ${total_usd_burn}")
 
-    tokenA_chunks = [tokensA[x:x+10] for x in range(0, len(tokensA), 10)]
-    tokenB_chunks = [tokensB[x:x+10] for x in range(0, len(tokensB), 10)]
-    amounts_chunks = [amounts[x:x+10] for x in range(0, len(amounts), 10)]
-    minimumOuts_chunks = [minimumOuts[x:x+10]
-                          for x in range(0, len(minimumOuts), 10)]
+    tokenA_chunks = [unwinds_tokensA[x:x+10]
+                     for x in range(0, len(unwinds_tokensA), 10)]
+    tokenB_chunks = [unwinds_tokensB[x:x+10]
+                     for x in range(0, len(unwinds_tokensB), 10)]
+    unwinds_amounts_chunks = [unwinds_amounts[x:x+10]
+                              for x in range(0, len(unwinds_amounts), 10)]
+    unwinds_minimumOuts_chunks = [unwinds_minimumOuts[x:x+10]
+                                  for x in range(0, len(unwinds_minimumOuts), 10)]
 
+    burns_lpToken_chunks = [burns_lpTokens[x:x+10]
+                            for x in range(0, len(burns_lpTokens), 10)]
+    burns_amounts_chunks = [burns_amounts[x:x+10]
+                            for x in range(0, len(burns_amounts), 10)]
+    burns_minimumOuts0_chunks = [burns_minimumOuts0[x:x+10]
+                                 for x in range(0, len(burns_minimumOuts0), 10)]
+    burns_minimumOuts1_chunks = [burns_minimumOuts1[x:x+10]
+                                 for x in range(0, len(burns_minimumOuts1), 10)]
+
+    print(f"Uwninding {len(unwinds_tokensA)} pairs")
     for i in range(len(tokenA_chunks)):
         # call unwinds here with chunk
-        print(tokenA_chunks[i])
+        gas_estimate = maker_contract.functions.unwindPairs(
+            tokenA_chunks[i],
+            tokenB_chunks[i],
+            unwinds_amounts_chunks[i],
+            unwinds_minimumOuts_chunks[i],
+        ).estimate_gas({
+            "chainId": CHAIN_MAP[chain],
+            "from": OPS_ADDRESS,
+            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
+        })
+
+        print(f"Full unwind gas estimate chunk {i}: {gas_estimate}")
+
+    print(f"Burning {len(burns_lpTokens)} pairs")
+    for i in range(len(burns_lpToken_chunks)):
+        # call burns here with chunk
+        gas_estimate = maker_contract.functions.burnPairs(
+            burns_lpToken_chunks[i],
+            burns_amounts_chunks[i],
+            burns_minimumOuts0_chunks[i],
+            burns_minimumOuts1_chunks[i],
+        ).estimate_gas({
+            "chainId": CHAIN_MAP[chain],
+            "from": OPS_ADDRESS,
+            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
+        })
+
+        print(f"Full burn gas estimate chunk {i}: {gas_estimate}")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("-b", "--burn", required=False,
                         action="store_true")
-    parser.add_argument("-u", "--unwind", required=False,
+    parser.add_argument("-f", "--full", required=False,
                         action="store_true")
     parser.add_argument("--chain", required=True, type=str)
 

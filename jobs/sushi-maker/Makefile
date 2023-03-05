@@ -6,8 +6,12 @@ build:
 run-burn-arbitrum:
 	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain arbitrum --burn
 
-run-unwind-arbitrum:
-	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain arbitrum --unwind
+run-arbitrum:
+	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain arbitrum --full
+
+run-mainnet:
+	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain mainnet --full
+
 
 run:
 	python src/main.py
