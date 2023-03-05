@@ -6,6 +6,7 @@ TOKEN_LIST_URL = "https://token-list.sushi.com/"
 CHAIN_MAP = {
     "mainnet": 1,
     "arbitrum": 42161,
+    "polygon": 137,
 }
 
 

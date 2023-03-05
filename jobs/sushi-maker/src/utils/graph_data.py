@@ -3,7 +3,8 @@ import json
 
 EXCHANGE_GRAPH_ENDPOINTS = {
     "mainnet": "https://api.thegraph.com/subgraphs/name/sushiswap/exchange-ethereum",
-    "arbitrum": "https://api.thegraph.com/subgraphs/name/sushiswap/exchange-arbitrum-backup"
+    "arbitrum": "https://api.thegraph.com/subgraphs/name/sushiswap/exchange-arbitrum-backup",
+    "polygon": "https://api.thegraph.com/subgraphs/name/sushiswap/matic-exchange",
 }
 
 

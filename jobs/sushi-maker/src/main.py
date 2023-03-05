@@ -28,16 +28,19 @@ OPS_PK = os.environ["OPS_PK"]
 CHAIN_MAP = {
     "mainnet": 1,
     "arbitrum": 42161,
+    "polygon": 137,
 }
 
 RPC_URL = {
     "mainnet": MAINNET_RPC_URL,
     "arbitrum": ARBITRUM_RPC_URL,
+    "polygon": "https://polygon-rpc.com",
 }
 
 WETH_SERVER_ADDRESSES = {
     "mainnet": "0x5ad6211CD3fdE39A9cECB5df6f380b8263d1e277",
     "arbitrum": "0xa19b3b22f29E23e4c04678C94CFC3e8f202137d8",
+    "polygon": "0xf1c9881be22ebf108b8927c4d197d126346b5036",
 }
 
 BASE_ADDRESS = {
@@ -57,11 +60,21 @@ BASE_ADDRESS = {
         "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",  # USDT
         "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",  # WBTC
     ],
+    "polygon": [
+        "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",  # WETH
+        "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",  # USDC
+        "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",  # WMATIC
+        "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",  # USDT
+        "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",  # DAI
+        "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",  # WBTC
+        "0x45c32fa6df82ead1e2ef74d17b76547eddfaff89",  # FRAX
+    ],
 }
 
 MIN_USD_VA = {
     "mainnet": 100,
-    "arbitrum": 100
+    "arbitrum": 10,
+    "polygon": 10,
 }
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/WethMaker.json")) as f:
@@ -80,10 +93,10 @@ def main(chain, args):
         print(f"Failed to connect to {chain}")
         return RuntimeError
 
-    last_block = w3.eth.get_block("latest")
+    # last_block = w3.eth.get_block("latest")
     # next_gas_price
     # gas price checks if should run script goes here
-    print(f"Current block: {last_block['number']}")
+    # print(f"Current block: {last_block['number']}")
 
     print("Fetching LP token balances...")
     lp_tokens_data = fetch_lp_tokens(
@@ -195,10 +208,6 @@ def full_breakdown(w3, chain, lp_tokens_data):
             print(f"NOT A BASE TOKEN PAIR: {lp_token['pair']['name']}")
             continue
 
-        # estimate gas, to check which slippage to use
-        last_block = w3.eth.get_block('latest')
-        next_gas_price = math.ceil(last_block.get('baseFeePerGas') * 1.125)
-
         try:
             estimate_result = maker_contract.functions.unwindPairs(
                 [w3.toChecksumAddress(unwind_data['tokenA'])],
@@ -260,7 +269,7 @@ def full_breakdown(w3, chain, lp_tokens_data):
                     total_usd_burn += usd_value
                     burns_lpTokens.append(
                         w3.toChecksumAddress(lp_token['pair']['id']))
-                    burns_amounts.append(unwind_data['amount'])
+                    burns_amounts.append(int(unwind_data['amount']))
                     burns_minimumOuts0.append(0)
                     burns_minimumOuts1.append(0)
 
