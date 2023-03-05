@@ -40,14 +40,28 @@ WETH_SERVER_ADDRESSES = {
     "arbitrum": "0xa19b3b22f29E23e4c04678C94CFC3e8f202137d8",
 }
 
-WETH_ADDRESS = {
-    "mainnet": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-    "arbitrum": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+BASE_ADDRESS = {
+    "mainnet": [
+        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",  # WETH
+        "0x6b175474e89094c44da98b954eedeac495271d0f",  # DAI
+        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",  # USDC
+        "0xdac17f958d2ee523a2206206994597c13d831ec7",  # USDT
+        "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",  # WBTC
+        "0xd533a949740bb3306d119cc777fa900ba034cd52",  # CRV
+        "0x853d955acef822db058eb8505911ed77f175b99e",  # FRAX
+    ],
+    "arbitrum": [
+        "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",  # WETH
+        "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",  # USDC
+        "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",  # DAI
+        "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",  # USDT
+        "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",  # WBTC
+    ],
 }
 
 MIN_USD_VA = {
     "mainnet": 100,
-    "arbitrum": 10
+    "arbitrum": 100
 }
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/WethMaker.json")) as f:
@@ -159,26 +173,26 @@ def full_breakdown(w3, chain, lp_tokens_data):
         }
 
         # Remove liquidity, and sell tokensB[i] for tokensA[i]
-        if lp_token['pair']['token1']['id'] == WETH_ADDRESS[chain]:
+        if lp_token['pair']['token1']['id'] in BASE_ADDRESS[chain]:
             unwind_data['tokenA'] = lp_token['pair']['token1']['id']
             unwind_data['tokenB'] = lp_token['pair']['token0']['id']
             unwind_data['amount'] = lp_token_balance
-            unwind_data['minOut_lowSlippage'] = w3.toWei(
-                token1_amount - (token1_amount * 0.001), 'ether')
-            unwind_data['minOut_highSlippage'] = w3.toWei(
-                token1_amount - (token1_amount * 0.1), 'ether')
+            unwind_data['minOut_lowSlippage'] = int(
+                (token1_amount - (token1_amount * 0.005)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
+            unwind_data['minOut_highSlippage'] = int(
+                (token1_amount - (token1_amount * 0.5)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
 
-        elif lp_token['pair']['token0']['id'] == WETH_ADDRESS[chain]:
+        elif lp_token['pair']['token0']['id'] in BASE_ADDRESS[chain]:
             unwind_data['tokenA'] = lp_token['pair']['token0']['id']
             unwind_data['tokenB'] = lp_token['pair']['token1']['id']
             unwind_data['amount'] = lp_token_balance
-            unwind_data['minOut_lowSlippage'] = w3.toWei(
-                token0_amount - (token0_amount * 0.005), 'ether')
-            unwind_data['minOut_highSlippage'] = w3.toWei(
-                token0_amount - (token0_amount * 0.1), 'ether')
+            unwind_data['minOut_lowSlippage'] = int(
+                (token0_amount - (token0_amount * 0.005)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
+            unwind_data['minOut_highSlippage'] = int(
+                (token0_amount - (token0_amount * 0.5)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
 
         else:
-            print(f"NOT A WETH PAIR: {lp_token['pair']['name']}")
+            print(f"NOT A BASE TOKEN PAIR: {lp_token['pair']['name']}")
             continue
 
         # estimate gas, to check which slippage to use
@@ -242,6 +256,7 @@ def full_breakdown(w3, chain, lp_tokens_data):
                     })
 
                     print(f"Burning {lp_token['pair']['name']}")
+
                     total_usd_burn += usd_value
                     burns_lpTokens.append(
                         w3.toChecksumAddress(lp_token['pair']['id']))

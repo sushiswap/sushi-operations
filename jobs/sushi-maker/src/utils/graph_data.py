@@ -26,11 +26,13 @@ def fetch_lp_tokens(address, chain):
             id
             name
             symbol
+            decimals
           }
           token1 {
             id
             name
             symbol
+            decimals
           }
         }
         liquidityTokenBalance
