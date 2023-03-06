@@ -16,6 +16,7 @@ TASK_ATTEMPT = os.getenv("CLOUD_RUN_TASK_ATTEMPT", 0)
 RUN_PRIORITY = False
 RUN_NON_PRIORITY = False
 IGNORE_GAS = False
+
 # Retrieve user-defined env vars
 MAINNET_RPC_URL = os.environ["MAINNET_RPC_URL"]
 OPS_ADDRESS = os.environ["OPS_ADDRESS"]
