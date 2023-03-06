@@ -8,74 +8,19 @@ from web3 import Web3, HTTPProvider
 from web3.logs import DISCARD
 from eth_abi import encode
 
+from utils.config import RPC_URL, CHAIN_MAP, WETH_SERVER_ADDRESSES, BASE_ADDRESS, MIN_USD_VA
 from utils.graph_data import fetch_lp_tokens
 from utils.token_list import fetch_whitelisted_tokens
 
 # Retrieve job-defined env vars
 TASK_INDEX = os.getenv("CLOUD_RUN_TASK_INDEX", 0)
 TASK_ATTEMPT = os.getenv("CLOUD_RUN_TASK_ATTEMPT", 0)
-RUN_PRIORITY = False
-RUN_NON_PRIORITY = False
 IGNORE_GAS = False
 
 # Retrieve user-defined env vars
-MAINNET_RPC_URL = os.environ["MAINNET_RPC_URL"]
-ARBITRUM_RPC_URL = os.environ["ARBITRUM_RPC_URL"]
 # os.environ["OPS_ADDRESS"]
 OPS_ADDRESS = "0x4bb4c1B0745ef7B4642fEECcd0740deC417ca0a0"
 OPS_PK = os.environ["OPS_PK"]
-
-CHAIN_MAP = {
-    "mainnet": 1,
-    "arbitrum": 42161,
-    "polygon": 137,
-}
-
-RPC_URL = {
-    "mainnet": MAINNET_RPC_URL,
-    "arbitrum": ARBITRUM_RPC_URL,
-    "polygon": "https://polygon-rpc.com",
-}
-
-WETH_SERVER_ADDRESSES = {
-    "mainnet": "0x5ad6211CD3fdE39A9cECB5df6f380b8263d1e277",
-    "arbitrum": "0xa19b3b22f29E23e4c04678C94CFC3e8f202137d8",
-    "polygon": "0xf1c9881be22ebf108b8927c4d197d126346b5036",
-}
-
-BASE_ADDRESS = {
-    "mainnet": [
-        "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",  # WETH
-        "0x6b175474e89094c44da98b954eedeac495271d0f",  # DAI
-        "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",  # USDC
-        "0xdac17f958d2ee523a2206206994597c13d831ec7",  # USDT
-        "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",  # WBTC
-        "0xd533a949740bb3306d119cc777fa900ba034cd52",  # CRV
-        "0x853d955acef822db058eb8505911ed77f175b99e",  # FRAX
-    ],
-    "arbitrum": [
-        "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",  # WETH
-        "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",  # USDC
-        "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",  # DAI
-        "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",  # USDT
-        "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",  # WBTC
-    ],
-    "polygon": [
-        "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",  # WETH
-        "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",  # USDC
-        "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",  # WMATIC
-        "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",  # USDT
-        "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",  # DAI
-        "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",  # WBTC
-        "0x45c32fa6df82ead1e2ef74d17b76547eddfaff89",  # FRAX
-    ],
-}
-
-MIN_USD_VA = {
-    "mainnet": 100,
-    "arbitrum": 10,
-    "polygon": 10,
-}
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/WethMaker.json")) as f:
     WETH_MAKER_ABI = json.load(f)
@@ -97,17 +42,18 @@ def main(chain, args):
     # next_gas_price
     # gas price checks if should run script goes here
     # print(f"Current block: {last_block['number']}")
+    # above doesn't work w/ polygon
 
     print("Fetching LP token balances...")
     lp_tokens_data = fetch_lp_tokens(
         WETH_SERVER_ADDRESSES[chain], chain)
     print(f"Fetched {len(lp_tokens_data)} LP tokens to process...")
 
-    print("Fetching token list for chain {chain}...")
-    whitelisted_tokens = fetch_whitelisted_tokens(chain)
-    filtered_lp_tokens_data = [
-        lp_token for lp_token in lp_tokens_data if lp_token['pair']['token0']['id'] in whitelisted_tokens and lp_token['pair']['token1']['id'] in whitelisted_tokens
-    ]
+    # print("Fetching token list for chain {chain}...")
+    # whitelisted_tokens = fetch_whitelisted_tokens(chain)
+    # filtered_lp_tokens_data = [
+    #    lp_token for lp_token in lp_tokens_data if lp_token['pair']['token0']['id'] in whitelisted_tokens and lp_token['pair']#['token1']['id'] in whitelisted_tokens
+    # ]
 
     if args.burn:
         print("Burning LP tokens...")
@@ -115,16 +61,6 @@ def main(chain, args):
     elif args.full:
         print("Unwinding LP tokens...")
         full_breakdown(w3, chain, lp_tokens_data)
-
-    # fetch all lp tokens maker is holding
-
-    # process and structure data to make burn calls
-
-    # burn all lp tokens into individual tokens
-
-    # sell all tokens for weth, watch for no bridge set and large slippage that should revert tx
-
-    # unwind_lp_tokens(w3)
 
 
 def burn_lp_tokens(w3, lp_tokens_data):
@@ -209,7 +145,7 @@ def full_breakdown(w3, chain, lp_tokens_data):
             continue
 
         try:
-            estimate_result = maker_contract.functions.unwindPairs(
+            maker_contract.functions.unwindPairs(
                 [w3.toChecksumAddress(unwind_data['tokenA'])],
                 [w3.toChecksumAddress(unwind_data['tokenB'])],
                 [int(unwind_data['amount'])],
@@ -231,7 +167,7 @@ def full_breakdown(w3, chain, lp_tokens_data):
         except Exception as err:
             # try again with max slippage
             try:
-                estimate_result = maker_contract.functions.unwindPairs(
+                maker_contract.functions.unwindPairs(
                     [w3.toChecksumAddress(unwind_data['tokenA'])],
                     [w3.toChecksumAddress(unwind_data['tokenB'])],
                     [int(unwind_data['amount'])],
@@ -253,7 +189,7 @@ def full_breakdown(w3, chain, lp_tokens_data):
                 unwinds_minimumOuts.append(unwind_data['minOut_highSlippage'])
             except Exception as err:
                 try:
-                    estimate_result = maker_contract.functions.burnPairs(
+                    maker_contract.functions.burnPairs(
                         [w3.toChecksumAddress(lp_token['pair']['id'])],
                         [int(unwind_data['amount'])],
                         [0],

@@ -1,13 +1,9 @@
 import requests
 import json
 
-TOKEN_LIST_URL = "https://token-list.sushi.com/"
+from utils.config import CHAIN_MAP
 
-CHAIN_MAP = {
-    "mainnet": 1,
-    "arbitrum": 42161,
-    "polygon": 137,
-}
+TOKEN_LIST_URL = "https://token-list.sushi.com/"
 
 
 def fetch_whitelisted_tokens(chain):

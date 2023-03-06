@@ -1,11 +1,7 @@
 import requests
 import json
 
-EXCHANGE_GRAPH_ENDPOINTS = {
-    "mainnet": "https://api.thegraph.com/subgraphs/name/sushiswap/exchange-ethereum",
-    "arbitrum": "https://api.thegraph.com/subgraphs/name/sushiswap/exchange-arbitrum-backup",
-    "polygon": "https://api.thegraph.com/subgraphs/name/sushiswap/matic-exchange",
-}
+from utils.config import EXCHANGE_GRAPH_ENDPOINTS
 
 
 def fetch_lp_tokens(address, chain):
