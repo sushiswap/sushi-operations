@@ -21,9 +21,9 @@ WETH_SERVER_ADDRESSES = {
     "polygon": "0xf1c9881be22ebf108b8927c4d197d126346b5036",
 }
 
-MIN_USD_VA = {
+MIN_USD_VAL = {
     "mainnet": 100,
-    "arbitrum": 10,
+    "arbitrum": 100,
     "polygon": 10,
 }
 

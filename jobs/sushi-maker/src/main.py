@@ -8,7 +8,7 @@ from web3 import Web3, HTTPProvider
 from web3.logs import DISCARD
 from eth_abi import encode
 
-from utils.config import RPC_URL, CHAIN_MAP, WETH_SERVER_ADDRESSES, BASE_ADDRESS, MIN_USD_VA
+from utils.config import RPC_URL, CHAIN_MAP, WETH_SERVER_ADDRESSES, BASE_ADDRESS, MIN_USD_VAL
 from utils.graph_data import fetch_lp_tokens
 from utils.token_list import fetch_whitelisted_tokens
 
@@ -18,8 +18,7 @@ TASK_ATTEMPT = os.getenv("CLOUD_RUN_TASK_ATTEMPT", 0)
 IGNORE_GAS = False
 
 # Retrieve user-defined env vars
-# os.environ["OPS_ADDRESS"]
-OPS_ADDRESS = "0x4bb4c1B0745ef7B4642fEECcd0740deC417ca0a0"
+OPS_ADDRESS = os.environ["OPS_ADDRESS"]
 OPS_PK = os.environ["OPS_PK"]
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/WethMaker.json")) as f:
@@ -37,12 +36,6 @@ def main(chain, args):
     if not w3.isConnected():
         print(f"Failed to connect to {chain}")
         return RuntimeError
-
-    # last_block = w3.eth.get_block("latest")
-    # next_gas_price
-    # gas price checks if should run script goes here
-    # print(f"Current block: {last_block['number']}")
-    # above doesn't work w/ polygon
 
     print("Fetching LP token balances...")
     lp_tokens_data = fetch_lp_tokens(
@@ -110,7 +103,7 @@ def full_breakdown(w3, chain, lp_tokens_data):
         token0_amount = float(lp_token['pair']['reserve0']) * ratio
         token1_amount = float(lp_token['pair']['reserve1']) * ratio
 
-        if usd_value < MIN_USD_VA[chain]:
+        if usd_value < MIN_USD_VAL[chain]:
             break
 
         unwind_data = {
@@ -136,9 +129,9 @@ def full_breakdown(w3, chain, lp_tokens_data):
             unwind_data['tokenB'] = lp_token['pair']['token1']['id']
             unwind_data['amount'] = lp_token_balance
             unwind_data['minOut_lowSlippage'] = int(
-                (token0_amount - (token0_amount * 0.005)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
+                (token0_amount - (token0_amount * 0.001)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
             unwind_data['minOut_highSlippage'] = int(
-                (token0_amount - (token0_amount * 0.5)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
+                (token0_amount - (token0_amount * 0.01)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
 
         else:
             print(f"NOT A BASE TOKEN PAIR: {lp_token['pair']['name']}")
@@ -250,6 +243,14 @@ def full_breakdown(w3, chain, lp_tokens_data):
     burns_minimumOuts1_chunks = [burns_minimumOuts1[x:x+10]
                                  for x in range(0, len(burns_minimumOuts1), 10)]
 
+    if chain is not CHAIN_MAP['polygon']:
+        last_block = w3.eth.get_block('latest')
+        next_gas_price = math.ceil(last_block.get('baseFeePerGas') * 1.125)
+    else:
+        next_gas_price = w3.eth.generate_gas_price()
+
+    print(f"Next gas price: {next_gas_price}")
+
     print(f"Uwninding {len(unwinds_tokensA)} pairs")
     for i in range(len(tokenA_chunks)):
         # call unwinds here with chunk
@@ -265,6 +266,36 @@ def full_breakdown(w3, chain, lp_tokens_data):
         })
 
         print(f"Full unwind gas estimate chunk {i}: {gas_estimate}")
+        print(f"Executing unwind chunk {i}")
+
+        tx_data = maker_contract.functions.unwindPairs(
+            tokenA_chunks[i],
+            tokenB_chunks[i],
+            unwinds_amounts_chunks[i],
+            unwinds_minimumOuts_chunks[i],
+        ).build_transaction({
+            "chainId": CHAIN_MAP[chain],
+            "from": OPS_ADDRESS,
+            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+            "maxFeePerGas": next_gas_price,
+            "gas": gas_estimate
+        })
+
+        tx = w3.eth.account.sign_transaction(
+            tx_data, private_key=OPS_PK)
+        tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
+
+        try:
+            tx_receipt = w3.eth.wait_for_transaction_receipt(
+                tx_hash, timeoout=600)
+        except:
+            print(
+                f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}"
+            )
+            time.sleep(180)
+            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+
+        print(f"Unwind chunk {i} executed successfully in tx: {tx_hash.hex()}")
 
     print(f"Burning {len(burns_lpTokens)} pairs")
     for i in range(len(burns_lpToken_chunks)):
@@ -281,6 +312,37 @@ def full_breakdown(w3, chain, lp_tokens_data):
         })
 
         print(f"Full burn gas estimate chunk {i}: {gas_estimate}")
+        print(f"Executing burn chunk {i}")
+
+        tx_data = maker_contract.functions.burnPairs(
+            burns_lpToken_chunks[i],
+            burns_amounts_chunks[i],
+            burns_minimumOuts0_chunks[i],
+            burns_minimumOuts1_chunks[i],
+        ).build_transaction({
+            "chainId": CHAIN_MAP[chain],
+            "from": OPS_ADDRESS,
+            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+            "maxFeePerGas": next_gas_price,
+            "gas": gas_estimate
+        })
+        tx = w3.eth.account.sign_transaction(
+            tx_data, private_key=OPS_PK)
+        tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
+
+        try:
+            tx_receipt = w3.eth.wait_for_transaction_receipt(
+                tx_hash, timeout=600)
+        except:
+            print(
+                f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}"
+            )
+            time.sleep(180)
+            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
+
+        print(f"Burn chunk {i} executed successfully in tx: {tx_hash.hex()}")
+
+    print(f"Completed Task #{TASK_INDEX}.")
 
 
 if __name__ == "__main__":
