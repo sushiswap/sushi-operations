@@ -32,6 +32,9 @@ def main(chain, args):
     print("Running WethMaker Job")
     print(f"Starting Task {TASK_INDEX} Attempt {TASK_ATTEMPT}...")
 
+    if args.read:
+        print("In read-only mode...")
+
     w3 = Web3(Web3.HTTPProvider(RPC_URL[chain]))
     if not w3.isConnected():
         print(f"Failed to connect to {chain}")
@@ -50,10 +53,10 @@ def main(chain, args):
 
     if args.burn:
         print("Burning LP tokens...")
-        burn_lp_tokens(w3, lp_tokens_data)
+        burn_lp_tokens(w3, lp_tokens_data, args.read)
     elif args.full:
         print("Unwinding LP tokens...")
-        full_breakdown(w3, chain, lp_tokens_data)
+        full_breakdown(w3, chain, lp_tokens_data, args.read)
 
 
 def burn_lp_tokens(w3, lp_tokens_data):
@@ -69,7 +72,7 @@ def burn_lp_tokens(w3, lp_tokens_data):
         print("\n")
 
 
-def full_breakdown(w3, chain, lp_tokens_data):
+def full_breakdown(w3, chain, lp_tokens_data, read_only):
     maker_contract = w3.eth.contract(
         w3.toChecksumAddress(WETH_SERVER_ADDRESSES[chain]),
         abi=WETH_MAKER_ABI
@@ -243,6 +246,9 @@ def full_breakdown(w3, chain, lp_tokens_data):
     burns_minimumOuts1_chunks = [burns_minimumOuts1[x:x+10]
                                  for x in range(0, len(burns_minimumOuts1), 10)]
 
+    if read_only:
+        return
+
     if chain is not CHAIN_MAP['polygon']:
         last_block = w3.eth.get_block('latest')
         next_gas_price = math.ceil(last_block.get('baseFeePerGas') * 1.125)
@@ -351,6 +357,7 @@ if __name__ == "__main__":
                         action="store_true")
     parser.add_argument("-f", "--full", required=False,
                         action="store_true")
+    parser.add_argument("-r", "--read", required=False, action="store_true")
     parser.add_argument("--chain", required=True, type=str)
 
     args = parser.parse_args()
