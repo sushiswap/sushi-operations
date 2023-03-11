@@ -91,6 +91,8 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
     total_usd_unwind = 0
     total_usd_burn = 0
 
+    below_min = 0
+
     for lp_token in lp_tokens_data:
         # fetch up to date liquidity token balance
         pair_contract = w3.eth.contract(
@@ -107,7 +109,10 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
         token1_amount = float(lp_token['pair']['reserve1']) * ratio
 
         if usd_value < MIN_USD_VAL[chain]:
-            break
+            if below_min >= 5:
+                break
+            below_min += 1
+            continue
 
         unwind_data = {
             "tokenA": "",
