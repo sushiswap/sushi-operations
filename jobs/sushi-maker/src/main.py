@@ -343,7 +343,7 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
 
         try:
             tx_receipt = w3.eth.wait_for_transaction_receipt(
-                tx_hash, timeout=600)
+                tx_hash, timeout=1200)
         except:
             print(
                 f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}"

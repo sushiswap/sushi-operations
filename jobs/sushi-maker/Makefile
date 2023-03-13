@@ -15,6 +15,9 @@ run-mainnet:
 run-mainnet-read-only:
 	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain mainnet --full --read
 
+run-arbitrum-read-only:
+	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain arbitrum --full --read
+
 run-polygon:
 	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain polygon --full
 
