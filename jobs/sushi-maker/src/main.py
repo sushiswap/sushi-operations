@@ -29,7 +29,7 @@ with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/Pair.j
 
 
 def main(chain, args):
-    print("Running WethMaker Job")
+    print(f"Running WethMaker Job on {chain}")
     print(f"Starting Task {TASK_INDEX} Attempt {TASK_ATTEMPT}...")
 
     if args.read:
@@ -123,25 +123,27 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
         }
 
         # Remove liquidity, and sell tokensB[i] for tokensA[i]
-        if lp_token['pair']['token1']['id'] in BASE_ADDRESS[chain]:
-            unwind_data['tokenA'] = lp_token['pair']['token1']['id']
-            unwind_data['tokenB'] = lp_token['pair']['token0']['id']
-            unwind_data['amount'] = lp_token_balance
-            unwind_data['minOut_lowSlippage'] = int(
-                (token1_amount - (token1_amount * 0.005)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
-            unwind_data['minOut_highSlippage'] = int(
-                (token1_amount - (token1_amount * 0.5)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
+        for base_token in BASE_ADDRESS[chain]:
+            if lp_token['pair']['token1']['id'] == base_token:
+                unwind_data['tokenA'] = lp_token['pair']['token1']['id']
+                unwind_data['tokenB'] = lp_token['pair']['token0']['id']
+                unwind_data['amount'] = lp_token_balance
+                unwind_data['minOut_lowSlippage'] = int(
+                    (token1_amount - (token1_amount * 0.005)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
+                unwind_data['minOut_highSlippage'] = int(
+                    (token1_amount - (token1_amount * 0.5)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
+                break
 
-        elif lp_token['pair']['token0']['id'] in BASE_ADDRESS[chain]:
-            unwind_data['tokenA'] = lp_token['pair']['token0']['id']
-            unwind_data['tokenB'] = lp_token['pair']['token1']['id']
-            unwind_data['amount'] = lp_token_balance
-            unwind_data['minOut_lowSlippage'] = int(
-                (token0_amount - (token0_amount * 0.001)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
-            unwind_data['minOut_highSlippage'] = int(
-                (token0_amount - (token0_amount * 0.01)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
-
-        else:
+            elif lp_token['pair']['token0']['id'] == base_token:
+                unwind_data['tokenA'] = lp_token['pair']['token0']['id']
+                unwind_data['tokenB'] = lp_token['pair']['token1']['id']
+                unwind_data['amount'] = lp_token_balance
+                unwind_data['minOut_lowSlippage'] = int(
+                    (token0_amount - (token0_amount * 0.001)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
+                unwind_data['minOut_highSlippage'] = int(
+                    (token0_amount - (token0_amount * 0.01)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
+                break
+        if unwind_data['tokenA'] == "":
             print(f"NOT A BASE TOKEN PAIR: {lp_token['pair']['name']}")
             continue
 
@@ -254,7 +256,7 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
     if read_only:
         return
 
-    if chain is not CHAIN_MAP['polygon']:
+    if chain in ['mainnet', 'arbitrum']:
         last_block = w3.eth.get_block('latest')
         next_gas_price = math.ceil(last_block.get('baseFeePerGas') * 1.125)
     else:

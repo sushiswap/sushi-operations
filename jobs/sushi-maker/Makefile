@@ -24,6 +24,9 @@ run-polygon-read-only:
 run-polygon:
 	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain polygon --full
 
+run-moonriver:
+	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain moonriver --full
+
 
 run:
 	python src/main.py
