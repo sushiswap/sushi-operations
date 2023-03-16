@@ -67,7 +67,7 @@ def main():
     }
     """
 
-    month_before_ts = datetime.now() - timedelta(30)
+    month_before_ts = datetime.now() - timedelta(85)
 
     total_weth_earned = 0
     for network in EXCHANGE_ENDPOINTS:
