@@ -23,26 +23,26 @@ def main():
     print("Pulling data from exchange graph endpoint...")
 
     maker_burns_query = """query($maker: String!, $ts: Int!) {
-    burns(first: 1000, where: {sender: $maker, timestamp_gte: $ts}) {
-      id
-      timestamp
-      transaction {
+      burns(first: 1000, where: {sender: $maker, timestamp_gte: $ts}) {
         id
-      }
-      pair {
-        token0 {
+        timestamp
+        transaction {
           id
         }
-        token1 {
-          id
+        pair {
+          token0 {
+            id
+          }
+          token1 {
+            id
+          }
         }
+        amount0
+        amount1
+        sender
       }
-      amount0
-      amount1
-      sender
     }
-  }
-  """
+    """
 
     maker_swaps_query = """query($maker: String!, $ts: Int!) {
       swaps(first: 1000, where: {sender: $maker, timestamp_gte: $ts}) {
@@ -67,47 +67,60 @@ def main():
     }
     """
 
-    month_before_ts = datetime.now() - timedelta(85)
+    dates_to_check = {
+        "start_of_kanpai": datetime(2022, 12, 19),
+        "start_of_year": datetime(2023, 1, 1),
+        "month_before_ts": datetime.now() - timedelta(30),
+        "week_before_ts": datetime.now() - timedelta(7),
+    }
 
-    total_weth_earned = 0
+    weth_amounts = {
+        "start_of_kanpai": 0,
+        "start_of_year": 0,
+        "month_before_ts": 0,
+        "week_before_ts": 0,
+    }
+
     for network in EXCHANGE_ENDPOINTS:
-        variables = {"maker": MAKER_ADDRESS[network], "ts": int(
-            month_before_ts.timestamp())}
-        result_burns = requests.post(
-            EXCHANGE_ENDPOINTS[network], json={'query': maker_burns_query, 'variables': variables})
-        result_swaps = requests.post(
-            EXCHANGE_ENDPOINTS[network], json={'query': maker_swaps_query, 'variables': variables})
+        for date in dates_to_check:
+            variables = {"maker": MAKER_ADDRESS[network], "ts": int(
+                dates_to_check[date].timestamp())}
+            result_burns = requests.post(
+                EXCHANGE_ENDPOINTS[network], json={'query': maker_burns_query, 'variables': variables})
+            result_swaps = requests.post(
+                EXCHANGE_ENDPOINTS[network], json={'query': maker_swaps_query, 'variables': variables})
 
-        data_burns = json.loads(result_burns.text)
-        data_swaps = json.loads(result_swaps.text)
-        burns = data_burns['data']['burns']
-        swaps = data_swaps['data']['swaps']
+            data_burns = json.loads(result_burns.text)
+            data_swaps = json.loads(result_swaps.text)
+            burns = data_burns['data']['burns']
+            swaps = data_swaps['data']['swaps']
 
-        weth_burned = 0
-        print(f"There are {len(burns)} burns...")
-        for burn in burns:
-            if burn['pair']['token0']['id'] == WETH_ADDRESS[network]:
-                weth_burned += float(burn['amount0'])
-            elif burn['pair']['token1']['id'] == WETH_ADDRESS[network]:
-                weth_burned += float(burn['amount1'])
+            weth_burned = 0
+            print(f"There are {len(burns)} burns...")
+            for burn in burns:
+                if burn['pair']['token0']['id'] == WETH_ADDRESS[network]:
+                    weth_burned += float(burn['amount0'])
+                elif burn['pair']['token1']['id'] == WETH_ADDRESS[network]:
+                    weth_burned += float(burn['amount1'])
 
-        print(
-            f"Maker burned {weth_burned} WETH in the last 30 days on {network}")
-        total_weth_earned += weth_burned
+            print(
+                f"Maker burned {weth_burned} WETH since {dates_to_check[date]} on {network}")
+            weth_amounts[date] += weth_burned
 
-        weth_swapped = 0
-        print(f"There are {len(swaps)} swaps...")
-        for swap in swaps:
-            if (swap['pair']['token0']['id'] == WETH_ADDRESS[network]) and (float(swap['amount0Out']) > 0):
-                weth_swapped += float(swap['amount0Out'])
-            elif (swap['pair']['token1']['id'] == WETH_ADDRESS[network]) and (float(swap['amount1Out']) > 0):
-                weth_swapped += float(swap['amount1Out'])
+            weth_swapped = 0
+            print(f"There are {len(swaps)} swaps...")
+            for swap in swaps:
+                if (swap['pair']['token0']['id'] == WETH_ADDRESS[network]) and (float(swap['amount0Out']) > 0):
+                    weth_swapped += float(swap['amount0Out'])
+                elif (swap['pair']['token1']['id'] == WETH_ADDRESS[network]) and (float(swap['amount1Out']) > 0):
+                    weth_swapped += float(swap['amount1Out'])
 
-        print(
-            f"Maker swapped for {weth_swapped} WETH in the last 30 days on {network}")
-        total_weth_earned += weth_swapped
+            print(
+                f"Maker swapped for {weth_swapped} WETH since {dates_to_check[date]} on {network}")
+            weth_amounts[date] += weth_swapped
 
-    print(f"Treasury earned {total_weth_earned} WETH in the last 30 days")
+    for date in weth_amounts:
+        print(f"Treasury earned {weth_amounts[date]} WETH since {date}")
 
 
 if __name__ == '__main__':

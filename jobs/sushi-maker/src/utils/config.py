@@ -76,9 +76,9 @@ EXCHANGE_GRAPH_ENDPOINTS = {
 BASE_ADDRESS = {
     "mainnet": [
         "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",  # WETH
-        "0x6b175474e89094c44da98b954eedeac495271d0f",  # DAI
         "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",  # USDC
         "0xdac17f958d2ee523a2206206994597c13d831ec7",  # USDT
+        "0x6b175474e89094c44da98b954eedeac495271d0f",  # DAI
         "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",  # WBTC
         "0xd533a949740bb3306d119cc777fa900ba034cd52",  # CRV
         "0x853d955acef822db058eb8505911ed77f175b99e",  # FRAX
@@ -86,8 +86,8 @@ BASE_ADDRESS = {
     "arbitrum": [
         "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",  # WETH
         "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",  # USDC
-        "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",  # DAI
         "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",  # USDT
+        "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",  # DAI
         "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",  # WBTC
     ],
     "polygon": [
