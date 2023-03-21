@@ -105,12 +105,8 @@ BASE_ADDRESS = {
         "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",  # WFTM
         "0x049d68029688eabf473097a2fc38ef61633a3c7a",  # USDT
     ],
-    "boba": [
-
-    ],
-    "nova": [
-
-    ],
+    "boba": [],
+    "nova": [],
     "bsc": [
         "0x55d398326f99059ff775485246999027b3197955",  # USDT
         "0x2170ed0880ac9a755fd29b2688956bd959f933f8",  # ETH

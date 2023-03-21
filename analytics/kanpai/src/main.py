@@ -28,16 +28,15 @@ def main():
 
     for network in WETH_ADDRESS:
         for date in dates_to_check:
-            burns, swaps = fetch_kanpai_data(
-                network, dates_to_check[date].timestamp())
+            burns, swaps = fetch_kanpai_data(network, dates_to_check[date].timestamp())
 
             weth_burned = 0
             # print(f"There are {len(burns)} burns...")
             for burn in burns:
-                if burn['pair']['token0']['id'] == WETH_ADDRESS[network]:
-                    weth_burned += float(burn['amount0'])
-                elif burn['pair']['token1']['id'] == WETH_ADDRESS[network]:
-                    weth_burned += float(burn['amount1'])
+                if burn["pair"]["token0"]["id"] == WETH_ADDRESS[network]:
+                    weth_burned += float(burn["amount0"])
+                elif burn["pair"]["token1"]["id"] == WETH_ADDRESS[network]:
+                    weth_burned += float(burn["amount1"])
 
             # print(
             #    f"Maker burned {weth_burned} WETH since {dates_to_check[date]} on {network}")
@@ -46,10 +45,14 @@ def main():
             weth_swapped = 0
             # print(f"There are {len(swaps)} swaps...")
             for swap in swaps:
-                if (swap['pair']['token0']['id'] == WETH_ADDRESS[network]) and (float(swap['amount0Out']) > 0):
-                    weth_swapped += float(swap['amount0Out'])
-                elif (swap['pair']['token1']['id'] == WETH_ADDRESS[network]) and (float(swap['amount1Out']) > 0):
-                    weth_swapped += float(swap['amount1Out'])
+                if (swap["pair"]["token0"]["id"] == WETH_ADDRESS[network]) and (
+                    float(swap["amount0Out"]) > 0
+                ):
+                    weth_swapped += float(swap["amount0Out"])
+                elif (swap["pair"]["token1"]["id"] == WETH_ADDRESS[network]) and (
+                    float(swap["amount1Out"]) > 0
+                ):
+                    weth_swapped += float(swap["amount1Out"])
 
             # print(
             #    f"Maker swapped for {weth_swapped} WETH since {dates_to_check[date]} on {network}")
@@ -59,5 +62,5 @@ def main():
         print(f"Treasury earned {weth_amounts[date]} WETH since {date}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

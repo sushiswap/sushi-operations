@@ -14,7 +14,6 @@ MAKER_ADDRESS = {
 
 
 def fetch_kanpai_data(chain, timestamp_start):
-
     maker_burns_query = """query($maker: String!, $ts: Int!, $last_id: String) {
       burns(first: 1000, where: {sender: $maker, timestamp_gte: $ts, id_gt: $last_id}) {
         id
@@ -63,36 +62,42 @@ def fetch_kanpai_data(chain, timestamp_start):
     # fetch burns
     last_id = ""
     burns = []
-    while (True):
-        variables = {"maker": MAKER_ADDRESS[chain], "ts": int(
-            timestamp_start), "last_id": last_id}
+    while True:
+        variables = {
+            "maker": MAKER_ADDRESS[chain],
+            "ts": int(timestamp_start),
+            "last_id": last_id,
+        }
         result_burns = requests.post(
-            EXCHANGE_ENDPOINTS[chain], json={
-                'query': maker_burns_query, 'variables': variables}
+            EXCHANGE_ENDPOINTS[chain],
+            json={"query": maker_burns_query, "variables": variables},
         )
         data_burns = json.loads(result_burns.text)
 
-        if len(data_burns['data']['burns']) == 0:
+        if len(data_burns["data"]["burns"]) == 0:
             break
 
-        burns += data_burns['data']['burns']
-        last_id = burns[-1]['id']
+        burns += data_burns["data"]["burns"]
+        last_id = burns[-1]["id"]
 
     last_id = ""
     swaps = []
-    while (True):
-        variables = {"maker": MAKER_ADDRESS[chain], "ts": int(
-            timestamp_start), "last_id": last_id}
+    while True:
+        variables = {
+            "maker": MAKER_ADDRESS[chain],
+            "ts": int(timestamp_start),
+            "last_id": last_id,
+        }
         result_swaps = requests.post(
-            EXCHANGE_ENDPOINTS[chain], json={
-                'query': maker_swaps_query, 'variables': variables}
+            EXCHANGE_ENDPOINTS[chain],
+            json={"query": maker_swaps_query, "variables": variables},
         )
         data_swaps = json.loads(result_swaps.text)
 
-        if len(data_swaps['data']['swaps']) == 0:
+        if len(data_swaps["data"]["swaps"]) == 0:
             break
 
-        swaps += data_swaps['data']['swaps']
-        last_id = swaps[-1]['id']
+        swaps += data_swaps["data"]["swaps"]
+        last_id = swaps[-1]["id"]
 
     return burns, swaps

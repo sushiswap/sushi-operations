@@ -36,11 +36,12 @@ def gas_price_boba():
 def get_arbitrum_retryable_submission_fee(isNova):
     w3 = Web3(Web3.HTTPProvider(MAINNET_RPC_URL))
 
-    with open(os.path.join(os.path.dirname(os.path.realpath('__main__')), "abis/Inbox.json")) as f:
+    with open(
+        os.path.join(os.path.dirname(os.path.realpath("__main__")), "abis/Inbox.json")
+    ) as f:
         inbox_abi = json.load(f)
 
     inbox_address = ARBITRUM_NOVA_INBOX_ADDRESS if isNova else ARBITRUM_INBOX
-    inbox_contract = w3.eth.contract(
-        w3.toChecksumAddress(inbox_address), abi=inbox_abi)
+    inbox_contract = w3.eth.contract(w3.toChecksumAddress(inbox_address), abi=inbox_abi)
     # passing 0 uses last block base fee for the calculation
     return inbox_contract.functions.calculateRetryableSubmissionFee(800, 0).call()

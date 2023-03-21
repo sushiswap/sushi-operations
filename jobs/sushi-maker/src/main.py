@@ -8,7 +8,13 @@ from web3 import Web3, HTTPProvider
 from web3.logs import DISCARD
 from eth_abi import encode
 
-from utils.config import RPC_URL, CHAIN_MAP, WETH_SERVER_ADDRESSES, BASE_ADDRESS, MIN_USD_VAL
+from utils.config import (
+    RPC_URL,
+    CHAIN_MAP,
+    WETH_SERVER_ADDRESSES,
+    BASE_ADDRESS,
+    MIN_USD_VAL,
+)
 from utils.graph_data import fetch_lp_tokens
 from utils.token_list import fetch_whitelisted_tokens
 
@@ -21,10 +27,14 @@ IGNORE_GAS = False
 OPS_ADDRESS = os.environ["OPS_ADDRESS"]
 OPS_PK = os.environ["OPS_PK"]
 
-with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/WethMaker.json")) as f:
+with open(
+    os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/WethMaker.json")
+) as f:
     WETH_MAKER_ABI = json.load(f)
 
-with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/Pair.json")) as f:
+with open(
+    os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/Pair.json")
+) as f:
     PAIR_ABI = json.load(f)
 
 
@@ -41,8 +51,7 @@ def main(chain, args):
         return RuntimeError
 
     print("Fetching LP token balances...")
-    lp_tokens_data = fetch_lp_tokens(
-        WETH_SERVER_ADDRESSES[chain], chain)
+    lp_tokens_data = fetch_lp_tokens(WETH_SERVER_ADDRESSES[chain], chain)
     print(f"Fetched {len(lp_tokens_data)} LP tokens to process...")
 
     # print("Fetching token list for chain {chain}...")
@@ -61,21 +70,22 @@ def main(chain, args):
 
 def burn_lp_tokens(w3, lp_tokens_data):
     for lp_token in lp_tokens_data:
-        if lp_token['pair']['trackedReserveETH'] == '0':
+        if lp_token["pair"]["trackedReserveETH"] == "0":
             print(f"Bunk pair: {lp_token['pair']['name']}")
             continue
-        usd_value = float(lp_token['pair']['reserveUSD']) * (
-            float(lp_token['liquidityTokenBalance']) / float(lp_token['pair']['totalSupply']))
+        usd_value = float(lp_token["pair"]["reserveUSD"]) * (
+            float(lp_token["liquidityTokenBalance"])
+            / float(lp_token["pair"]["totalSupply"])
+        )
         print(f"Burning ${usd_value} worth of {lp_token['pair']['name']}")
-        print(lp_token['pair']['id'])
-        print(lp_token['liquidityTokenBalance'])
+        print(lp_token["pair"]["id"])
+        print(lp_token["liquidityTokenBalance"])
         print("\n")
 
 
 def full_breakdown(w3, chain, lp_tokens_data, read_only):
     maker_contract = w3.eth.contract(
-        w3.toChecksumAddress(WETH_SERVER_ADDRESSES[chain]),
-        abi=WETH_MAKER_ABI
+        w3.toChecksumAddress(WETH_SERVER_ADDRESSES[chain]), abi=WETH_MAKER_ABI
     )
 
     unwinds_tokensA = []
@@ -96,17 +106,16 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
     for lp_token in lp_tokens_data:
         # fetch up to date liquidity token balance
         pair_contract = w3.eth.contract(
-            w3.toChecksumAddress(lp_token['pair']['id']),
-            abi=PAIR_ABI
+            w3.toChecksumAddress(lp_token["pair"]["id"]), abi=PAIR_ABI
         )
         lp_token_balance = pair_contract.functions.balanceOf(
-            w3.toChecksumAddress(WETH_SERVER_ADDRESSES[chain])).call()
+            w3.toChecksumAddress(WETH_SERVER_ADDRESSES[chain])
+        ).call()
 
-        ratio = float(lp_token_balance / 1e18) / \
-            float(lp_token['pair']['totalSupply'])
-        usd_value = float(lp_token['pair']['reserveUSD']) * ratio
-        token0_amount = float(lp_token['pair']['reserve0']) * ratio
-        token1_amount = float(lp_token['pair']['reserve1']) * ratio
+        ratio = float(lp_token_balance / 1e18) / float(lp_token["pair"]["totalSupply"])
+        usd_value = float(lp_token["pair"]["reserveUSD"]) * ratio
+        token0_amount = float(lp_token["pair"]["reserve0"]) * ratio
+        token1_amount = float(lp_token["pair"]["reserve1"]) * ratio
 
         if usd_value < MIN_USD_VAL[chain]:
             if below_min >= 5:
@@ -124,108 +133,120 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
 
         # Remove liquidity, and sell tokensB[i] for tokensA[i]
         for base_token in BASE_ADDRESS[chain]:
-            if lp_token['pair']['token1']['id'] == base_token:
-                unwind_data['tokenA'] = lp_token['pair']['token1']['id']
-                unwind_data['tokenB'] = lp_token['pair']['token0']['id']
-                unwind_data['amount'] = lp_token_balance
-                unwind_data['minOut_lowSlippage'] = int(
-                    (token1_amount - (token1_amount * 0.005)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
-                unwind_data['minOut_highSlippage'] = int(
-                    (token1_amount - (token1_amount * 0.5)) * pow(10, int(lp_token['pair']['token1']['decimals'])))
+            if lp_token["pair"]["token1"]["id"] == base_token:
+                unwind_data["tokenA"] = lp_token["pair"]["token1"]["id"]
+                unwind_data["tokenB"] = lp_token["pair"]["token0"]["id"]
+                unwind_data["amount"] = lp_token_balance
+                unwind_data["minOut_lowSlippage"] = int(
+                    (token1_amount - (token1_amount * 0.005))
+                    * pow(10, int(lp_token["pair"]["token1"]["decimals"]))
+                )
+                unwind_data["minOut_highSlippage"] = int(
+                    (token1_amount - (token1_amount * 0.5))
+                    * pow(10, int(lp_token["pair"]["token1"]["decimals"]))
+                )
                 break
 
-            elif lp_token['pair']['token0']['id'] == base_token:
-                unwind_data['tokenA'] = lp_token['pair']['token0']['id']
-                unwind_data['tokenB'] = lp_token['pair']['token1']['id']
-                unwind_data['amount'] = lp_token_balance
-                unwind_data['minOut_lowSlippage'] = int(
-                    (token0_amount - (token0_amount * 0.001)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
-                unwind_data['minOut_highSlippage'] = int(
-                    (token0_amount - (token0_amount * 0.01)) * pow(10, int(lp_token['pair']['token0']['decimals'])))
+            elif lp_token["pair"]["token0"]["id"] == base_token:
+                unwind_data["tokenA"] = lp_token["pair"]["token0"]["id"]
+                unwind_data["tokenB"] = lp_token["pair"]["token1"]["id"]
+                unwind_data["amount"] = lp_token_balance
+                unwind_data["minOut_lowSlippage"] = int(
+                    (token0_amount - (token0_amount * 0.001))
+                    * pow(10, int(lp_token["pair"]["token0"]["decimals"]))
+                )
+                unwind_data["minOut_highSlippage"] = int(
+                    (token0_amount - (token0_amount * 0.01))
+                    * pow(10, int(lp_token["pair"]["token0"]["decimals"]))
+                )
                 break
-        if unwind_data['tokenA'] == "":
+        if unwind_data["tokenA"] == "":
             print(f"NOT A BASE TOKEN PAIR: {lp_token['pair']['name']}")
             continue
 
         try:
             maker_contract.functions.unwindPairs(
-                [w3.toChecksumAddress(unwind_data['tokenA'])],
-                [w3.toChecksumAddress(unwind_data['tokenB'])],
-                [int(unwind_data['amount'])],
-                [int(unwind_data['minOut_lowSlippage'])],
-            ).estimate_gas({
-                "chainId": CHAIN_MAP[chain],
-                "from": OPS_ADDRESS,
-                "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
-            })
+                [w3.toChecksumAddress(unwind_data["tokenA"])],
+                [w3.toChecksumAddress(unwind_data["tokenB"])],
+                [int(unwind_data["amount"])],
+                [int(unwind_data["minOut_lowSlippage"])],
+            ).estimate_gas(
+                {
+                    "chainId": CHAIN_MAP[chain],
+                    "from": OPS_ADDRESS,
+                    "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+                }
+            )
 
             print(
-                f"Unwinding(low slippage) ${usd_value} worth of {lp_token['pair']['name']}")
+                f"Unwinding(low slippage) ${usd_value} worth of {lp_token['pair']['name']}"
+            )
             total_usd_unwind += usd_value
-            unwinds_tokensA.append(w3.toChecksumAddress(unwind_data['tokenA']))
-            unwinds_tokensB.append(w3.toChecksumAddress(unwind_data['tokenB']))
-            unwinds_amounts.append(unwind_data['amount'])
-            unwinds_minimumOuts.append(unwind_data['minOut_lowSlippage'])
+            unwinds_tokensA.append(w3.toChecksumAddress(unwind_data["tokenA"]))
+            unwinds_tokensB.append(w3.toChecksumAddress(unwind_data["tokenB"]))
+            unwinds_amounts.append(unwind_data["amount"])
+            unwinds_minimumOuts.append(unwind_data["minOut_lowSlippage"])
 
         except Exception as err:
             # try again with max slippage
             try:
                 maker_contract.functions.unwindPairs(
-                    [w3.toChecksumAddress(unwind_data['tokenA'])],
-                    [w3.toChecksumAddress(unwind_data['tokenB'])],
-                    [int(unwind_data['amount'])],
-                    [int(unwind_data['minOut_highSlippage'])],
-                ).estimate_gas({
-                    "chainId": CHAIN_MAP[chain],
-                    "from": OPS_ADDRESS,
-                    "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
-                })
+                    [w3.toChecksumAddress(unwind_data["tokenA"])],
+                    [w3.toChecksumAddress(unwind_data["tokenB"])],
+                    [int(unwind_data["amount"])],
+                    [int(unwind_data["minOut_highSlippage"])],
+                ).estimate_gas(
+                    {
+                        "chainId": CHAIN_MAP[chain],
+                        "from": OPS_ADDRESS,
+                        "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+                    }
+                )
 
                 print(
-                    f"Unwinding (high slippage) ${usd_value} worth of {lp_token['pair']['name']}")
+                    f"Unwinding (high slippage) ${usd_value} worth of {lp_token['pair']['name']}"
+                )
                 total_usd_unwind += usd_value
-                unwinds_tokensA.append(
-                    w3.toChecksumAddress(unwind_data['tokenA']))
-                unwinds_tokensB.append(
-                    w3.toChecksumAddress(unwind_data['tokenB']))
-                unwinds_amounts.append(unwind_data['amount'])
-                unwinds_minimumOuts.append(unwind_data['minOut_highSlippage'])
+                unwinds_tokensA.append(w3.toChecksumAddress(unwind_data["tokenA"]))
+                unwinds_tokensB.append(w3.toChecksumAddress(unwind_data["tokenB"]))
+                unwinds_amounts.append(unwind_data["amount"])
+                unwinds_minimumOuts.append(unwind_data["minOut_highSlippage"])
             except Exception as err:
                 try:
                     maker_contract.functions.burnPairs(
-                        [w3.toChecksumAddress(lp_token['pair']['id'])],
-                        [int(unwind_data['amount'])],
+                        [w3.toChecksumAddress(lp_token["pair"]["id"])],
+                        [int(unwind_data["amount"])],
                         [0],
                         [0],
-                    ).estimate_gas({
-                        "chainId": CHAIN_MAP[chain],
-                        "from": OPS_ADDRESS,
-                        "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
-                    })
+                    ).estimate_gas(
+                        {
+                            "chainId": CHAIN_MAP[chain],
+                            "from": OPS_ADDRESS,
+                            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+                        }
+                    )
 
                     print(f"Burning {lp_token['pair']['name']}")
 
                     total_usd_burn += usd_value
-                    burns_lpTokens.append(
-                        w3.toChecksumAddress(lp_token['pair']['id']))
-                    burns_amounts.append(int(unwind_data['amount']))
+                    burns_lpTokens.append(w3.toChecksumAddress(lp_token["pair"]["id"]))
+                    burns_amounts.append(int(unwind_data["amount"]))
                     burns_minimumOuts0.append(0)
                     burns_minimumOuts1.append(0)
 
                 except Exception as err:
                     print(
-                        f"Likely Bunk Token, can't Unwind/Burn: {lp_token['pair']['name']}")
+                        f"Likely Bunk Token, can't Unwind/Burn: {lp_token['pair']['name']}"
+                    )
                     print("\n")
-                    print('-- Needs possible manual actions --')
+                    print("-- Needs possible manual actions --")
                     print(f"{lp_token['pair']['name']}")
                     print(f"LP Token: {lp_token['pair']['id']}")
                     print(f"TokenA: {unwind_data['tokenA']}")
                     print(f"TokenB: {unwind_data['tokenB']}")
                     print(f"Amount: {unwind_data['amount']}")
-                    print(
-                        f"TokenA Out(low): {unwind_data['minOut_lowSlippage']}")
-                    print(
-                        f"TokenA Out(high): {unwind_data['minOut_highSlippage']}")
+                    print(f"TokenA Out(low): {unwind_data['minOut_lowSlippage']}")
+                    print(f"TokenA Out(high): {unwind_data['minOut_highSlippage']}")
                     print("\n")
 
                     continue
@@ -235,30 +256,38 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
     print(f"Value of unwinds: ${total_usd_unwind}")
     print(f"Value of burns: ${total_usd_burn}")
 
-    tokenA_chunks = [unwinds_tokensA[x:x+10]
-                     for x in range(0, len(unwinds_tokensA), 10)]
-    tokenB_chunks = [unwinds_tokensB[x:x+10]
-                     for x in range(0, len(unwinds_tokensB), 10)]
-    unwinds_amounts_chunks = [unwinds_amounts[x:x+10]
-                              for x in range(0, len(unwinds_amounts), 10)]
-    unwinds_minimumOuts_chunks = [unwinds_minimumOuts[x:x+10]
-                                  for x in range(0, len(unwinds_minimumOuts), 10)]
+    tokenA_chunks = [
+        unwinds_tokensA[x : x + 10] for x in range(0, len(unwinds_tokensA), 10)
+    ]
+    tokenB_chunks = [
+        unwinds_tokensB[x : x + 10] for x in range(0, len(unwinds_tokensB), 10)
+    ]
+    unwinds_amounts_chunks = [
+        unwinds_amounts[x : x + 10] for x in range(0, len(unwinds_amounts), 10)
+    ]
+    unwinds_minimumOuts_chunks = [
+        unwinds_minimumOuts[x : x + 10] for x in range(0, len(unwinds_minimumOuts), 10)
+    ]
 
-    burns_lpToken_chunks = [burns_lpTokens[x:x+10]
-                            for x in range(0, len(burns_lpTokens), 10)]
-    burns_amounts_chunks = [burns_amounts[x:x+10]
-                            for x in range(0, len(burns_amounts), 10)]
-    burns_minimumOuts0_chunks = [burns_minimumOuts0[x:x+10]
-                                 for x in range(0, len(burns_minimumOuts0), 10)]
-    burns_minimumOuts1_chunks = [burns_minimumOuts1[x:x+10]
-                                 for x in range(0, len(burns_minimumOuts1), 10)]
+    burns_lpToken_chunks = [
+        burns_lpTokens[x : x + 10] for x in range(0, len(burns_lpTokens), 10)
+    ]
+    burns_amounts_chunks = [
+        burns_amounts[x : x + 10] for x in range(0, len(burns_amounts), 10)
+    ]
+    burns_minimumOuts0_chunks = [
+        burns_minimumOuts0[x : x + 10] for x in range(0, len(burns_minimumOuts0), 10)
+    ]
+    burns_minimumOuts1_chunks = [
+        burns_minimumOuts1[x : x + 10] for x in range(0, len(burns_minimumOuts1), 10)
+    ]
 
     if read_only:
         return
 
-    if chain in ['mainnet', 'arbitrum']:
-        last_block = w3.eth.get_block('latest')
-        next_gas_price = math.ceil(last_block.get('baseFeePerGas') * 1.125)
+    if chain in ["mainnet", "arbitrum"]:
+        last_block = w3.eth.get_block("latest")
+        next_gas_price = math.ceil(last_block.get("baseFeePerGas") * 1.125)
     else:
         next_gas_price = w3.eth.generate_gas_price()
 
@@ -272,11 +301,13 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
             tokenB_chunks[i],
             unwinds_amounts_chunks[i],
             unwinds_minimumOuts_chunks[i],
-        ).estimate_gas({
-            "chainId": CHAIN_MAP[chain],
-            "from": OPS_ADDRESS,
-            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
-        })
+        ).estimate_gas(
+            {
+                "chainId": CHAIN_MAP[chain],
+                "from": OPS_ADDRESS,
+                "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+            }
+        )
 
         print(f"Full unwind gas estimate chunk {i}: {gas_estimate}")
         print(f"Executing unwind chunk {i}")
@@ -286,21 +317,21 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
             tokenB_chunks[i],
             unwinds_amounts_chunks[i],
             unwinds_minimumOuts_chunks[i],
-        ).build_transaction({
-            "chainId": CHAIN_MAP[chain],
-            "from": OPS_ADDRESS,
-            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
-            "maxFeePerGas": next_gas_price,
-            "gas": gas_estimate
-        })
+        ).build_transaction(
+            {
+                "chainId": CHAIN_MAP[chain],
+                "from": OPS_ADDRESS,
+                "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+                "maxFeePerGas": next_gas_price,
+                "gas": gas_estimate,
+            }
+        )
 
-        tx = w3.eth.account.sign_transaction(
-            tx_data, private_key=OPS_PK)
+        tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
         tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
 
         try:
-            tx_receipt = w3.eth.wait_for_transaction_receipt(
-                tx_hash, timeoout=600)
+            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash, timeoout=600)
         except:
             print(
                 f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}"
@@ -318,11 +349,13 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
             burns_amounts_chunks[i],
             burns_minimumOuts0_chunks[i],
             burns_minimumOuts1_chunks[i],
-        ).estimate_gas({
-            "chainId": CHAIN_MAP[chain],
-            "from": OPS_ADDRESS,
-            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS)
-        })
+        ).estimate_gas(
+            {
+                "chainId": CHAIN_MAP[chain],
+                "from": OPS_ADDRESS,
+                "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+            }
+        )
 
         print(f"Full burn gas estimate chunk {i}: {gas_estimate}")
         print(f"Executing burn chunk {i}")
@@ -332,20 +365,20 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
             burns_amounts_chunks[i],
             burns_minimumOuts0_chunks[i],
             burns_minimumOuts1_chunks[i],
-        ).build_transaction({
-            "chainId": CHAIN_MAP[chain],
-            "from": OPS_ADDRESS,
-            "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
-            "maxFeePerGas": next_gas_price,
-            "gas": gas_estimate
-        })
-        tx = w3.eth.account.sign_transaction(
-            tx_data, private_key=OPS_PK)
+        ).build_transaction(
+            {
+                "chainId": CHAIN_MAP[chain],
+                "from": OPS_ADDRESS,
+                "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
+                "maxFeePerGas": next_gas_price,
+                "gas": gas_estimate,
+            }
+        )
+        tx = w3.eth.account.sign_transaction(tx_data, private_key=OPS_PK)
         tx_hash = w3.eth.send_raw_transaction(tx.rawTransaction)
 
         try:
-            tx_receipt = w3.eth.wait_for_transaction_receipt(
-                tx_hash, timeout=1200)
+            tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash, timeout=1200)
         except:
             print(
                 f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}"
@@ -360,10 +393,8 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-b", "--burn", required=False,
-                        action="store_true")
-    parser.add_argument("-f", "--full", required=False,
-                        action="store_true")
+    parser.add_argument("-b", "--burn", required=False, action="store_true")
+    parser.add_argument("-f", "--full", required=False, action="store_true")
     parser.add_argument("-r", "--read", required=False, action="store_true")
     parser.add_argument("--chain", required=True, type=str)
 
