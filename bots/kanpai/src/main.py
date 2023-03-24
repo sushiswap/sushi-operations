@@ -12,7 +12,7 @@ DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 client = discord.Client(intents=discord.Intents.default())
 
 
-@tasks.loop(hours=12)
+@tasks.loop(hours=1)
 async def change_kanpai_status():
     eth_amounts = fetch_kanpai_data()
     await client.change_presence(
