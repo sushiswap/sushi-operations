@@ -18,17 +18,20 @@ def main():
         "start_of_year": datetime(2023, 1, 1),
         "month_before": datetime.now() - timedelta(30),
         "week_before": datetime.now() - timedelta(7),
+        "day_before": datetime.now() - timedelta(1),
     }
 
     weth_amounts = {
         "start_of_year": 0,
         "month_before": 0,
         "week_before": 0,
+        "day_before": 0,
     }
 
     for network in WETH_ADDRESS:
         for date in dates_to_check:
-            burns, swaps = fetch_kanpai_data(network, dates_to_check[date].timestamp())
+            burns, swaps = fetch_kanpai_data(
+                network, dates_to_check[date].timestamp())
 
             weth_burned = 0
             # print(f"There are {len(burns)} burns...")
