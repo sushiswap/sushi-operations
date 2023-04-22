@@ -3,7 +3,7 @@
   "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
   "user": "0x4be5ecc076c7db235b97264d480dcc9c1a57dc7b",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 1922446029,
+  "value": "1922446029",
   "txHash": "0x95e44235411c46814d43bdac0cdcbec3a3945bcd443ffaf2f0bd6adc8e0c148e",
   "chain": "fantom"
  },
@@ -11,7 +11,7 @@
   "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
   "user": "0x770edb43ecc5bcbe6f7088e1049fc42b2d1b195c",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 990062494,
+  "value": "990062494",
   "txHash": "0x95e44235411c46814d43bdac0cdcbec3a3945bcd443ffaf2f0bd6adc8e0c148e",
   "chain": "fantom"
  },
@@ -19,7 +19,7 @@
   "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
   "user": "0xe7f23915674b56678a1963ab3321303d196a3fa6",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 159449284,
+  "value": "159449284",
   "txHash": "0x95e44235411c46814d43bdac0cdcbec3a3945bcd443ffaf2f0bd6adc8e0c148e",
   "chain": "fantom"
  },
@@ -27,7 +27,7 @@
   "token": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
   "user": "0x5a01179f3641fdad8e3ce238311eda1e028f5ce8",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 190074844555329635510,
+  "value": "190074844555329635510",
   "txHash": "0x95e44235411c46814d43bdac0cdcbec3a3945bcd443ffaf2f0bd6adc8e0c148e",
   "chain": "fantom"
  },
@@ -35,7 +35,7 @@
   "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
   "user": "0x46d963a229caf05ff4afc14b1b35105ab777e846",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 48687822,
+  "value": "48687822",
   "txHash": "0x1c402d82bed48057e20b264468dc974c98ba5ed4f0fc920f001708db48e84614",
   "chain": "fantom"
  },
@@ -43,7 +43,7 @@
   "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
   "user": "0xa61f623f3bd38a18a218b5e02940c5eaf39c0004",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 45901058,
+  "value": "45901058",
   "txHash": "0x1c402d82bed48057e20b264468dc974c98ba5ed4f0fc920f001708db48e84614",
   "chain": "fantom"
  },
@@ -51,7 +51,7 @@
   "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
   "user": "0x394b67c6bc05abb14c73a57706dcd5cb85231c4e",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 1,
+  "value": "1",
   "txHash": "0x99c8781ed2b3a7563eb0446f33da6700714210f9c753d9f4bdb3679cabc2823f",
   "chain": "fantom"
  },
@@ -59,7 +59,7 @@
   "token": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
   "user": "0xc16c5648f7ea48be52e597f818b50124cd6199a2",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 4560231610529,
+  "value": "4560231610529",
   "txHash": "0xc817f99d43ff6997aa82cb5795c15333b57258a336fe1c5607511d0226c356b1",
   "chain": "fantom"
  },
@@ -67,7 +67,7 @@
   "token": "0x468003b688943977e6130f4f68f23aad939a1040",
   "user": "0x7edcf935ce69e992ea27fe5d3f3b720a902f526a",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 302756114762819303111,
+  "value": "302756114762819303111",
   "txHash": "0x3c3c01b531c600dbc4d24ce5fafa541ea9a4ad5b4dc2197c24efb8e627ef8bf8",
   "chain": "fantom"
  },
@@ -75,7 +75,7 @@
   "token": "0x321162cd933e2be498cd2267a90534a804051b11",
   "user": "0xc16c5648f7ea48be52e597f818b50124cd6199a2",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 29,
+  "value": "29",
   "txHash": "0x1447dbf8f13103c47da003bb46ae804a17af1b88ea376519f08ea44b20482a0b",
   "chain": "fantom"
  },
@@ -83,7 +83,7 @@
   "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
   "user": "0x36c0ade75d82190504a01827d2ac5a42ce43417a",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 999400,
+  "value": "999400",
   "txHash": "0x5c25d7d1674a38d21e09f3be77f1831dbdf77e0324d414ee02c82b7850029cb7",
   "chain": "fantom"
  },
@@ -91,7 +91,7 @@
   "token": "0x534c7fb5607251e1927b17fbc4d22ba818e197bc",
   "user": "0xa6d7d0e650aa40ffa42d845a354c12c2bc0ab15f",
   "receiver": "0x164f82ae0261ad2ad5f99b7a01d5fb80d4acc963",
-  "value": 1933200,
+  "value": "1933200",
   "txHash": "0x9e1c889ec9dcb57638d0f61c81a3279ee079a41f0926857a0c8a08ed8aca6a89",
   "chain": "fantom"
  }

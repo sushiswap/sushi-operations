@@ -39,16 +39,20 @@ key_mapping = {
 
 ignore_token_list = {
     "arbitrum": [
+        "0xb7d927a50531f9b3c43dc8d73033e765b24bf316",
+        "0x37932bb72336462a052d7da588c75e32afa1cedf",
         "0x76f27f78554a6b6e0a49d49ccbf0691f7d648a50",
-        "0x7ca7eaca7b62c1c2a8106a5c9094186895155c17"
+        "0x2e516ba5bf3b7ee47fb99b09eadb60bde80a82e0",
+        "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
     ],
     "avalanche": [],
     "boba": [],
     "bsc": [
-        "0xd048b4c23af828e5be412505a51a8dd7b37782dd",
-        "0x4bf87eb459cdc52e17fbe310139f0134065cd065"
+        "0xd048b4c23af828e5be412505a51a8dd7b37782dd"
     ],
-    "ethereum": [],
+    "ethereum": [
+        "0x9ea3b5b4ec044b70375236a281986106457b20ef"
+    ],
     "fantom": [],
     "nova": [],
     "optimism": [],
@@ -127,6 +131,8 @@ for network in networks:
 
         renamed_rows = []
         for row in rows:
+            if row['ContractAddress'] in ignore_token_list[network]:
+                continue
             renamed_row = {new_key: row[old_key]
                            for new_key, old_key in key_mapping.items()}
             renamed_rows.append(renamed_row)
@@ -141,8 +147,8 @@ for network in networks:
 
             if token in decimal_token_book[network]:
                 decimals = decimal_token_book[network][token]
-                row['value'] = int(Decimal(row['value'].replace(
-                    ',', '')) * Decimal(10 ** decimals))
+                row['value'] = str(int(Decimal(row['value'].replace(
+                    ',', '')) * Decimal(10 ** decimals)))
                 continue
 
             try:
@@ -151,12 +157,12 @@ for network in networks:
                 decimals = contract.functions.decimals().call()
                 decimal_token_book[network][token] = decimals
 
-                row['value'] = int(Decimal(row['value'].replace(
-                    ',', '')) * Decimal(10 ** decimals))
+                row['value'] = str(int(Decimal(row['value'].replace(
+                    ',', '')) * Decimal(10 ** decimals)))
             except:
                 print("Hard setting decimals for: ", token)
-                row['value'] = int(Decimal(row['value'].replace(
-                    ',', '')) * Decimal(10 ** 18))
+                row['value'] = str(int(Decimal(row['value'].replace(
+                    ',', '')) * Decimal(10 ** 18)))
 
         # print(renamed_rows)
 

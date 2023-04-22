@@ -44,7 +44,7 @@ for network in networks:
 
     w3 = Web3(HTTPProvider(rpcs[network]))
 
-    print(f"Totals for {network}")
+    print(f"Checking Totals for {network}")
     print("-----------------------------------")
 
     json_file = './data/output/' + network + '-token-claims.json'
@@ -55,7 +55,7 @@ for network in networks:
 
     for entry in data:
         token = entry['token']
-        amount = entry['value']
+        amount = int(entry['value'])
         sums_by_token[token] += amount
 
     # for token, amount in sums_by_token.items():

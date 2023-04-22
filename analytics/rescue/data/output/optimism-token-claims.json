@@ -3,7 +3,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x68f60e4f1a3a36ff3ce43f80f5bf06eba59b044b",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 2100928538,
+  "value": "2100928538",
   "txHash": "0x15cb488a48ab0f578776ee7121011e3d4fd1eb7ee302de5ffec42e7d5fef0a71",
   "chain": "optimism"
  },
@@ -11,7 +11,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x9db57c2673983c42efda68b0bfc4eebafb2b15ad",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 1305251323,
+  "value": "1305251323",
   "txHash": "0x15cb488a48ab0f578776ee7121011e3d4fd1eb7ee302de5ffec42e7d5fef0a71",
   "chain": "optimism"
  },
@@ -19,7 +19,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x06d402d0f6b179a73fc03b730ce170ea849498d3",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 344624910,
+  "value": "344624910",
   "txHash": "0x15cb488a48ab0f578776ee7121011e3d4fd1eb7ee302de5ffec42e7d5fef0a71",
   "chain": "optimism"
  },
@@ -27,7 +27,7 @@
   "token": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
   "user": "0x530cfdf08e0da2f0c75b750c62244e7336922518",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 300917749207529463033,
+  "value": "300917749207529463033",
   "txHash": "0x15cb488a48ab0f578776ee7121011e3d4fd1eb7ee302de5ffec42e7d5fef0a71",
   "chain": "optimism"
  },
@@ -35,7 +35,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x4164d6bb3c7d86b13ac420aec4fd1db2d90e7016",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 122890783,
+  "value": "122890783",
   "txHash": "0x15cb488a48ab0f578776ee7121011e3d4fd1eb7ee302de5ffec42e7d5fef0a71",
   "chain": "optimism"
  },
@@ -43,7 +43,7 @@
   "token": "0x4200000000000000000000000000000000000042",
   "user": "0x2f2f665974261c4129b1dc6c359bd259cd66f78a",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 50000000000000000000,
+  "value": "50000000000000000000",
   "txHash": "0x0113e82fbc02097ba10acc5cf3729e55e6fa7bb627fe9440c9a03d5cd09303da",
   "chain": "optimism"
  },
@@ -51,7 +51,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x9a52c6d4bc3cc30169e22886280e7aac169d5781",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 105539697,
+  "value": "105539697",
   "txHash": "0x0113e82fbc02097ba10acc5cf3729e55e6fa7bb627fe9440c9a03d5cd09303da",
   "chain": "optimism"
  },
@@ -59,7 +59,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0xe05f0df951b96f0e264973e1c444e64d7350c7e3",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 104706294,
+  "value": "104706294",
   "txHash": "0x0113e82fbc02097ba10acc5cf3729e55e6fa7bb627fe9440c9a03d5cd09303da",
   "chain": "optimism"
  },
@@ -67,7 +67,7 @@
   "token": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
   "user": "0x7adf30dca721f792a4308dcac6607117e697a432",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 52990836,
+  "value": "52990836",
   "txHash": "0x0113e82fbc02097ba10acc5cf3729e55e6fa7bb627fe9440c9a03d5cd09303da",
   "chain": "optimism"
  },
@@ -75,7 +75,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0xf87bd1fcc84397cac2205effbb549f02280fcec7",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 40954162,
+  "value": "40954162",
   "txHash": "0x0113e82fbc02097ba10acc5cf3729e55e6fa7bb627fe9440c9a03d5cd09303da",
   "chain": "optimism"
  },
@@ -83,7 +83,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x5458e942470d50053f49d22dcc39aaa0d793d7ee",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 36700000,
+  "value": "36700000",
   "txHash": "0x873748c18e03d86c922125f482265cc43ec84321ddae9a989512439106120c70",
   "chain": "optimism"
  },
@@ -91,7 +91,7 @@
   "token": "0x4200000000000000000000000000000000000042",
   "user": "0x87d9c50b3e774536250f1aba2ab38c54268a18d8",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 12100873687392809566,
+  "value": "12100873687392809566",
   "txHash": "0x873748c18e03d86c922125f482265cc43ec84321ddae9a989512439106120c70",
   "chain": "optimism"
  },
@@ -99,7 +99,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x5d2ce8beae0f00cf9e8a0dff475eb6b873b2895e",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 13474921,
+  "value": "13474921",
   "txHash": "0x873748c18e03d86c922125f482265cc43ec84321ddae9a989512439106120c70",
   "chain": "optimism"
  },
@@ -107,7 +107,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x897ca23ae83acaf6e46ae47d49f37bedf3f52a1b",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 12571648,
+  "value": "12571648",
   "txHash": "0x873748c18e03d86c922125f482265cc43ec84321ddae9a989512439106120c70",
   "chain": "optimism"
  },
@@ -115,7 +115,7 @@
   "token": "0x4200000000000000000000000000000000000042",
   "user": "0x7059df82d93aea2a02b9b137a028749526be369f",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 5419572398371999335,
+  "value": "5419572398371999335",
   "txHash": "0x873748c18e03d86c922125f482265cc43ec84321ddae9a989512439106120c70",
   "chain": "optimism"
  },
@@ -123,7 +123,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0xbd462191a34abe4794f88d37e71afbeb7ab73b79",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 9662265,
+  "value": "9662265",
   "txHash": "0xec683bca18a17d9140f8943f11c93767b21e41a68e4cd1aa4dddc7e3f981038d",
   "chain": "optimism"
  },
@@ -131,7 +131,7 @@
   "token": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
   "user": "0xa367f5b4dea0ea066190739b2f6f48a4c9f109c0",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 9311753,
+  "value": "9311753",
   "txHash": "0xec683bca18a17d9140f8943f11c93767b21e41a68e4cd1aa4dddc7e3f981038d",
   "chain": "optimism"
  },
@@ -139,7 +139,7 @@
   "token": "0x4200000000000000000000000000000000000042",
   "user": "0xd2e858cad48bbcdbdeca26c4d702bfd9dd4c8654",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 3204429213924667425,
+  "value": "3204429213924667425",
   "txHash": "0xec683bca18a17d9140f8943f11c93767b21e41a68e4cd1aa4dddc7e3f981038d",
   "chain": "optimism"
  },
@@ -147,7 +147,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x47c2d039c32a0057ef44262ac27b0de4aa0df32d",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 7082000,
+  "value": "7082000",
   "txHash": "0xec683bca18a17d9140f8943f11c93767b21e41a68e4cd1aa4dddc7e3f981038d",
   "chain": "optimism"
  },
@@ -155,7 +155,7 @@
   "token": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
   "user": "0x54cf78c31739b97f87381b19937d13f04dc9819f",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 5723848590537353413,
+  "value": "5723848590537353413",
   "txHash": "0xec683bca18a17d9140f8943f11c93767b21e41a68e4cd1aa4dddc7e3f981038d",
   "chain": "optimism"
  },
@@ -163,7 +163,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x6fd6de5ba9f70f00e2d916f722fa4b5e26278dc7",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 5484000,
+  "value": "5484000",
   "txHash": "0x86ac898d4ec24a8823bc247b9000598e25fe9b8fbd5213f4425435d0ba6f1268",
   "chain": "optimism"
  },
@@ -171,7 +171,7 @@
   "token": "0x4200000000000000000000000000000000000042",
   "user": "0x64a03a4fca0a7a4eecaf3501be6bb8d181178c44",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 2000000000000000000,
+  "value": "2000000000000000000",
   "txHash": "0x86ac898d4ec24a8823bc247b9000598e25fe9b8fbd5213f4425435d0ba6f1268",
   "chain": "optimism"
  },
@@ -179,7 +179,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x2d79559842b125ff98ed640a031e50e2d5061e9e",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 4508840,
+  "value": "4508840",
   "txHash": "0x86ac898d4ec24a8823bc247b9000598e25fe9b8fbd5213f4425435d0ba6f1268",
   "chain": "optimism"
  },
@@ -187,7 +187,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x8db6b8e5a978871044864ae94825387add06384d",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 4196700,
+  "value": "4196700",
   "txHash": "0x86ac898d4ec24a8823bc247b9000598e25fe9b8fbd5213f4425435d0ba6f1268",
   "chain": "optimism"
  },
@@ -195,7 +195,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x29a1303f5412c771c421997f75b19773c2601568",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 3997600,
+  "value": "3997600",
   "txHash": "0x86ac898d4ec24a8823bc247b9000598e25fe9b8fbd5213f4425435d0ba6f1268",
   "chain": "optimism"
  },
@@ -203,7 +203,7 @@
   "token": "0x4200000000000000000000000000000000000042",
   "user": "0x365d7431ddc4121e8ac07710e10c34edecdc452a",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 1621181645252976777,
+  "value": "1621181645252976777",
   "txHash": "0x49beb144774b2c1b654377cc379113b94a984044c3d8798d8ce462c0a9770f85",
   "chain": "optimism"
  },
@@ -211,7 +211,7 @@
   "token": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97",
   "user": "0xcf65c45e37e8d70e3ed62fb6e8fc14210fccb527",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 1940000000000000000,
+  "value": "1940000000000000000",
   "txHash": "0xed802ba5a4bf7c9cb3cde2df2fbd567818a669b4bf812dae9c40c34891d49eda",
   "chain": "optimism"
  },
@@ -219,7 +219,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0xd33f357220fe1cd8786f222ef65c85cd2435f53c",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 1739006,
+  "value": "1739006",
   "txHash": "0xe5ac88618bf349321a30d04b860c5ff27c849db99bbc0a1eac2166d26fdf0aac",
   "chain": "optimism"
  },
@@ -227,7 +227,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x5458e942470d50053f49d22dcc39aaa0d793d7ee",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 990000,
+  "value": "990000",
   "txHash": "0x68467f46cba27624ef4533712490a9bc8556ba50fe8a7cd14e500504129ea401",
   "chain": "optimism"
  },
@@ -235,7 +235,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x57a98b1765313e664c2fd1a7b490114ce8658fd5",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 132837622,
+  "value": "132837622",
   "txHash": "0x25507e12712e9d7fe40fca2e3c5a9a9956a663f4cdf60963852cadec6f6f7a4e",
   "chain": "optimism"
  },
@@ -243,7 +243,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0xbd5b72956c6dede12c7449a227d8d2aa4b152b97",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 120378678,
+  "value": "120378678",
   "txHash": "0x3eea11126a3bbbbebc81fb92516ff8e455f5310c524cc202bebb6b7cfa8c80db",
   "chain": "optimism"
  },
@@ -251,7 +251,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0xbe998ecd9cffc755f07e2003cc54c9237b493d89",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 3000000,
+  "value": "3000000",
   "txHash": "0x836369ac1d5805d75074d59caaac7083754f298d5d635744dfd2f21007b5c636",
   "chain": "optimism"
  },
@@ -259,7 +259,7 @@
   "token": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
   "user": "0x1135bd1bf173a5afdb6619eff91a61518796de87",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 110832056,
+  "value": "110832056",
   "txHash": "0xf00fa93e78456cec3aaba23c1f5e5b6be8a60c31fc16dfc51b851ba82290d53e",
   "chain": "optimism"
  },
@@ -267,7 +267,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0xd2d3bebbf5e41a159b8ecc90a0a02b1018dd0d70",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 9990000,
+  "value": "9990000",
   "txHash": "0x62fb3c2eda127dcb335affe6de798743e3eb414b7e6b8442e038b15edbccb025",
   "chain": "optimism"
  },
@@ -275,7 +275,7 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x6fd6de5ba9f70f00e2d916f722fa4b5e26278dc7",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 10499999,
+  "value": "10499999",
   "txHash": "0x18b4cbeabc99b35de2a6ae447c174eafc6ee2be862def88f99e54e2f72b1c724",
   "chain": "optimism"
  },
@@ -283,8 +283,24 @@
   "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
   "user": "0x5458e942470d50053f49d22dcc39aaa0d793d7ee",
   "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
-  "value": 10000,
+  "value": "10000",
   "txHash": "0x7c0cc8fd9e77efa6ab9f020700b0d30b5cff22157a977a1c8ee2c6553a5c2acf",
+  "chain": "optimism"
+ },
+ {
+  "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+  "user": "0xd2d3bebbf5e41a159b8ecc90a0a02b1018dd0d70",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": "49970000",
+  "txHash": "0xa8f4864a8e6701237952a20423c47a39af09215af81e5905be2f96621aa060cd",
+  "chain": "optimism"
+ },
+ {
+  "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+  "user": "0xd2d3bebbf5e41a159b8ecc90a0a02b1018dd0d70",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": "185996",
+  "txHash": "0x0b713bb75d3ce3be4644c9dde1caa05b950b06a65b89585d57c46232bb6d3c89",
   "chain": "optimism"
  }
 ]
