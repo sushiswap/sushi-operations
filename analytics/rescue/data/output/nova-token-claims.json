@@ -1,0 +1,322 @@
+[
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x87257f4919eed021f240a9b130d2558ec0115556",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 322019,
+  "txHash": "0x2af44053c1ca363971f5adea49255c5171982164936bf85083d967eda63ad6eb",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x90927e80b6c37e6e8905d179bb2acf8feb902f03",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 16668,
+  "txHash": "0x05ef33b7e7e54401121b71d8be4795f3c7c6af99af867b98b26d49bbb269e8e4",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x55c7fe832626839c32f3d30bb6537d53a06722cc",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 161987,
+  "txHash": "0x61baf290cf9d33bb930f6a327294ca5226c790b1e1e4cd566071c67a18eaa107",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xa9080708f0a07441c8ce7b2ab618c4c5b611c084",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 73010,
+  "txHash": "0x983adac92f9ac29d99d3d49191058854d53b320b2f790078caf9b70b5340fdfa",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xb3a4e8ade7ee18ca770cbfb61cc8b2a5b75c9fa9",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 482497,
+  "txHash": "0xb3375907c374c96ad608cf429b61daa851bbaa81cb95c17dcfd8f81bfe562a2c",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x3ee42d76d92e62839ec3638600da4dbd43e11e1f",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 563532,
+  "txHash": "0xeef8853620bf58b483802296b6cf71a34e11d81c25aec78e51f700651f6fe02e",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x422125476a8b5c696a0866c31c7d65a53d551c38",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 17997146,
+  "txHash": "0x22e748d83f6c605ad20a441ec79f363344bc6c61ffa6a88ea0fa36f0172c4d98",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x422125476a8b5c696a0866c31c7d65a53d551c38",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 181964,
+  "txHash": "0xe347fe25a70026374ea2a16f82a19fde74a77e7a4e156baf3059640fe0e3beb0",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x422125476a8b5c696a0866c31c7d65a53d551c38",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 370695,
+  "txHash": "0xe3afb27a1e7bff239996018feeed596a71a5dd87f2220f39a0387238e0b6703b",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x14448debb3ceb52334c14bc615761c55fb1c50db",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 12986976,
+  "txHash": "0x349b6bfcb160041140afdddc1c1956c75957b9bfb7c93a2e74604e0ecd1de38f",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x14448debb3ceb52334c14bc615761c55fb1c50db",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 14842156,
+  "txHash": "0x9bd5c4882853dfaf19087b89bcbb12a309466cb6e2aac401b672fa42396b0134",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x14448debb3ceb52334c14bc615761c55fb1c50db",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 185320,
+  "txHash": "0x2f98b6238ca492801b6c6a8c7fe693b8baafa602a9069c6303ab3e5c782663ef",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x55c7fe832626839c32f3d30bb6537d53a06722cc",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 225494,
+  "txHash": "0x0af9275d6bd2b294a21a06d3fda532e1e3830e0027605f08336ea38fe11cddeb",
+  "chain": "nova"
+ },
+ {
+  "token": "0xf823c3cd3cebe0a1fa952ba88dc9eef8e0bf46ad",
+  "user": "0x422125476a8b5c696a0866c31c7d65a53d551c38",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 114347442355570141,
+  "txHash": "0x327eb8bdfc2f91da57b4a8d52ef9115d44a4bf930e793af97bb948c84d55d311",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x0935c90400d95fc6757d07904b9ba88a0b447012",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 10283,
+  "txHash": "0x25a14cf94fbbbc943df2e87b8dca22cb32e2e31c7f8be067f41af8a15c0bdf01",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xaefcd0f8a1cbd231cecaa9bfd9ffb82a6eaaa462",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 345581,
+  "txHash": "0xa8772ca0b6698cc1097b42529f61988e2e77d7eb9f74909d15b83fe064fcda2c",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x8e3f0e695b11d694a7ee7ea5cc45e441c157e295",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 810292,
+  "txHash": "0xa8772ca0b6698cc1097b42529f61988e2e77d7eb9f74909d15b83fe064fcda2c",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x493496f63277008ac1722ceed5c36b29fcb2d820",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 1367837,
+  "txHash": "0x7c1b07c9e86b3e579ee366ff161d4612edf3c22236a03310c598d373e9b06cfa",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x953bfcf51638b336f07dffd28ecfaef96711508c",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 198906,
+  "txHash": "0x0fd8dc9d0f29fa41ca01c0ff0617d3377e7a094574f68080725c1ec28af520c2",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x016d9a478996396aac038c2f504963150f43c8b6",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 104683,
+  "txHash": "0xd432c0913b3b1e881b42e92eacad6d97c4b3c9131e74a9cdbefa012e5071a8b4",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x9af9c34ae11ff3f67d5b203a2e47a58703360606",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 1503184,
+  "txHash": "0x0c3b6db22a25296a4ea1a27600375bbcbc7207e57e3ff2abd5cb8a6b7fc20cd5",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x38fa5f8bcb88e04fea9881056379198f3d2d5a28",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 1503184,
+  "txHash": "0x0c3b6db22a25296a4ea1a27600375bbcbc7207e57e3ff2abd5cb8a6b7fc20cd5",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x01c208f6fc0702de0370b80a77fe749b7eff6985",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 1503184,
+  "txHash": "0x0c3b6db22a25296a4ea1a27600375bbcbc7207e57e3ff2abd5cb8a6b7fc20cd5",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x667d5ea79fd770b5f8b5c8ac97cfd302d1e2a284",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 1503184,
+  "txHash": "0x567ce16de29929676d528a2968e4e0e75faa8b6e2d6723e558a84ef38e17cf2a",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x2ede9c4ddce76d6cf995c89802455e77e687aadd",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 1502071,
+  "txHash": "0x567ce16de29929676d528a2968e4e0e75faa8b6e2d6723e558a84ef38e17cf2a",
+  "chain": "nova"
+ },
+ {
+  "token": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+  "user": "0xcd5f705fb26400966142f662a28591fd551c61a1",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 204901882083360,
+  "txHash": "0xccd3b480117fb1f058beb6e48d662925328f762087a087da6b1b77a771b69c26",
+  "chain": "nova"
+ },
+ {
+  "token": "0x52484e1ab2e2b22420a25c20fa49e173a26202cd",
+  "user": "0x10e1c3fea111d8327d42bff0fd6de51a20b1cf30",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 262,
+  "txHash": "0xc8ceadc48bb85374f2fb2eb493784572e0dffe87e2c92a1bdb8242687f8f7984",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x971db54a4bb5f3870c3034c4c3c570497034aaed",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 3778465,
+  "txHash": "0x2d95bb31e6d9419086485f523a7269c7109ee204c2b66a6d88e930ffb6e2bd71",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xa6af0479e3e3ebeeaba50bc1b8e7c39c3ac6d063",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 205914229,
+  "txHash": "0x3ae4b4628c7008e1d1d385b4f7a64ce3ff6e9d143e1f954b0f84441d35cb2bd0",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xa6af0479e3e3ebeeaba50bc1b8e7c39c3ac6d063",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 1876295,
+  "txHash": "0x91054ba5a03a0e6e0ffbb8b876c89266aa4f75b121d4b8fc6a0c398b33cadbcd",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xb3a4e8ade7ee18ca770cbfb61cc8b2a5b75c9fa9",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 5572302,
+  "txHash": "0x4dcbff7f45d9b4f956c096b8352f7056e01672c520a7281d07eec12a778e2117",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xb3a4e8ade7ee18ca770cbfb61cc8b2a5b75c9fa9",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 3816246,
+  "txHash": "0xe33eef9f466305ecdbc32603b54f32a97e062b81323053089048e6af6b9b492a",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xb3a4e8ade7ee18ca770cbfb61cc8b2a5b75c9fa9",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 951360,
+  "txHash": "0x52e969dd07e912f92817fab0c22b7dfe4f8007c11c5bed90c665691ecd51732a",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xb3a4e8ade7ee18ca770cbfb61cc8b2a5b75c9fa9",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 593350,
+  "txHash": "0x1bb9fc101788cbec2fbb3ea31ef2fc258745a7f80aa3de866cf0087d886d7e8f",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x711a1d62b89b8da1a182673eaa08aef16e2db136",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 9922227,
+  "txHash": "0x3768651d3b770e8e17ef79f7937bcb8549ebc131ce4654ee27db87a7408c3f61",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x711a1d62b89b8da1a182673eaa08aef16e2db136",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 9922070,
+  "txHash": "0x89f00f2b86a00f95a9ce302f621abe11ce165d308a902e0f0b809e7204ed812e",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xf3bfdd95f63901f718537aa9dc058fdae2e9c472",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 85287144,
+  "txHash": "0x2953d61c338a0d8e7c57eae9412dea7232617417430fec395f1fd95aeb61ffb1",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xb81bb73632c64c69616cddd289f5da64a99495b5",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 2072151,
+  "txHash": "0x833f22a793b129a808aeb5f2e5d099f5a062254101c00aaf9bbdfea952a121b8",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0x57ab819f4ccfa96c248dce35e3d9613d1248d5bc",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 414036,
+  "txHash": "0xa0a14d7d08ac6fc1d98398a1765e4883a8070b1ce1fd8f56e4b4d10604e771ba",
+  "chain": "nova"
+ },
+ {
+  "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+  "user": "0xd705c025fb3ea424ee8c6d813325bca417476402",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 3000000,
+  "txHash": "0x9616a53a9efc9ca2be84d3c8a487b142fd5d9c8a4217e372da6b4328085a814c",
+  "chain": "nova"
+ }
+]

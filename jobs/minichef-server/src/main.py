@@ -62,15 +62,18 @@ NON_PRIORITY_CHAINS = {
 MULTICALL_ADDRESS = "0x38a7826A128aF56963713E224640495a3B4Fc5FC"
 
 with open(
-    os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/OldServer.json")
+    os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                 "abis/OldServer.json")
 ) as f:
     OLD_SERVER_ABI = json.load(f)
 with open(
-    os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/BaseServer.json")
+    os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                 "abis/BaseServer.json")
 ) as f:
     DATA_SERVER_ABI = json.load(f)
 with open(
-    os.path.join(os.path.dirname(os.path.realpath(__file__)), "abis/Multicall3.json")
+    os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                 "abis/Multicall3.json")
 ) as f:
     MULTICALL_ABI = json.load(f)
 
@@ -215,13 +218,16 @@ def bridge_data_servers(w3):
 def bridge_op_style(w3, key):
     if key == "boba":
         l2_gas = 1300000
-        bridge_data = encode(["uint32", "bytes"], [l2_gas, Web3.toBytes(text="")])
+        bridge_data = encode(["uint32", "bytes"], [
+                             l2_gas, Web3.toBytes(text="")])
     elif key == "metis":
         l2_gas = 200000
-        bridge_data = encode(["uint32", "bytes"], [l2_gas, Web3.toBytes(text="")])
+        bridge_data = encode(["uint32", "bytes"], [
+                             l2_gas, Web3.toBytes(text="")])
     elif key == "optimism":
         l2_gas = 200000
-        bridge_data = encode(["uint32", "bytes"], [l2_gas, Web3.toBytes(text="")])
+        bridge_data = encode(["uint32", "bytes"], [
+                             l2_gas, Web3.toBytes(text="")])
     print(f"Serving {key} Server...")
     server_contract = w3.eth.contract(
         w3.toChecksumAddress(DATA_SERVER_ADDRESS[key]), abi=DATA_SERVER_ABI
@@ -246,7 +252,8 @@ def bridge_arbitrum(w3, isNova):
     l2_transfer_gas_limit = 200000
     gas_price_bid = gas_price_arbitrum(isNova)
     retryable_submission_fee = get_arbitrum_retryable_submission_fee(isNova)
-    max_submission_fee = int(retryable_submission_fee * 0.2 + retryable_submission_fee)
+    max_submission_fee = int(retryable_submission_fee *
+                             0.2 + retryable_submission_fee)
     eth_to_send = (l2_transfer_gas_limit * gas_price_bid) / 1e16 * 0.6 + (
         l2_transfer_gas_limit * gas_price_bid
     ) / 1e16
@@ -270,13 +277,15 @@ def bridge_arbitrum(w3, isNova):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-p", "--priority", required=False, action="store_true")
+    parser.add_argument("-p", "--priority", required=False,
+                        action="store_true")
     parser.add_argument(
         "-np",
         "--nonPriority",
         required=False,
     )
-    parser.add_argument("-ig", "--ignoreGas", required=False, action="store_true")
+    parser.add_argument("-ig", "--ignoreGas",
+                        required=False, action="store_true")
     args = parser.parse_args()
     RUN_PRIORITY = args.priority
     RUN_NON_PRIORITY = args.nonPriority
@@ -286,7 +295,8 @@ if __name__ == "__main__":
         main()
     except Exception as err:
         message = (
-            f"Task #{TASK_INDEX}, " + f"Attempt #{TASK_ATTEMPT} failed: {str(err)}"
+            f"Task #{TASK_INDEX}, " +
+            f"Attempt #{TASK_ATTEMPT} failed: {str(err)}"
         )
         print(json.dumps({"message": message, "severity": "ERROR"}))
         sys.exit(1)  # Retry Job Task by exiting the process

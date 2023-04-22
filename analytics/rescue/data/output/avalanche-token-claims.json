@@ -1,0 +1,130 @@
+[
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xc57451e87076814cc6e0167247b95cc8e61d1a00",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 55738192,
+  "txHash": "0x5ea0e2ac7388e919e30d4e6cc0cf01000ddd2d51751bc907ba0a293b497cf42c",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xbebf759fc15bc07e5b8abad6ed931e2f945931a8",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 23177083,
+  "txHash": "0x5ea0e2ac7388e919e30d4e6cc0cf01000ddd2d51751bc907ba0a293b497cf42c",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0x81a3e5dd8be2a21b99ae623b9b1adb6113544746",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 924,
+  "txHash": "0xf298fd6bccb323bca69476181853d0107d811fd368d50b03066c26a210764d4e",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0x706702ddc1dbd00eaaddc918dfdf536505fb1993",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 9088,
+  "txHash": "0xfd74904ecfda33e4ab5a04e5f1a33ed5f86483667ead21bdd3c07f805468cbdb",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0x8ee97a04603c51011d45ba1fcf5762f9eafe96ac",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 211089,
+  "txHash": "0xfd74904ecfda33e4ab5a04e5f1a33ed5f86483667ead21bdd3c07f805468cbdb",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0x0d6dd40eae5bf9d8d64a4b246015b4425917c2b7",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 289700,
+  "txHash": "0xfd74904ecfda33e4ab5a04e5f1a33ed5f86483667ead21bdd3c07f805468cbdb",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+  "user": "0x2abfc65e28cb29e68e140332fa6e06fcf37fa506",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 95900073,
+  "txHash": "0xc82870d90d0ae885b5fb434cb0c06e4f0c07ba803a468851cf600a0cbdde9a16",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0x52539ea869f7162bc18f9c3c2db595f2cd69f63b",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 32466746,
+  "txHash": "0x9d4ef2ab0fffbd9d58f380a7a7f5681c7426a9381f670de322489587448df7e3",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xad6cee674193faefe82b72e45f45a91ee8d89ce1",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 5984740,
+  "txHash": "0x09ddfd47fb0a0365d3e0450de14c776f0da068738435ee7c1f0c46d56be25082",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xc2b17d1466ffbdd4113fddee14883cf390aea993",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 10000,
+  "txHash": "0xc8784a5fd74d239a67317c72eb84a0cef14734e557f3ad082ff86bb56c7bbed7",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0x6fbac09b783a2c681314e60ae4f41f7abc6a0afa",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 19979999,
+  "txHash": "0x9cc34d1f367bba529f0de7a2821e9385d25bda01b63ff6c4a82d4d15b4c4dd2e",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xc2b17d1466ffbdd4113fddee14883cf390aea993",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 10000,
+  "txHash": "0x12458fb28c4fab04c54e3c141dc09a2bfb66e127a02827174acc73fd44fa856b",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xc2b17d1466ffbdd4113fddee14883cf390aea993",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 10000,
+  "txHash": "0xe98a24e9d8df01d95a901de0f8332f3ae59d9b455b59a8c31f4d03b841270891",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xc2b17d1466ffbdd4113fddee14883cf390aea993",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 10000,
+  "txHash": "0xfc38b01bab002ab65d196059c666c2f3931dc47229924317b13b0ec779f551c7",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0x5071a9079156bc2721d45dad82ba8331d7078a43",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 4018587,
+  "txHash": "0xe1391c96980c8c47546404f18e320d6c5ec4b8b32e94aed9060089dd07009978",
+  "chain": "avalanche"
+ },
+ {
+  "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+  "user": "0xa0176e25718ae320c193bca496d3a7da4a334e3c",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": 999400,
+  "txHash": "0x784dff3410f5eec79ac4ac35e1645d280a2e09b989c203410634a317a026a7d4",
+  "chain": "avalanche"
+ }
+]
