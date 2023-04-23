@@ -5094,5 +5094,13 @@
   "value": "795917846184843008",
   "txHash": "0xdc706db1e1a70a0af3bcf8a0713d3303cecf5c123ccef7e9ca743a9270e2fe66",
   "chain": "arbitrum"
+ },
+ {
+  "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+  "user": "0x27d7de0bb23b5eecd7fa89044de52fbf861500a6",
+  "receiver": "0x74ebb8e8d0b0cc65f06040eb0f77b5da0e33ffee",
+  "value": "1584383194071008800",
+  "txHash": "0x59a51cc3b726b1c8acedabf7d02cdf64b864b978329c19108ea8f08b8aabb362",
+  "chain": "arbitrum"
  }
 ]
