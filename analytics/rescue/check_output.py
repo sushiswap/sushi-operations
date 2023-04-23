@@ -58,9 +58,6 @@ for network in networks:
         amount = int(entry['value'])
         sums_by_token[token] += amount
 
-    # for token, amount in sums_by_token.items():
-    #   print(f"{token}: {amount}")
-
     # Then check balanceOf on each token
     for token, amount in sums_by_token.items():
         try:
@@ -79,3 +76,6 @@ for network in networks:
             print(f"MANUAL CHECK REQUIRED: {token} ")
             print(f"amount from output: {amount}")
             print('---------------')
+
+    for token, amount in sums_by_token.items():
+        print(f"{token}: {amount}")

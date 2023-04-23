@@ -70,7 +70,8 @@ decimal_token_book = {
         "0xee9857de0e55d4a54d36a5a5a73a15e57435fdca": 18,
         "0xd4d42f0b6def4ce0383636770ef773390d85c61a": 18,
         "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8": 6,
-        "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9": 6
+        "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9": 6,
+        "0x2ef2cbc12db5a88bb8078a6fe488a60f4caa0451": 9,
     },
     "avalanche": {
         "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e": 6
