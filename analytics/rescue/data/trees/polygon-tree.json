@@ -1,0 +1,1457 @@
+{
+  "merkleRoot": "0x4f81986f36d6b4ba64761a2decc79cb6bcd6f9c9ee5263cc0ed72066e8326b5b",
+  "claims": [
+    {
+      "user": "0x01dbb440b09965b937da3af71e53051ed028d9bd",
+      "index": 0,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0140ad32"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x13321f249566a37ba989ab9b5e196cf07b2a429fa97cefb31d6ac7ad1d21ec33",
+        "0x0c4118aa3d4ed1aef86b1623eb02ac48cf796febc8ba756b2b7a039131f82193",
+        "0x5c2158b89be83205efc846374e569eedf629df2c35ff87adba6c199c4a5a2e75",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x03fed09a02c73747e62eacd8119fabae7ac16923",
+      "index": 1,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x01aa99f70cc3af4af3"
+      },
+      "token": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
+      "proof": [
+        "0x4080b9685fce5b34d301f3a9851cc66048d2bec6590e4b75a4c31f20d0b75669",
+        "0xb7acb5ad5b07028cd931b98e03113b176a7fe7b5dad438983eff7391b6c1706c",
+        "0x970996429e989c5d6037d987f7aeda7397bc1a31a01fc4b009acd9a53fdaecae",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x03fed09a02c73747e62eacd8119fabae7ac16923",
+      "index": 2,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x012383359ae232f17a"
+      },
+      "token": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
+      "proof": [
+        "0x1408ae18d5b27894ac918585475b2b52867c807bfe70a4d4dc68b72e0564335f",
+        "0x0c4118aa3d4ed1aef86b1623eb02ac48cf796febc8ba756b2b7a039131f82193",
+        "0x5c2158b89be83205efc846374e569eedf629df2c35ff87adba6c199c4a5a2e75",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x0c85cfca1944ec4aa935b573f326b030361f2ce0",
+      "index": 3,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x5f5e1000"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x65a0a402a8781fa5fd0aa113b91039b38080054b7c4c021f46aae5ab68a48384",
+        "0xc28ea2ab822965da6d9bcc667e266a258183872fa9ad453d8cb00001be2adbc9",
+        "0x1d236277aba26a5ca0f5b3aa8339904ebebcf5f2c84a82c0e2693ef1a74e5b08",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x15b24db69ba67bc322c3abfd1108743fe6886295",
+      "index": 4,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x024449a1"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x8f5047932ab22ef2e9a1c1e3ffe85fee9395e6a0cb5015373cc67dfd61564420",
+        "0x1865e63719041f2210d46c32555bfc8c8e528c488b9c0bd8d8e8668083d17f6a",
+        "0x22beae761d286d7e1338d2c33d4ad742a157b288bdf4dffb6c9900c98299fe8b",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x1657e36d67e3ca976cb3990cb611b061244a5680",
+      "index": 5,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0xc3162d"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xddbf9b5b07396e86796d1b2046c40fc37a9136df2df5146de57e5b7773a28472",
+        "0xa9c665c77a41a66c5cbe044196866cf1146cd978745adc872451ed90802267e0",
+        "0x9bfcd91ab6c52f43d3843988328f90fe4ccbc144fa363c7a7e28697e4c6fc2db",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x1e178a22f6c069095394489544e8f77f1f7893cd",
+      "index": 6,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x06cfc92c"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xa35f2a4598d0650eec669addbd5b55905fb75d38ff7f5d20f5393fae16decbd0",
+        "0xc501704b4717a194f71ff8ab5592a2084b462d8b9df63d72584707630cc51ba3",
+        "0x1953555e739c948c78f79e00b9fd7c7e862c22f81ec277161445888d5f6fea76",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x2195cba565ab95285ba6b670cde15e7f4b0e4462",
+      "index": 7,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x02daa44c"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x7d2d9bfd51d51655bedb25bca61c1e0280d928e50bff43a60204fa17a3512dec",
+        "0xe5455992719559682dcc94333cddbf48c2d64038f6671ed39c347e4fd1a46519",
+        "0x11e24fbcf053a65651485dfae8d908e82834dcf23c0d3246bf7408c9b714f14d",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x23af7efe45d5a1452b5424853f1e33adb546c1bf",
+      "index": 8,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x02dde213"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xbc518b4922064cd011888527373ca0803eb3e7a3208a5f03e641bd7eb32d4ddb",
+        "0xdee1e64ffd8c28f988409c0e539bbc0a7145174851055b9ddcfa89f932518ae7",
+        "0x78ad6d7b15bc48ce655c332ed34f2fcc8e47056f0a9654792d0fa74ff3725a8e",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x2444aac7235f44c72dea79e38b2c96ea11796cea",
+      "index": 9,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0601c7e0"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x95a181bf08e4086d308e14580ef6c20c9ebe91c8c504baf9272ce64ff18818f6",
+        "0xad00a1183dd4a8ea8a2f8142ac956128a77bbf3c5f4cf41d5642983b0611c58a",
+        "0xa34b75dc3cfb8fd18486046c4a17cff5278a82e0ff306d2b62766117c2ce2e38",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x259cee65370b4d57b5a0497d03ae932a96be2f98",
+      "index": 10,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x989680"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xd0b62bb497652c3f68e97f2f6153a7174b3b4f2b2c2fcbdcfa5849354dfa46ad",
+        "0x6f9f69ce232ab17ed4dec4824c5a87c88e11c3c99da82a88fc43db15809b4394",
+        "0x525bb3f5ce6f40ca2954f3ecf97ef198b8703d766803b1ef198b6f9d56c8d491",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x2eb1da6b844acc531917d73f7dd4433626cb0946",
+      "index": 11,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x02f80a50"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xcaf014b1283666d56323835e8f9bc5bb2eca3aaa75b6d18d75720c388ccafe91",
+        "0x92d15445844c2130e1a33182513ea429356e94537c80b0bea8600c6b5d912e4e",
+        "0xcf5bd099b92bbfc31ab5ceb0778309dbc3550b009a62504ff99a10acdf267de1",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x2f8d0119e84c3820128c049cc4dbf7f3bee1be30",
+      "index": 12,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x1ea39b89"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x05f5977c263f1aa4542169cfbc67dcb3f6c4388e45b3e4e27d1e1715a7841cf2",
+        "0x31c8b6b6813738b2d110876a5d9301f0ef2662c18af11d7d699c1af13082e959",
+        "0x5c2158b89be83205efc846374e569eedf629df2c35ff87adba6c199c4a5a2e75",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x3401701b49639f602165ce21d969a1edabc7f206",
+      "index": 13,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0372830c"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x3b38d311c78e5f7de9a23357466720d78e97c339c812a7cc533cc38148103ccc",
+        "0x21c375cb5e5c1f5afd28a0ce6cebbadcb306a392cf7558c4421ba979d1079b4c",
+        "0x23103635ff8206602abe78386f3994837c32b7a08ae9f535f28674461c7c2b9d",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x39c6f8e49f867f701a38737270f43551225d8e0e",
+      "index": 14,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0d02ab486cedc00000"
+      },
+      "token": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+      "proof": [
+        "0xa44d37c6f8d997ec13035404daa3d1e612b423fef76a045fdccecdada9b40f16",
+        "0xfabb28fdd156c35f8ec608d306efff79c8657b20020143bcff819ec139baab06",
+        "0xe5bf64bbb27fe43573d1eff9208965189cf03c7b3e9049016e09918cff399e1b",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x3f0001e5779a7f9805f3a458b995f2570557997d",
+      "index": 15,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0960"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xd75382416c05186431c124ff8789dc241e493440d7d6cfdbfd273d7c5e397360",
+        "0xa9c665c77a41a66c5cbe044196866cf1146cd978745adc872451ed90802267e0",
+        "0x9bfcd91ab6c52f43d3843988328f90fe4ccbc144fa363c7a7e28697e4c6fc2db",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x42b5f17e54e53a491e26c6e5042db48cef143daa",
+      "index": 16,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x03d72156d93011a7"
+      },
+      "token": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+      "proof": [
+        "0xc75202e9fb22489ca9f2c0b1c7c20c50c891df0ceb6f94f8c345a30e1de15a31",
+        "0x92d15445844c2130e1a33182513ea429356e94537c80b0bea8600c6b5d912e4e",
+        "0xcf5bd099b92bbfc31ab5ceb0778309dbc3550b009a62504ff99a10acdf267de1",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x42b5f17e54e53a491e26c6e5042db48cef143daa",
+      "index": 17,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x4ad4a65a6acff1"
+      },
+      "token": "0x2b88ad57897a8b496595925f43048301c37615da",
+      "proof": [
+        "0x3914e1f5bddc837bc9ea74422636aba63a43e484c89059d6b09c8f96b05a84ec",
+        "0xdc033540a66a8281765782d7e56e312b6f9d943bb1ed49422fe04680a43e0a90",
+        "0x010a6aaba52c1a8259a910d1ab27278c6a4d74dadbca4d58ccd474dc832bf0f3",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x4391d79373675ef2c44f2aa83c25bd15e5f66887",
+      "index": 18,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0e3a4dd6"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x6b525ebd9989d39879be10bfc3ffa86cd9f7b3ed8e2a176e21f72a088ed61c34",
+        "0x75696ee7a06ec89c5e66af2ca447cfe315b52060c044e3d49b4ab087f6ab2d1c",
+        "0x1d236277aba26a5ca0f5b3aa8339904ebebcf5f2c84a82c0e2693ef1a74e5b08",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x4708ffe39445fbb9cc1cb76906f2c38691d0dc22",
+      "index": 19,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x3635c9adc5dea00000"
+      },
+      "token": "0x6e8a8726639d12935b3219892155520bdc57366b",
+      "proof": [
+        "0x38ace4beda80107cb71a7468f307c8cf210b23c46dc5893ebcc43732996ba7af",
+        "0xdc033540a66a8281765782d7e56e312b6f9d943bb1ed49422fe04680a43e0a90",
+        "0x010a6aaba52c1a8259a910d1ab27278c6a4d74dadbca4d58ccd474dc832bf0f3",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x4c23d301ed0dbf717706c3539b5cf32ab799ad9a",
+      "index": 20,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x1ab5899a6600"
+      },
+      "token": "0x2e618eabe66818f4c6718c24f59c5694f0b2735a",
+      "proof": [
+        "0x70d40c6f524f7f8fb1a93e8204825460cfd9ffdc70ddccd3107aee30a08f9042",
+        "0x82101e08a41cd5d7d68483e2c044e14b189d2149a3fdee093813567346d213ed",
+        "0x11e24fbcf053a65651485dfae8d908e82834dcf23c0d3246bf7408c9b714f14d",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x4e9f2cadc0af0aa63110b2c5e3a2cdcf98cc967a",
+      "index": 21,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x079d9c"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x51a8cd39d2cb94e8fcc1332525c5e5203d6895934ac3ce9ce1fe052a8d0a9134",
+        "0x8a1fdc8832f1c7a36d643ce2b8b342fa06ec45a4e0e6d7f5224286ceae01f4fb",
+        "0x8ff86794e07be518336fe47884f26796b8efbe11909f6f576c3132d1092bea56",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x4f1dc0a02fc70338ff748975d60287adabf5f33e",
+      "index": 22,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x1dc5c3e0"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xb2eb4b16669f4a5cc5567445ba300fb64148ced7a8706457e9f89816dc10d81c",
+        "0x9ae84698319cdabcbc8b2e97fe98398249558843d03b5c9bca8c3d6b8eb7c4af",
+        "0xe5bf64bbb27fe43573d1eff9208965189cf03c7b3e9049016e09918cff399e1b",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x4fc2aba367e273740258fd670761f1bd16f463f7",
+      "index": 23,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x69d43b0eb13e0df3"
+      },
+      "token": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+      "proof": [
+        "0x6072cc3379972f0258ea96aa5b051149fe36e1ee79a37805745bd13b9094590e",
+        "0xc20d5849e7425de9401108894d5b418a1cce5f3d31e823fc486b413d78bdd197",
+        "0x13dc0472eba673643f99264ceb2dc380a56384d8ab7e53777d2968cdaca2bf86",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x5165bcd135c151708aac4661bba7915ddd8d192b",
+      "index": 24,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x31aa4814"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x449ef272d75bf7776b04c59effc6d481e5db602b816e10444497384c62067081",
+        "0xb7acb5ad5b07028cd931b98e03113b176a7fe7b5dad438983eff7391b6c1706c",
+        "0x970996429e989c5d6037d987f7aeda7397bc1a31a01fc4b009acd9a53fdaecae",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x560c98f9733e19a4dbd00206ed42a0a83f8d071a",
+      "index": 25,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x04b8809a"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x6a8232f4729cf15fe4c9a16c94efc514b14d1da636d54a85517d7756057711d8",
+        "0x75696ee7a06ec89c5e66af2ca447cfe315b52060c044e3d49b4ab087f6ab2d1c",
+        "0x1d236277aba26a5ca0f5b3aa8339904ebebcf5f2c84a82c0e2693ef1a74e5b08",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x5aa99d6fb11efff22be677f276cb5b880dce2080",
+      "index": 26,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x1eee3a6f"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x3140355a75f8b5e60138ec0b6aa49782fa21490e4041c8f4eac25a049ae701b3",
+        "0xa6a223ef05ba468b7920f9f292e88c8a078f8654d11dfbd89076bbabbe1a5ea7",
+        "0x010a6aaba52c1a8259a910d1ab27278c6a4d74dadbca4d58ccd474dc832bf0f3",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x5c03e7dc2399f2646640b0bcdfcd135e1798623b",
+      "index": 27,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x227cef37"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x563759c2d7e65b4f0b6148dc7d65b8c36c27ee77340e4838fcb2d972e6d89423",
+        "0xd2b73468d64e052b3905e5ea6f9e887151ebe654893300ee646e43eb04d262bf",
+        "0x101429efd509781f87a18b3f676ec6a83ac76866f3ff35324eb0fabcd779c9bf",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x5c8ff3a17642a1a19ed9e3f5dd800a050a6a8c32",
+      "index": 28,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x05e9b270"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xfdfae2acc9b25c0f2306e283f5997783d2274ce35c6f1052f47d6346387e4af6",
+        "0xd2a5e4b8a309a20b78fef7ed8565c31c76f782db9c778cd1cc7e19ad9e4f0921",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x614d4cb5887034f17720d5b8dc28c1f2fb7459d3",
+      "index": 29,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0fc3c9904b0d7a402eba"
+      },
+      "token": "0x34667ed7c36cbbbf2d5d5c5c8d6eb76a094edb9f",
+      "proof": [
+        "0x2bce6c87a4c758a5c14a496b9e5aa48cb4ce98e5561d6b2cd25639f82dd0fd94",
+        "0x10cd9701f1837907b32c7d12988652c99381658f63abe097746e10fe5dbfd69f",
+        "0xfb9594fc0af7603b1673bd8667ed30cfaa8cf4498ab4d513c1da5fb29d682e06",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x62929db669e7e748a28178a99c6a202135944f3f",
+      "index": 30,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x06c98055"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xfdbfcd11390e699f64452b4230fed4d2ea008f275ef57b327cf531551b90996d",
+        "0xd2a5e4b8a309a20b78fef7ed8565c31c76f782db9c778cd1cc7e19ad9e4f0921",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x62929db669e7e748a28178a99c6a202135944f3f",
+      "index": 31,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0fe3fe7306153d"
+      },
+      "token": "0x2f6f07cdcf3588944bf4c42ac74ff24bf56e7590",
+      "proof": [
+        "0x9bf07c8c17e6af33c86f99438f5d95c3f819fbec49bf30a92d3938c3ac0663f7",
+        "0xc501704b4717a194f71ff8ab5592a2084b462d8b9df63d72584707630cc51ba3",
+        "0x1953555e739c948c78f79e00b9fd7c7e862c22f81ec277161445888d5f6fea76",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x63e6c569e556cdcd570ec0adbd9dd5f09c45d19b",
+      "index": 32,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0xa7de2bba665ebc9414"
+      },
+      "token": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+      "proof": [
+        "0xe0635887447f521b4b0cd4458c385c8390d59bd20bb2e17072ed9131c3c8db88",
+        "0xd352aa9b50a3234d6e8af12d2b25ad48580b3832a306a3591bd4d67e0f839650",
+        "0x9bfcd91ab6c52f43d3843988328f90fe4ccbc144fa363c7a7e28697e4c6fc2db",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x648bdc3784cda3ee007d7030a274a3ee2ce32b6a",
+      "index": 33,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0a9dfbd644f875213096"
+      },
+      "token": "0x34667ed7c36cbbbf2d5d5c5c8d6eb76a094edb9f",
+      "proof": [
+        "0xbc0b29a5fff4bb80121ca136f7a85eb08f28427ad04796cd20c43b51cbb53ca1",
+        "0x5daef9f3d467336ac331d5bfe08b5214726a8e8de4fcc97ffe7c0fc4067a6b56",
+        "0x78ad6d7b15bc48ce655c332ed34f2fcc8e47056f0a9654792d0fa74ff3725a8e",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x689e994d0e4fcd7f5771de774bc83e4126e468f4",
+      "index": 34,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x036bdbef"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xc3728726960f957c9d043c2ac1887c739d5187d58e8bfb1f6e5cc87ac73331c9",
+        "0xa01a1a3ffe9eaeaa05e5c40a07c84516660449e24fa64465eb523dc81e37a2a3",
+        "0xcf5bd099b92bbfc31ab5ceb0778309dbc3550b009a62504ff99a10acdf267de1",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x6bfbdc6ce41e9d5b2809e19a441420fc1f2d64cb",
+      "index": 35,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x012dd1a0"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x5ed90e642c778178ad9e1b5e9b5c5dc53378af7e403406626d05a4595b647e6d",
+        "0xc0c1f872ebe1f2f61b17be18c58aeaa1eef510f9cabb2703c0682a7e0a0fa5fd",
+        "0x4215a127d1cde9b473ee965b401b1003e9a3208f893bae88b420dee8d5609d7f",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x6bfbdc6ce41e9d5b2809e19a441420fc1f2d64cb",
+      "index": 36,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0f4240"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xd123fd3c5563ea730777b19989bf362ee2d058889cce16f1380cb4158513ba67",
+        "0x6f9f69ce232ab17ed4dec4824c5a87c88e11c3c99da82a88fc43db15809b4394",
+        "0x525bb3f5ce6f40ca2954f3ecf97ef198b8703d766803b1ef198b6f9d56c8d491",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x76a7d804686fd55d64094bdf6a2c74670feaf64b",
+      "index": 37,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x030a72"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x4a95c68ceb44afbff05f23baeb409ba13851dd7061c52c3750aa3090279f0114",
+        "0x34378e45a7b33ef2967cc2ee5ce9416e73ef03deb0723c4622398b891a333517",
+        "0x8ff86794e07be518336fe47884f26796b8efbe11909f6f576c3132d1092bea56",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x7d64e59464430bff5ca2d2d4a9643ca59e66bda9",
+      "index": 38,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x1577fe37"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x8c266a85f144d9522577ac5f2711d2b94f4880dbd55ad82598c3509034a68523",
+        "0x2f096c2c482db4646b2cfc905babf8e4218c3e958a2e9b7216cfcaf6a1dffdd0",
+        "0x22beae761d286d7e1338d2c33d4ad742a157b288bdf4dffb6c9900c98299fe8b",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x7d7c7d28e2061b30887c94b0623ed49c59f6d19c",
+      "index": 39,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x09204ff5"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xc6f5f18699966e55d52264037a3e0d858930079379e810185dd63663a8eece24",
+        "0xa01a1a3ffe9eaeaa05e5c40a07c84516660449e24fa64465eb523dc81e37a2a3",
+        "0xcf5bd099b92bbfc31ab5ceb0778309dbc3550b009a62504ff99a10acdf267de1",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x82d193140b161a5bbb00b66530b83805684d2695",
+      "index": 40,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x043840"
+      },
+      "token": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+      "proof": [
+        "0x97ea321642a0e3aedbf7ad19a95741b0ed10aefc68870807288cf978fa7311b4",
+        "0xad00a1183dd4a8ea8a2f8142ac956128a77bbf3c5f4cf41d5642983b0611c58a",
+        "0xa34b75dc3cfb8fd18486046c4a17cff5278a82e0ff306d2b62766117c2ce2e38",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x82e5b6ad650fe2741bfca6a095d493cf97ead16b",
+      "index": 41,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x01841efa"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x569b7798520267aea61f3e90799cf2fda831996c316c298491337e0ffea8edd0",
+        "0x52e6627eca1f510f80178ad3fd6881d2585095cb5d1feede868789ec8d0d0c82",
+        "0x4215a127d1cde9b473ee965b401b1003e9a3208f893bae88b420dee8d5609d7f",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x86a981fa59d02d59d0a89d25c2ffb3935c103d7c",
+      "index": 42,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x2710"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xb9dc41c95842ea17873603539ce841b63e622c5601d3c360964e65735cfad0e0",
+        "0x5daef9f3d467336ac331d5bfe08b5214726a8e8de4fcc97ffe7c0fc4067a6b56",
+        "0x78ad6d7b15bc48ce655c332ed34f2fcc8e47056f0a9654792d0fa74ff3725a8e",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x86a981fa59d02d59d0a89d25c2ffb3935c103d7c",
+      "index": 43,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x2710"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xbfe1cf3fbcd4b603dae365d83cec12a2be6e2d18278ede0941281462eec55a03",
+        "0xdee1e64ffd8c28f988409c0e539bbc0a7145174851055b9ddcfa89f932518ae7",
+        "0x78ad6d7b15bc48ce655c332ed34f2fcc8e47056f0a9654792d0fa74ff3725a8e",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x86a981fa59d02d59d0a89d25c2ffb3935c103d7c",
+      "index": 44,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x2710"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xed2d0fe4d9a94a9c96e4d0c3b6c5fa54b74e8ab69d1cf03ac4b4e1f729cada9b",
+        "0x5fbe30729e4fe64efc8428fdf09170bd3e72079cda21c28b1855e9616f452a25",
+        "0xc081f3ba3c78a905bc4b6d05f958f95bcd929a3768d2aaf479f8a094ef2111e8",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x8d2abb24b7fe55b36f8b93ca084940ab2db1c9fe",
+      "index": 45,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x662c9cfb09d290e1b9"
+      },
+      "token": "0x34667ed7c36cbbbf2d5d5c5c8d6eb76a094edb9f",
+      "proof": [
+        "0x7b4e5a3725e6d0ef143dcb82838dcaf69db81a57d13984b10f21f42b703a92a4",
+        "0x82101e08a41cd5d7d68483e2c044e14b189d2149a3fdee093813567346d213ed",
+        "0x11e24fbcf053a65651485dfae8d908e82834dcf23c0d3246bf7408c9b714f14d",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x96107b077dd96db8b9e310c846254a181ec768b8",
+      "index": 46,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x01c9c380"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xf3be6709488a2be69f91ff86e0b9f2648dcdd6ba8f233854869b4343ff6950e2",
+        "0x90ca70e6c0dd36c60574de9b277cf861071392b7752106eefde029e39240c627",
+        "0xc081f3ba3c78a905bc4b6d05f958f95bcd929a3768d2aaf479f8a094ef2111e8",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0x99ad066a1d7f94ee2d404c5b556e69a68a3b15d4",
+      "index": 47,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x1e8480"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xaf732207868e15737647853438a66e260ac5b94b2a56d7599b3d099e7d6e23c0",
+        "0xfabb28fdd156c35f8ec608d306efff79c8657b20020143bcff819ec139baab06",
+        "0xe5bf64bbb27fe43573d1eff9208965189cf03c7b3e9049016e09918cff399e1b",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x99ad066a1d7f94ee2d404c5b556e69a68a3b15d4",
+      "index": 48,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x1e8480"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x39be5dc6a09ab66cdf8d5ba7144db881a31dcae73ba3e69f4cb2c7ceeddf53dd",
+        "0xa54ad012a7eae6f9ccf26ee3d521bcf3118e1ad14e19a3385e6d0a7c8d1100ba",
+        "0x23103635ff8206602abe78386f3994837c32b7a08ae9f535f28674461c7c2b9d",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x99ad066a1d7f94ee2d404c5b556e69a68a3b15d4",
+      "index": 49,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x9872d3"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x0e2183c155e2ec525a6ab51e85329b6b637953362675f42adc0ca163af12863d",
+        "0x31c8b6b6813738b2d110876a5d9301f0ef2662c18af11d7d699c1af13082e959",
+        "0x5c2158b89be83205efc846374e569eedf629df2c35ff87adba6c199c4a5a2e75",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x9cb96d7d6748d8f21e14f1b8a57a6e65eae8eeb8",
+      "index": 50,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x3cc80013c97f280e07"
+      },
+      "token": "0xe0bceef36f3a6efdd5eebfacd591423f8549b9d5",
+      "proof": [
+        "0x4aebdea846248d4751b8ed8ab31e35b617c2acc394ebd3e8348ae0713a40038f",
+        "0x34378e45a7b33ef2967cc2ee5ce9416e73ef03deb0723c4622398b891a333517",
+        "0x8ff86794e07be518336fe47884f26796b8efbe11909f6f576c3132d1092bea56",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x9d10cfc712c8e8a6e2afeb3015a53a56f6a4111b",
+      "index": 51,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x055caf38"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x398655318c75fed5c1293712518ddf903ad3d16c0424552bfbc7d90bda9c3eea",
+        "0xa54ad012a7eae6f9ccf26ee3d521bcf3118e1ad14e19a3385e6d0a7c8d1100ba",
+        "0x23103635ff8206602abe78386f3994837c32b7a08ae9f535f28674461c7c2b9d",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0x9d86ce4ea939ba71bb97383b85afd12d3b3bbcaf",
+      "index": 52,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0bf70d81"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x8f3c7054c671b27864b10ddb3b06a226864ba2bceed8adc2fe47db8546219894",
+        "0x1865e63719041f2210d46c32555bfc8c8e528c488b9c0bd8d8e8668083d17f6a",
+        "0x22beae761d286d7e1338d2c33d4ad742a157b288bdf4dffb6c9900c98299fe8b",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xa2569d22a5d352cfd9a553a581fb19b1edea23a0",
+      "index": 53,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x5f155107c41312"
+      },
+      "token": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+      "proof": [
+        "0x64dc58ba2ff1a568c2e024a821f65b13f4cb6a2244dd30213d8d59eb969b251b",
+        "0xc28ea2ab822965da6d9bcc667e266a258183872fa9ad453d8cb00001be2adbc9",
+        "0x1d236277aba26a5ca0f5b3aa8339904ebebcf5f2c84a82c0e2693ef1a74e5b08",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xa38716be6043c82846c5f879c94ea9d0300cc719",
+      "index": 54,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0347d160"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x57cc280c84eb56b1629909233c789bcf91b3e6a9973a94e19e686e5cbc9ce041",
+        "0xc0c1f872ebe1f2f61b17be18c58aeaa1eef510f9cabb2703c0682a7e0a0fa5fd",
+        "0x4215a127d1cde9b473ee965b401b1003e9a3208f893bae88b420dee8d5609d7f",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xb021dd755efc1be8670329e1735c9ed6b880e925",
+      "index": 55,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x05b8d800"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x541cabe3834b1486a9a8229fe9f859f95a5febac5774b8467bf5781c2e4c03ca",
+        "0xd2b73468d64e052b3905e5ea6f9e887151ebe654893300ee646e43eb04d262bf",
+        "0x101429efd509781f87a18b3f676ec6a83ac76866f3ff35324eb0fabcd779c9bf",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xb56be553c991d1d120a2585bdade45cf0086ecf5",
+      "index": 56,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x02006ce1"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x93fb4f3ce500d15f864705eed80a6384f2232b1bb4eaecb3a9126656b02183f6",
+        "0x7d50801a40ae9ab84ade581a9901ef316f75ef893d0a23b3e4d67d341625b289",
+        "0xa34b75dc3cfb8fd18486046c4a17cff5278a82e0ff306d2b62766117c2ce2e38",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xc002876816e2a8e4f2d6ec283bae2de8d05b427a",
+      "index": 57,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0xaff32b5054e8d000"
+      },
+      "token": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+      "proof": [
+        "0x9bbac43ecaacef6dde63d0e550100bcab26b7d9307b42f26e241866194a8e306",
+        "0x86e6edfe906ce48da3048f5c44ad4c5b31bd660cba0b1aee9a4a878ab082e988",
+        "0x1953555e739c948c78f79e00b9fd7c7e862c22f81ec277161445888d5f6fea76",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xc19032538df7624f0605ffb5def5c00b4031c715",
+      "index": 58,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x83a5296f"
+      },
+      "token": "0x94f98d16c6ba5c2f649d6d7efb9767b14b0f325b",
+      "proof": [
+        "0x178ecd1d2f5d2b78e6b5c9d900560317603a5cbe13f7d7946eed420ab6c62d83",
+        "0x6ab7bfe892e190b762e357c8ec90538eec35acc3974641e519eef95a48e85c78",
+        "0xfb9594fc0af7603b1673bd8667ed30cfaa8cf4498ab4d513c1da5fb29d682e06",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xc9dc938af1fccd038e293535cf358502b9a16249",
+      "index": 59,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x08954400"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x4b825c059b5ac553d1e785366446c5f006c64ab09e9f674303bbd53230960624",
+        "0x8a1fdc8832f1c7a36d643ce2b8b342fa06ec45a4e0e6d7f5224286ceae01f4fb",
+        "0x8ff86794e07be518336fe47884f26796b8efbe11909f6f576c3132d1092bea56",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xcb5282e5f49ea4f41e5d11f1361fa0421df66ff8",
+      "index": 60,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x05f5e100"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x47a33b7d4b5b612ebb69bae31fba059fdcb6fa6fea4c2da1dca04815f659df45",
+        "0xdf680a904a639ef9ee8f76cce757edf90e69fe275d07b92a216ebbef8ef3358e",
+        "0x970996429e989c5d6037d987f7aeda7397bc1a31a01fc4b009acd9a53fdaecae",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xcbed75a2dbf32860d6f86808de986982d2058032",
+      "index": 61,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0bebc200"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x9b44294cdbbac1de429bc9255503fd5cdc5c6eb89672aa6a99ff23d7a9638629",
+        "0x86e6edfe906ce48da3048f5c44ad4c5b31bd660cba0b1aee9a4a878ab082e988",
+        "0x1953555e739c948c78f79e00b9fd7c7e862c22f81ec277161445888d5f6fea76",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xcc7545f2959098c1be4753574f3aa0e1fb8b2f77",
+      "index": 62,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x05f65a86"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xd31ebf862dbc0479f95f5470101e3070f1e5065337e4357b290348fbe88530b9",
+        "0x7d14f4228143b9d9e99b75931afff4ef4838bf5102f1cd6a4d27c0158f16f76c",
+        "0x525bb3f5ce6f40ca2954f3ecf97ef198b8703d766803b1ef198b6f9d56c8d491",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0xd03168129cbfc9874df6c9f200f8dc1bf6270b60",
+      "index": 63,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x3487938e0499840000"
+      },
+      "token": "0xdc8282fcde3b35c50cf2d273d829c7ee114b2f25",
+      "proof": [
+        "0xed28d23b3694529ec81ea9b1ae2d3fd25beb1dd3f4cf892f1118a23ba51d1d8b",
+        "0x5fbe30729e4fe64efc8428fdf09170bd3e72079cda21c28b1855e9616f452a25",
+        "0xc081f3ba3c78a905bc4b6d05f958f95bcd929a3768d2aaf479f8a094ef2111e8",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0xd03168129cbfc9874df6c9f200f8dc1bf6270b60",
+      "index": 64,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x3487938e0499840000"
+      },
+      "token": "0xdc8282fcde3b35c50cf2d273d829c7ee114b2f25",
+      "proof": [
+        "0x60e2875b0657d41d76b624b1de25fc8272e1f6805d7599f235f7f471362d4cb4",
+        "0x26b71e36cc7a64f2d705d6890f3bed6248801f37e7e790f6332eb3d8612d46b1",
+        "0x13dc0472eba673643f99264ceb2dc380a56384d8ab7e53777d2968cdaca2bf86",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xd2a7e100e1ab1206287cda30fe2ae7d97d9d0deb",
+      "index": 65,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0242be81"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x7f7615ce92f7ac2130b2a85fb4999c6e8ad0c3f4e8c398d9abb9ec3fbd18982e",
+        "0xe5455992719559682dcc94333cddbf48c2d64038f6671ed39c347e4fd1a46519",
+        "0x11e24fbcf053a65651485dfae8d908e82834dcf23c0d3246bf7408c9b714f14d",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xd799fc32aa7cbf3783abdee102aca5f586e5b4fc",
+      "index": 66,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x018664"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x60caaba937f3aa8e16f72334f7dc9e2c41bcd6817682f51cd125a40a2e305f16",
+        "0x26b71e36cc7a64f2d705d6890f3bed6248801f37e7e790f6332eb3d8612d46b1",
+        "0x13dc0472eba673643f99264ceb2dc380a56384d8ab7e53777d2968cdaca2bf86",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xd799fc32aa7cbf3783abdee102aca5f586e5b4fc",
+      "index": 67,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x01865d"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x527d6ac4e9502efb0a5779b711fa6073a76a175038b31d97dd7d216e3d7803c4",
+        "0xd7e12a6839096dcda828e8cdc0514c0f5a0cf81c56659dd31a8a26e032381c72",
+        "0x101429efd509781f87a18b3f676ec6a83ac76866f3ff35324eb0fabcd779c9bf",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xda19274f395a8618cf3b453dbac35bebb56e9b6d",
+      "index": 68,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x013aab36"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0xddd5aecca02f0412b6f633d6746c1734ab8856fe3bb0d8c1e2339a5a4d982372",
+        "0xd352aa9b50a3234d6e8af12d2b25ad48580b3832a306a3591bd4d67e0f839650",
+        "0x9bfcd91ab6c52f43d3843988328f90fe4ccbc144fa363c7a7e28697e4c6fc2db",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0xdf94895ff64012f2832a8ba9da2fae5e7b68d789",
+      "index": 69,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x08fed69f"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x84ba159a716f8a57b7480a7d1d3c9adf8a20943c8df81f6de42cc2fa260dfdd1",
+        "0x2f096c2c482db4646b2cfc905babf8e4218c3e958a2e9b7216cfcaf6a1dffdd0",
+        "0x22beae761d286d7e1338d2c33d4ad742a157b288bdf4dffb6c9900c98299fe8b",
+        "0x0dfe43b5e250c44622e3eb6f9a54d0d80303326391785f993db2632e85d17924",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xe1d89f97f7172c1ad9f169ce79216a4a4931df3e",
+      "index": 70,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0178c234"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x3b7bc948d2b9d1e2dfa1cd5951480be0eb8d344a516db005f468795dd525d1eb",
+        "0x21c375cb5e5c1f5afd28a0ce6cebbadcb306a392cf7558c4421ba979d1079b4c",
+        "0x23103635ff8206602abe78386f3994837c32b7a08ae9f535f28674461c7c2b9d",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xe2e67afa38ccb7255123b87590d315eb997115e3",
+      "index": 71,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0xb5e620f48000"
+      },
+      "token": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619",
+      "proof": [
+        "0x535764709819640d8155eecd2a5d9cbface29a3a259d61d29b7549b9260c4feb",
+        "0xd7e12a6839096dcda828e8cdc0514c0f5a0cf81c56659dd31a8a26e032381c72",
+        "0x101429efd509781f87a18b3f676ec6a83ac76866f3ff35324eb0fabcd779c9bf",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xe9de2e48c95509280b8d15f99e26612864333863",
+      "index": 72,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x04c158a0"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x94a2fe9876822897419f99b5eaeb218bd4785aa4229e0070d8760f2a35d9ea6e",
+        "0x7d50801a40ae9ab84ade581a9901ef316f75ef893d0a23b3e4d67d341625b289",
+        "0xa34b75dc3cfb8fd18486046c4a17cff5278a82e0ff306d2b62766117c2ce2e38",
+        "0x7c5be6481c9b724cb245a278d7e1adacfbf5a675fa5d8608ed02087b3d3b86f9",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xea4d277971d00b09add178c0a13e08737be7b5db",
+      "index": 73,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x0d19d4"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x30e04d4f1c636271311f57adafc571b5a66351ddd3ad5bf4512393d8fac7611e",
+        "0xa6a223ef05ba468b7920f9f292e88c8a078f8654d11dfbd89076bbabbe1a5ea7",
+        "0x010a6aaba52c1a8259a910d1ab27278c6a4d74dadbca4d58ccd474dc832bf0f3",
+        "0x6d02ae8592afa08714e5c290e26d581b78e6dd284f76a73776f8601944a63aff",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xf118f8b46d2fb2596b4f38c4be3539a589b4c99e",
+      "index": 74,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x03a9f531"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x26efcf99de2c0156b1d98a03dd0843cb32ea324bca533e3fe8c88a9d0d73c72b",
+        "0x10cd9701f1837907b32c7d12988652c99381658f63abe097746e10fe5dbfd69f",
+        "0xfb9594fc0af7603b1673bd8667ed30cfaa8cf4498ab4d513c1da5fb29d682e06",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xf17135ddde942ea02bde97ebe530557049265d40",
+      "index": 75,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x01d0ef70"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x1a4cf140ecefb217566cbc487a6efd47d64c461509cb93eeac4d978018ff5974",
+        "0x6ab7bfe892e190b762e357c8ec90538eec35acc3974641e519eef95a48e85c78",
+        "0xfb9594fc0af7603b1673bd8667ed30cfaa8cf4498ab4d513c1da5fb29d682e06",
+        "0x698b848f7eb5bc55918cbb1141c526543a8f0831303ee74140961a90cafa69b7",
+        "0xb5a4ac696856cc069f2faec8c65d0e0d062961be1751c152a886dedfea65ccc7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xf1e1845f0b01a6184b1d25b83ef1aca8fac5d372",
+      "index": 76,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x389fd980"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0x4a36db43a9b5b62a2a99b072b1988111763019542a048958eed1aaa5d905261b",
+        "0xdf680a904a639ef9ee8f76cce757edf90e69fe275d07b92a216ebbef8ef3358e",
+        "0x970996429e989c5d6037d987f7aeda7397bc1a31a01fc4b009acd9a53fdaecae",
+        "0xc4deb9c2d613cb0bd836b60565e12088926d59cf4e8bac7218a7319c7eb8bbce",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xf420726997164eabbe00f0bdce2ba67ff85a3e95",
+      "index": 77,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x20186a67bfdadaaa"
+      },
+      "token": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
+      "proof": [
+        "0x56fa55053f6d35b806e189fb806b4bb2818b77c91491bb6081a42be7464eb398",
+        "0x52e6627eca1f510f80178ad3fd6881d2585095cb5d1feede868789ec8d0d0c82",
+        "0x4215a127d1cde9b473ee965b401b1003e9a3208f893bae88b420dee8d5609d7f",
+        "0x0116225f44d921d2e63ecc6ada6671754c07847efa5ea0c69a372c0ba440adb7",
+        "0x4acbf5551a6d84ff0ed105dd3fa3cd30a54a84393e1bc5244f2f9f691c0563e7",
+        "0x1bf69b0581b29ad6b0a0842056326ac57b9990956b6afdc4e46dc74a74aa96d0",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xf6d6caf4e98da1383940010134cd5fa93c6bdae9",
+      "index": 78,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x056f72f0"
+      },
+      "token": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+      "proof": [
+        "0x5fef6ec454ae934391f61484259190ea4a225ff864ec5ea1533654794f7d7758",
+        "0xc20d5849e7425de9401108894d5b418a1cce5f3d31e823fc486b413d78bdd197",
+        "0x13dc0472eba673643f99264ceb2dc380a56384d8ab7e53777d2968cdaca2bf86",
+        "0x5664c9937b644e042a7d468f0db9caf6c5af919a313b156d8234fe26f0858eaa",
+        "0x37b2e08c610d99a2fcdaa54fd32cc71b6d3eed9a30e19dfe2ca239d059d6d462",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    },
+    {
+      "user": "0xf8e29bca98c091d94eeb285e6da36919b78c6e4e",
+      "index": 79,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x017d3a42"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xf3632e50f2f4b5ddc9f670a05a44388233dfa5189e5df00c5ffa791574a44e35",
+        "0x90ca70e6c0dd36c60574de9b277cf861071392b7752106eefde029e39240c627",
+        "0xc081f3ba3c78a905bc4b6d05f958f95bcd929a3768d2aaf479f8a094ef2111e8",
+        "0x5d6eba79634238aef337de2be85e0d46696a9535346252bb08dfb3476c3b6508",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0xf8e29bca98c091d94eeb285e6da36919b78c6e4e",
+      "index": 80,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x97ecab"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xd4e6751fdac619a8fd1146c233161e9699ae2765065f32ed6a925f4825d75883",
+        "0x7d14f4228143b9d9e99b75931afff4ef4838bf5102f1cd6a4d27c0158f16f76c",
+        "0x525bb3f5ce6f40ca2954f3ecf97ef198b8703d766803b1ef198b6f9d56c8d491",
+        "0x8fea7c850a4a4e2890998f7588cf0d862423ebc7b3f83f99b49d1fb4da5df68f",
+        "0x9fc571cbda748d3ea9ad129a2f7f145b8e6fd6865e7ed29fea5f3fb8bc45fe8a",
+        "0x9f7a7e36ead5d230e5523e96a08eb51cfddc691344a77d40997c0be8822708a5"
+      ]
+    },
+    {
+      "user": "0xf8e29bca98c091d94eeb285e6da36919b78c6e4e",
+      "index": 81,
+      "amount": {
+        "type": "BigNumber",
+        "hex": "0x54cd53"
+      },
+      "token": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+      "proof": [
+        "0xb11ef8745064a4b054c66304725ccd542195bd0714871fa5bc7a17ecc3751687",
+        "0x9ae84698319cdabcbc8b2e97fe98398249558843d03b5c9bca8c3d6b8eb7c4af",
+        "0xe5bf64bbb27fe43573d1eff9208965189cf03c7b3e9049016e09918cff399e1b",
+        "0xe6545b0d810b20de4e1283f9a41052ab5c7ae3721ccca55d38c8bb7e0ade740c",
+        "0x374ec508eaf6a5addbb295115f72eb6a941085a73a0d70ccd9a2b776dad42b23",
+        "0x5a6f246e51e65d3cfc17b3f0d07ea5cc90d179dc615db182b8415c3756e5097a",
+        "0xf359b271dcb83dad9b78ff23bdf9f449017eb78573398ebe7abff5e8f8a12467"
+      ]
+    }
+  ]
+}
