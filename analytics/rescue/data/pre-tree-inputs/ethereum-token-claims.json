@@ -1,0 +1,110 @@
+[
+  {
+    "token": "0x0f2d719407fdbeff09d87557abb7232601fd9f29",
+    "user": "0x1e3c382f6bf183244abb21020de45ac736d15d57",
+    "chain": "ethereum",
+    "value": "12065829660088021418809"
+  },
+  {
+    "token": "0x767fe9edc9e0df98e07454847909b5e959d7ca0e",
+    "user": "0x7c29db3b645410413f9d59d54c9ace1da66ce3aa",
+    "chain": "ethereum",
+    "value": "80000000000000000000"
+  },
+  {
+    "token": "0xe60779cc1b2c1d0580611c526a8df0e3f870ec48",
+    "user": "0xbc2f3873cd6650474d7153f3ecc0a4ac23968fff",
+    "chain": "ethereum",
+    "value": "10023479226719630887604"
+  },
+  {
+    "token": "0x4c3a8eceb656ec63eae80a4ebd565e4887db6160",
+    "user": "0x7952a71eb021d7d138cd459b75700d28844950a8",
+    "chain": "ethereum",
+    "value": "1500000000000000000000000"
+  },
+  {
+    "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "user": "0xfb1ae6a0b2fcec7cd3b4f741b9191bc305d99856",
+    "chain": "ethereum",
+    "value": "130000"
+  },
+  {
+    "token": "0x25f8087ead173b73d6e8b84329989a8eea16cf73",
+    "user": "0xfd0d28b9f1cf7bed6b9cf543976c58929d747f1c",
+    "chain": "ethereum",
+    "value": "10000000000000000000000"
+  },
+  {
+    "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "user": "0xf78ef3831f42f36402a7c17436b8a32c3ee7ded1",
+    "chain": "ethereum",
+    "value": "871790"
+  },
+  {
+    "token": "0x76bc677d444f1e9d57daf5187ee2b7dc852745ae",
+    "user": "0x00dbb60ce71242f2512063dd5fbd26faaec43e33",
+    "chain": "ethereum",
+    "value": "2263658992000000000000"
+  },
+  {
+    "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "user": "0x07fd39294ce1062d84a0b4c1281d22b34dddb1a0",
+    "chain": "ethereum",
+    "value": "400000000"
+  },
+  {
+    "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "user": "0xe18392077885913818da08ef5889a2b6aaf63ccc",
+    "chain": "ethereum",
+    "value": "87782500000000000"
+  },
+  {
+    "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "user": "0xb8c32e5ea015672647dc419b7276029ea5f64985",
+    "chain": "ethereum",
+    "value": "50000000"
+  },
+  {
+    "token": "0x5b1d655c93185b06b00f7925791106132cb3ad75",
+    "user": "0x8b83aa53dc74e3b54e9c4de8349cdbb6d9d9c652",
+    "chain": "ethereum",
+    "value": "5695760416666649898348"
+  },
+  {
+    "token": "0x7c3ed93b03e67c1fa240395b28e38c4386321b58",
+    "user": "0xbddfc70658391ebe20c9839d510376c8e877e0c3",
+    "chain": "ethereum",
+    "value": "1"
+  },
+  {
+    "token": "0xd417144312dbf50465b1c641d016962017ef6240",
+    "user": "0x61410d2d49b9555d79c5c7c91884bca3f623d018",
+    "chain": "ethereum",
+    "value": "50000134084524048178523"
+  },
+  {
+    "token": "0x80f0c1c49891dcfdd40b6e0f960f84e6042bcb6f",
+    "user": "0x7baa154972bdce17e344ab16de33dbfab1ca64c5",
+    "chain": "ethereum",
+    "value": "699395821367315977"
+  },
+  {
+    "token": "0xcd1de9fbbf6c5be46c748f862a5396991ab892ee",
+    "user": "0xcd920af3a9115bf4fc9df4832fce92d8bb7744fa",
+    "chain": "ethereum",
+    "value": "20613868229096674"
+  },
+  {
+    "token": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+    "user": "0x9deff3637e583c7d2bffc7164dc2ca630d0ab7cb",
+    "chain": "ethereum",
+    "value": "9999999999999999991"
+  },
+  {
+    "token": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+    "user": "0x6199b7ce4e81d7a5a98e4532a48067f97fba756d",
+    "chain": "ethereum",
+    "value": "5472941422"
+  }
+]

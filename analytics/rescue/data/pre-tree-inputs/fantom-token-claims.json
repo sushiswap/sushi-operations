@@ -1,0 +1,74 @@
+[
+  {
+    "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+    "user": "0x4be5ecc076c7db235b97264d480dcc9c1a57dc7b",
+    "chain": "fantom",
+    "value": "1922446029"
+  },
+  {
+    "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+    "user": "0x770edb43ecc5bcbe6f7088e1049fc42b2d1b195c",
+    "chain": "fantom",
+    "value": "990062494"
+  },
+  {
+    "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+    "user": "0xe7f23915674b56678a1963ab3321303d196a3fa6",
+    "chain": "fantom",
+    "value": "159449284"
+  },
+  {
+    "token": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83",
+    "user": "0x5a01179f3641fdad8e3ce238311eda1e028f5ce8",
+    "chain": "fantom",
+    "value": "190074844555329635510"
+  },
+  {
+    "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+    "user": "0x46d963a229caf05ff4afc14b1b35105ab777e846",
+    "chain": "fantom",
+    "value": "48687822"
+  },
+  {
+    "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+    "user": "0xa61f623f3bd38a18a218b5e02940c5eaf39c0004",
+    "chain": "fantom",
+    "value": "45901058"
+  },
+  {
+    "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+    "user": "0x394b67c6bc05abb14c73a57706dcd5cb85231c4e",
+    "chain": "fantom",
+    "value": "1"
+  },
+  {
+    "token": "0x74b23882a30290451a17c44f4f05243b6b58c76d",
+    "user": "0xc16c5648f7ea48be52e597f818b50124cd6199a2",
+    "chain": "fantom",
+    "value": "4560231610529"
+  },
+  {
+    "token": "0x468003b688943977e6130f4f68f23aad939a1040",
+    "user": "0x7edcf935ce69e992ea27fe5d3f3b720a902f526a",
+    "chain": "fantom",
+    "value": "302756114762819303111"
+  },
+  {
+    "token": "0x321162cd933e2be498cd2267a90534a804051b11",
+    "user": "0xc16c5648f7ea48be52e597f818b50124cd6199a2",
+    "chain": "fantom",
+    "value": "29"
+  },
+  {
+    "token": "0x04068da6c83afcfa0e13ba15a6696662335d5b75",
+    "user": "0x36c0ade75d82190504a01827d2ac5a42ce43417a",
+    "chain": "fantom",
+    "value": "999400"
+  },
+  {
+    "token": "0x534c7fb5607251e1927b17fbc4d22ba818e197bc",
+    "user": "0xa6d7d0e650aa40ffa42d845a354c12c2bc0ab15f",
+    "chain": "fantom",
+    "value": "1933200"
+  }
+]

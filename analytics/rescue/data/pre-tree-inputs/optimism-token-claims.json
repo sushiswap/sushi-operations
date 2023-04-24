@@ -1,0 +1,200 @@
+[
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x68f60e4f1a3a36ff3ce43f80f5bf06eba59b044b",
+    "chain": "optimism",
+    "value": "2100928538"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x9db57c2673983c42efda68b0bfc4eebafb2b15ad",
+    "chain": "optimism",
+    "value": "1305251323"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x06d402d0f6b179a73fc03b730ce170ea849498d3",
+    "chain": "optimism",
+    "value": "344624910"
+  },
+  {
+    "token": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
+    "user": "0x530cfdf08e0da2f0c75b750c62244e7336922518",
+    "chain": "optimism",
+    "value": "300917749207529463033"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x4164d6bb3c7d86b13ac420aec4fd1db2d90e7016",
+    "chain": "optimism",
+    "value": "122890783"
+  },
+  {
+    "token": "0x4200000000000000000000000000000000000042",
+    "user": "0x2f2f665974261c4129b1dc6c359bd259cd66f78a",
+    "chain": "optimism",
+    "value": "50000000000000000000"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x9a52c6d4bc3cc30169e22886280e7aac169d5781",
+    "chain": "optimism",
+    "value": "105539697"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0xe05f0df951b96f0e264973e1c444e64d7350c7e3",
+    "chain": "optimism",
+    "value": "104706294"
+  },
+  {
+    "token": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
+    "user": "0x7adf30dca721f792a4308dcac6607117e697a432",
+    "chain": "optimism",
+    "value": "52990836"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0xf87bd1fcc84397cac2205effbb549f02280fcec7",
+    "chain": "optimism",
+    "value": "40954162"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x5458e942470d50053f49d22dcc39aaa0d793d7ee",
+    "chain": "optimism",
+    "value": "37700000"
+  },
+  {
+    "token": "0x4200000000000000000000000000000000000042",
+    "user": "0x87d9c50b3e774536250f1aba2ab38c54268a18d8",
+    "chain": "optimism",
+    "value": "12100873687392809566"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x5d2ce8beae0f00cf9e8a0dff475eb6b873b2895e",
+    "chain": "optimism",
+    "value": "13474921"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x897ca23ae83acaf6e46ae47d49f37bedf3f52a1b",
+    "chain": "optimism",
+    "value": "12571648"
+  },
+  {
+    "token": "0x4200000000000000000000000000000000000042",
+    "user": "0x7059df82d93aea2a02b9b137a028749526be369f",
+    "chain": "optimism",
+    "value": "5419572398371999335"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0xbd462191a34abe4794f88d37e71afbeb7ab73b79",
+    "chain": "optimism",
+    "value": "9662265"
+  },
+  {
+    "token": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
+    "user": "0xa367f5b4dea0ea066190739b2f6f48a4c9f109c0",
+    "chain": "optimism",
+    "value": "9311753"
+  },
+  {
+    "token": "0x4200000000000000000000000000000000000042",
+    "user": "0xd2e858cad48bbcdbdeca26c4d702bfd9dd4c8654",
+    "chain": "optimism",
+    "value": "3204429213924667425"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x47c2d039c32a0057ef44262ac27b0de4aa0df32d",
+    "chain": "optimism",
+    "value": "7082000"
+  },
+  {
+    "token": "0x8c6f28f2f1a3c87f0f938b96d27520d9751ec8d9",
+    "user": "0x54cf78c31739b97f87381b19937d13f04dc9819f",
+    "chain": "optimism",
+    "value": "5723848590537353413"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x6fd6de5ba9f70f00e2d916f722fa4b5e26278dc7",
+    "chain": "optimism",
+    "value": "15983999"
+  },
+  {
+    "token": "0x4200000000000000000000000000000000000042",
+    "user": "0x64a03a4fca0a7a4eecaf3501be6bb8d181178c44",
+    "chain": "optimism",
+    "value": "2000000000000000000"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x2d79559842b125ff98ed640a031e50e2d5061e9e",
+    "chain": "optimism",
+    "value": "4508840"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x8db6b8e5a978871044864ae94825387add06384d",
+    "chain": "optimism",
+    "value": "4196700"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x29a1303f5412c771c421997f75b19773c2601568",
+    "chain": "optimism",
+    "value": "3997600"
+  },
+  {
+    "token": "0x4200000000000000000000000000000000000042",
+    "user": "0x365d7431ddc4121e8ac07710e10c34edecdc452a",
+    "chain": "optimism",
+    "value": "1621181645252976777"
+  },
+  {
+    "token": "0x296f55f8fb28e498b858d0bcda06d955b2cb3f97",
+    "user": "0xcf65c45e37e8d70e3ed62fb6e8fc14210fccb527",
+    "chain": "optimism",
+    "value": "1940000000000000000"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0xd33f357220fe1cd8786f222ef65c85cd2435f53c",
+    "chain": "optimism",
+    "value": "1739006"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0x57a98b1765313e664c2fd1a7b490114ce8658fd5",
+    "chain": "optimism",
+    "value": "132837622"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0xbd5b72956c6dede12c7449a227d8d2aa4b152b97",
+    "chain": "optimism",
+    "value": "120378678"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0xbe998ecd9cffc755f07e2003cc54c9237b493d89",
+    "chain": "optimism",
+    "value": "3000000"
+  },
+  {
+    "token": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58",
+    "user": "0x1135bd1bf173a5afdb6619eff91a61518796de87",
+    "chain": "optimism",
+    "value": "110832056"
+  },
+  {
+    "token": "0x7f5c764cbc14f9669b88837ca1490cca17c31607",
+    "user": "0xd2d3bebbf5e41a159b8ecc90a0a02b1018dd0d70",
+    "chain": "optimism",
+    "value": "60145996"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0xc57451e87076814cc6e0167247b95cc8e61d1a00",
+    "chain": "avalanche",
+    "value": "55738192"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0xbebf759fc15bc07e5b8abad6ed931e2f945931a8",
+    "chain": "avalanche",
+    "value": "23177083"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0x81a3e5dd8be2a21b99ae623b9b1adb6113544746",
+    "chain": "avalanche",
+    "value": "924"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0x706702ddc1dbd00eaaddc918dfdf536505fb1993",
+    "chain": "avalanche",
+    "value": "9088"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0x8ee97a04603c51011d45ba1fcf5762f9eafe96ac",
+    "chain": "avalanche",
+    "value": "211089"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0x0d6dd40eae5bf9d8d64a4b246015b4425917c2b7",
+    "chain": "avalanche",
+    "value": "289700"
+  },
+  {
+    "token": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+    "user": "0x2abfc65e28cb29e68e140332fa6e06fcf37fa506",
+    "chain": "avalanche",
+    "value": "95900073"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0x52539ea869f7162bc18f9c3c2db595f2cd69f63b",
+    "chain": "avalanche",
+    "value": "32466746"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0xad6cee674193faefe82b72e45f45a91ee8d89ce1",
+    "chain": "avalanche",
+    "value": "5984740"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0xc2b17d1466ffbdd4113fddee14883cf390aea993",
+    "chain": "avalanche",
+    "value": "40000"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0x6fbac09b783a2c681314e60ae4f41f7abc6a0afa",
+    "chain": "avalanche",
+    "value": "19979999"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0x5071a9079156bc2721d45dad82ba8331d7078a43",
+    "chain": "avalanche",
+    "value": "4018587"
+  },
+  {
+    "token": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e",
+    "user": "0xa0176e25718ae320c193bca496d3a7da4a334e3c",
+    "chain": "avalanche",
+    "value": "999400"
+  }
+]

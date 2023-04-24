@@ -47,7 +47,7 @@ for network in networks:
     print(f"Checking Totals for {network}")
     print("-----------------------------------")
 
-    json_file = './data/output/' + network + '-token-claims.json'
+    json_file = './data/pre-tree-inputs/' + network + '-token-claims.json'
     with open(json_file, mode='r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -77,5 +77,5 @@ for network in networks:
             print(f"amount from output: {amount}")
             print('---------------')
 
-    for token, amount in sums_by_token.items():
-        print(f"{token}: {amount}")
+    # for token, amount in sums_by_token.items():
+    #    print(f"{token}: {amount}")

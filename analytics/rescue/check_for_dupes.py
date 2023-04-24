@@ -1,27 +1,43 @@
 import json
 
-user_data_file_path = "./data/output/arbitrum-token-claims.json"
+networks = [
+    'arbitrum',
+    'avalanche',
+    'boba',
+    'bsc',
+    'ethereum',
+    'fantom',
+    'nova',
+    'optimism',
+    'polygon',
+]
 
-# Load user data
-with open(user_data_file_path, 'r') as file:
-    user_data = json.load(file)
+for network in networks:
+    print(network)
+    pre_tree_inputs = './data/pre-tree-inputs/' + network + '-token-claims.json'
 
-user_count = {}
+    # Load user data
+    with open(pre_tree_inputs, 'r') as file:
+        user_data = json.load(file)
 
-# Count occurrences of each user
-for entry in user_data:
-    user = entry['user']
-    if user in user_count:
-        user_count[user] += 1
-    else:
-        user_count[user] = 1
+    user_token_count = {}
 
-# Find and print duplicates
-duplicates_found = False
-for user, count in user_count.items():
-    if count > 1:
-        duplicates_found = True
-        print(f'Duplicate user: {user}, count: {count}')
+    # Count occurrences of each user
+    for entry in user_data:
+        user = entry['user']
+        token = entry['token']
+        if (user, token) in user_token_count:
+            user_token_count[(user, token)] += 1
+        else:
+            user_token_count[(user, token)] = 1
 
-if not duplicates_found:
-    print('No duplicate users found.')
+    # Find and print duplicates
+    duplicates_found = False
+    for (user, token), count in user_token_count.items():
+        if count > 1:
+            duplicates_found = True
+            print(
+                f'Duplicate user-token pair: User: {user}, Token: {token}, count: {count}')
+
+    if not duplicates_found:
+        print('No duplicate users found.')

@@ -1,0 +1,2360 @@
+[
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x2fa8e966d6d0f9ea1f638f74464c1ac8b6a492ec",
+    "chain": "arbitrum",
+    "value": "102840616294"
+  },
+  {
+    "token": "0x32eb7902d4134bf98a28b963d26de779af92a212",
+    "user": "0x4d82a8afdf423681b60811943015c26d0c796ae9",
+    "chain": "arbitrum",
+    "value": "1245000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xde0fb083043cb88eacd0a3b286955ef93cac56f7",
+    "chain": "arbitrum",
+    "value": "26500994000"
+  },
+  {
+    "token": "0x32eb7902d4134bf98a28b963d26de779af92a212",
+    "user": "0xb4dbc39c3ea0dcb67db6c4ce35c6cf0f9f1cd47c",
+    "chain": "arbitrum",
+    "value": "815135927952635047429"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x020b69636bff584a71972b3ee1e9d9814fc647fe",
+    "chain": "arbitrum",
+    "value": "13553442967"
+  },
+  {
+    "token": "0xc628534100180582e43271448098cb2c185795bd",
+    "user": "0xc00a5ce2a1c2000a70a655aba84e87956a0f7361",
+    "chain": "arbitrum",
+    "value": "27027527579045273327316"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xade62b4cb00d520407b416a139d075f24a8e17c8",
+    "chain": "arbitrum",
+    "value": "6500263754010365580670"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xe10ef7cbd3ea3d11488a98e082c312f077246f7b",
+    "chain": "arbitrum",
+    "value": "6504708674"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x373da167236beaeb6202d83a3469c83187f8a9e8",
+    "chain": "arbitrum",
+    "value": "5250000000000000000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x21245b2caf35ee6f1f363e11d1484640cae68fdb",
+    "chain": "arbitrum",
+    "value": "5972489613"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xe84c253ede03268e5dc97ec6020ff0f30bb833a1",
+    "chain": "arbitrum",
+    "value": "4741990045352764680543"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x223a1bd65845a09ebda9a1ef4ff77f09f7cc2d27",
+    "chain": "arbitrum",
+    "value": "4300000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xc9ca60862fcd3d4121ce90371fa675d2ae7e3dd0",
+    "chain": "arbitrum",
+    "value": "3989339308723335576703"
+  },
+  {
+    "token": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+    "user": "0x194b3496e9d2ffae6af332350d33af8b21ca9b5d",
+    "chain": "arbitrum",
+    "value": "3500000007540026762049"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x32d1a648c80094f71e0667ebe240454d67e27339",
+    "chain": "arbitrum",
+    "value": "4433774888"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x6742ba32f92a0f415b84c6ec1cbf77277e03c4ac",
+    "chain": "arbitrum",
+    "value": "3750000002990000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xada05856c476e033d61c8441360ac6c18376d2a2",
+    "chain": "arbitrum",
+    "value": "4374161775"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xee4e4225fe3c52cc4b1727d8264722198ad3bb8e",
+    "chain": "arbitrum",
+    "value": "4240000000"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0xb64209b7362b59e5d69e3ad88ab34a7a3066ffb4",
+    "chain": "arbitrum",
+    "value": "4450971976007637197462"
+  },
+  {
+    "token": "0x2ef2cbc12db5a88bb8078a6fe488a60f4caa0451",
+    "user": "0xfd6f96764828ad37e0c47b6833df43644b1f1809",
+    "chain": "arbitrum",
+    "value": "49471304850"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xfb6a28a82905c6abd289b20ae217381859c9c7fd",
+    "chain": "arbitrum",
+    "value": "3451893877"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb8518afa61da9cc2235a13e9c38900ea9ad67fc2",
+    "chain": "arbitrum",
+    "value": "3237849386"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x46b1d16b376b43cebb546869e5bb134c65707bde",
+    "chain": "arbitrum",
+    "value": "3135209834"
+  },
+  {
+    "token": "0xaa54e84a3e6e5a80288d2c2f8e36ea5ca3a3ca30",
+    "user": "0xbc9a9fe486e471f33d68b442e699add34a8d1689",
+    "chain": "arbitrum",
+    "value": "318330892948158501"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5179a8498047f19720d889dca48f027363c8bae8",
+    "chain": "arbitrum",
+    "value": "3005235082"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x8f21b96b18f34456067658f3819c32826e4f4cd0",
+    "chain": "arbitrum",
+    "value": "3000000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x3f45cca56fcedb196a2c78c9517b1543485ea1c8",
+    "chain": "arbitrum",
+    "value": "3000609835"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x15bf5877ce70ef3e6d3abc5c688fa6305af0dbfb",
+    "chain": "arbitrum",
+    "value": "2550000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x5d11a66f421205798c6e22b07e50a375234b9ee9",
+    "chain": "arbitrum",
+    "value": "2500934700000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xecae00863ba72d39f531bf0acfa70fbd6985fa33",
+    "chain": "arbitrum",
+    "value": "2928748501"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xdcafccc50defc3f829b10e1004571b2ee6602b83",
+    "chain": "arbitrum",
+    "value": "2250000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x09b11cb70131f9f75497a499813d3bccf9006cd4",
+    "chain": "arbitrum",
+    "value": "2053800684"
+  },
+  {
+    "token": "0xb98058640970d8aa7bbce3b067b2d63c14143786",
+    "user": "0x812406f641a11b1d0c12abe9b23d3f2f2964931b",
+    "chain": "arbitrum",
+    "value": "773987980500649439589132"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xa3807236a0b5b0392cc5691cc26542e6a39f6f76",
+    "chain": "arbitrum",
+    "value": "1938432343"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x08034c21ae1f11fcfe124efe35fdfcef3a7b14c5",
+    "chain": "arbitrum",
+    "value": "1927000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x170ffc33576f8d038dc2cfb0d64fcda9e5f57cb2",
+    "chain": "arbitrum",
+    "value": "1850364190"
+  },
+  {
+    "token": "0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f",
+    "user": "0x66a99aa1bd0595527db7c8fce9ddaaedb45da236",
+    "chain": "arbitrum",
+    "value": "179742493341482124586231"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xa072b92bedb5cd02e13596aefea9ae0c40e04f87",
+    "chain": "arbitrum",
+    "value": "1777974191"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xac244ca4f9f8e70b819d0bc77978ce8f2b9e121f",
+    "chain": "arbitrum",
+    "value": "1680176110"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xb792009b879cbca239f9bd8489ac8dc238a55911",
+    "chain": "arbitrum",
+    "value": "1401069339269087467630"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xdee0a8bf3e592277b3763e28e60e97233a98ce4a",
+    "chain": "arbitrum",
+    "value": "1289078848062046606737"
+  },
+  {
+    "token": "0x02150e97271fdc0d6e3a16d9094a0948266f07dd",
+    "user": "0xdfa74cb7865e238ecec39092ecebb931c7eff79b",
+    "chain": "arbitrum",
+    "value": "2483355754549072739660000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xe839979fff555451da7df6f0382730cefd5c79c4",
+    "chain": "arbitrum",
+    "value": "1200000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x4db24e856f34485bd5ae33e3885cd2e78f6ad252",
+    "chain": "arbitrum",
+    "value": "1249804348"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xbf5e797f6a98938e90968952952582387e0a3f1f",
+    "chain": "arbitrum",
+    "value": "1200500000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xe76ace2d80edbc34418dc7458a5dc9e7ded705b9",
+    "chain": "arbitrum",
+    "value": "1186000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x2855bfb8ba5f85f41a87a06d0b94f41e4e205931",
+    "chain": "arbitrum",
+    "value": "1176000000"
+  },
+  {
+    "token": "0x2ef2cbc12db5a88bb8078a6fe488a60f4caa0451",
+    "user": "0xcaf8bf4b099712f78aa1ada86b36cc74526cf9af",
+    "chain": "arbitrum",
+    "value": "15425485160"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x626b4650e09484c9178daca20b830a5fc0ce0638",
+    "chain": "arbitrum",
+    "value": "1105655738"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x1936ccc5f6aa94e8b0d1df1179b532c555876575",
+    "chain": "arbitrum",
+    "value": "1075280546"
+  },
+  {
+    "token": "0x2ef61fbe7adc237611e847e9bee5ed1a401fd854",
+    "user": "0xee4e4225fe3c52cc4b1727d8264722198ad3bb8e",
+    "chain": "arbitrum",
+    "value": "100000000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xc495268f672f76bda9acd963b1d5922a0fcb20c3",
+    "chain": "arbitrum",
+    "value": "1054760886"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb9f0fc4473ff75ce20dfa9b9887ac143261e78bf",
+    "chain": "arbitrum",
+    "value": "997400102"
+  },
+  {
+    "token": "0xb98058640970d8aa7bbce3b067b2d63c14143786",
+    "user": "0x6530015af431bcb3f3145b5d42a663822f1f7f5d",
+    "chain": "arbitrum",
+    "value": "392744574119431965709602"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x19398060399ecf0319eea1177561f754606a5d6d",
+    "chain": "arbitrum",
+    "value": "992000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xc41a30e3ef0fbf022ca7116161db0a194c00473f",
+    "chain": "arbitrum",
+    "value": "984900000"
+  },
+  {
+    "token": "0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f",
+    "user": "0x38434a8e726b7b089d5600577ef9b2dba9ca92ad",
+    "chain": "arbitrum",
+    "value": "39322030261577243267109"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xa7308d4d83b14859916671a17370476e6c6cd1a9",
+    "chain": "arbitrum",
+    "value": "797365130698586746988"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xa990f78f7c8e734087cd36ee9b4a7360d39ef7f3",
+    "chain": "arbitrum",
+    "value": "735365920000000000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x74a361f83febb91ab26aad3f89659af2a3cd7ae8",
+    "chain": "arbitrum",
+    "value": "845469802"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xcd4a476b5c4714326d71e2d8e8c69c3b936b479c",
+    "chain": "arbitrum",
+    "value": "800745104"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x8aeafd5ec5fdb7380f18d777074fa5e37478f01e",
+    "chain": "arbitrum",
+    "value": "800000000"
+  },
+  {
+    "token": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+    "user": "0x42741dd36db0aa4ec6fa2b90afe8250b1ec2e70a",
+    "chain": "arbitrum",
+    "value": "600293725618825906198"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x50d6713887b26882da9eb722626d63a7668f87cd",
+    "chain": "arbitrum",
+    "value": "278372438"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x06aae5573e53d568ba0a8c9f05814e7bac3d0a6d",
+    "chain": "arbitrum",
+    "value": "600000000000000000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xfb642de3ffca379e059fe4f055d1054871c970ed",
+    "chain": "arbitrum",
+    "value": "674160828"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x9a42b9298fc7eefcdc6d2ac799b26c222ad7305a",
+    "chain": "arbitrum",
+    "value": "674035996"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0xc8402eb3402c3a3dd8a47643303aa669c27e086e",
+    "chain": "arbitrum",
+    "value": "8792474072390086380234380"
+  },
+  {
+    "token": "0xa59647648d34815fa2b15f506e9ac7e5aa79babd",
+    "user": "0x0000000000000000000000000000000000000000",
+    "chain": "arbitrum",
+    "value": "24038380405592270808502824"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xaa3b677101cd1c5da6ef651899bc7a9286066bb9",
+    "chain": "arbitrum",
+    "value": "650615651"
+  },
+  {
+    "token": "0x2ef2cbc12db5a88bb8078a6fe488a60f4caa0451",
+    "user": "0x9d9531f11bb464fc2ea968c640dc401646ba0ee5",
+    "chain": "arbitrum",
+    "value": "8421635707"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb3fb6a591babe6d92ab54a10e2ac29070fc624f2",
+    "chain": "arbitrum",
+    "value": "619463605"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xffd8d3e653b57fd260d0e5f56564db2939ec021d",
+    "chain": "arbitrum",
+    "value": "525000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x47d1afcdeed9a365a8452c127865517b057e89e5",
+    "chain": "arbitrum",
+    "value": "525000000000000000000"
+  },
+  {
+    "token": "0xaa54e84a3e6e5a80288d2c2f8e36ea5ca3a3ca30",
+    "user": "0x4a1a02f4e9256d27dfd06be240512a5e9ad61e97",
+    "chain": "arbitrum",
+    "value": "55000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xd6ff2d5d073edd2369ebae8778a37ceb3e2d2e82",
+    "chain": "arbitrum",
+    "value": "485000094"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xf6fdf07c7faccd1c9cb0c539f485682235b3cf8d",
+    "chain": "arbitrum",
+    "value": "484555711"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x91d6233b4c3341cadcead500e4f87766ea4186cf",
+    "chain": "arbitrum",
+    "value": "481429919"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x577cf650c17ec909c724de8054beb52645284852",
+    "chain": "arbitrum",
+    "value": "476010721"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x75094550e12b392796203a1dcf41ac08eb7ef408",
+    "chain": "arbitrum",
+    "value": "476181303"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xc6f2e3123176dbd76649a5a1a1c0d57d6b995c99",
+    "chain": "arbitrum",
+    "value": "426368056"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x8477981dbd957ae4c6a249544e43915218948404",
+    "chain": "arbitrum",
+    "value": "355000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x258cce25ca74fa0867a2c875a47f71c46b79d969",
+    "chain": "arbitrum",
+    "value": "412085784"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xdadceb847ea09a38270427895ae7db146a1bd2c8",
+    "chain": "arbitrum",
+    "value": "337043230806763433230"
+  },
+  {
+    "token": "0xe021047851012d8e981ebd9f3c2cbb8945e996da",
+    "user": "0xa17ec09f79be5a8c420a08e6a4feb2eda3da0111",
+    "chain": "arbitrum",
+    "value": "358559727039170"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x61bc74866ca2acf0ba6aabb1448c686e2016401b",
+    "chain": "arbitrum",
+    "value": "363741182"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0x1920923cf7f8f5ed84bd698538e38ea72923d081",
+    "chain": "arbitrum",
+    "value": "4787431471851638007303127"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x30fc9f2a2382f10d314e2f00d12aecbb88139751",
+    "chain": "arbitrum",
+    "value": "350293440"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb097af42759ae66faa3b425b69377b3c8ac83388",
+    "chain": "arbitrum",
+    "value": "350000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x04183d21a499b90d043e0186be984a44e2459ba8",
+    "chain": "arbitrum",
+    "value": "291860642491995210250"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x844efab1af81f54fef7491ecdce8354b8ea595cf",
+    "chain": "arbitrum",
+    "value": "339156303"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x5811c85ec0df23a92aa33116d9a4108cef7edcde",
+    "chain": "arbitrum",
+    "value": "286754009357658846854"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xc64bd4636fd601e02ec9e65d8ce7d487ad113f0f",
+    "chain": "arbitrum",
+    "value": "325600897"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x1af4faaeadd15af4af8352859079131aa6a3e93a",
+    "chain": "arbitrum",
+    "value": "324610742"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x6858440eef594cf2a554e859720ffdb67fc96903",
+    "chain": "arbitrum",
+    "value": "275000000000000000000"
+  },
+  {
+    "token": "0x3082cc23568ea640225c2467653db90e9250aaa0",
+    "user": "0xa22bc0f16dd98206866b4afc9ce2ea9dd0802edd",
+    "chain": "arbitrum",
+    "value": "957103000000000000000"
+  },
+  {
+    "token": "0xeb50e8a331fe341e69ade68e66e8d0a0a8f61d5c",
+    "user": "0x30f63206edbb8b87395e7e6f2cf35aeb0380c6b6",
+    "chain": "arbitrum",
+    "value": "8195985470363294344"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x0860a74847ec4f3e1dc0cfbab41013eb90f69654",
+    "chain": "arbitrum",
+    "value": "299781388"
+  },
+  {
+    "token": "0xa3e7e143b69aeaa2b435efd7e40c4a7d1d6d8296",
+    "user": "0xdb1bdb0619e6efe32d348dd4377cfde44b1105c7",
+    "chain": "arbitrum",
+    "value": "164327051300000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xfd1490b5bab3013c8a8b483a2e16aabe37388905",
+    "chain": "arbitrum",
+    "value": "286914457"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb9c0e4232317834511be59964e5259d3d4ba8926",
+    "chain": "arbitrum",
+    "value": "281852305"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x494b30993e033d35367ed6cbe6f3857b28c3d629",
+    "chain": "arbitrum",
+    "value": "280000000"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0x80d96dc86f677338e7f1f3f0ac7930b9cc7e734e",
+    "chain": "arbitrum",
+    "value": "150000000000000000"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0xbd3d5061abb0b7d4e9f79f61cfbb042b204a14b2",
+    "chain": "arbitrum",
+    "value": "3583521645477353114314223"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x70bb9cea5317eb71f866dc7db8cf278190f80ef0",
+    "chain": "arbitrum",
+    "value": "266192530"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x508c6aceb59500a944a56f75949c79436098cbac",
+    "chain": "arbitrum",
+    "value": "225000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x1a93e6e79dc39a89eee193f2269dd7f0936ffcff",
+    "chain": "arbitrum",
+    "value": "263728965"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x750331b60a0ef7470f73600cac99eaddca92dbb6",
+    "chain": "arbitrum",
+    "value": "220966055116339241750"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x1555883d804b2fae33dbaa651673c2ce255b4346",
+    "chain": "arbitrum",
+    "value": "220000810751208305216"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xec6403302fa8676818fb3e48a4fdea62f7e116f8",
+    "chain": "arbitrum",
+    "value": "215000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x25bc299a5fd97641c542a6a251c4f985591b9a54",
+    "chain": "arbitrum",
+    "value": "205000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x6accb3eca94562416aaccad044241ba91de61b7f",
+    "chain": "arbitrum",
+    "value": "200000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x7187e4b19df4cc944dadf9398410d3cf0ac72c4f",
+    "chain": "arbitrum",
+    "value": "227520152"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x4c513a1bd30b96a751308fde0954ef3610dbf2c6",
+    "chain": "arbitrum",
+    "value": "260768382"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x03316b2ec37fc2b65fcf013a54736894eb735d01",
+    "chain": "arbitrum",
+    "value": "190302442783799508552"
+  },
+  {
+    "token": "0xdb03940fd249d41fb964628a328070201a3b539a",
+    "user": "0x210753bb8dfbcd326892a23c59dc37c854c1699d",
+    "chain": "arbitrum",
+    "value": "13698651540359919437"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x19900e567aa22f426442097ff004fee4cd0f6cbd",
+    "chain": "arbitrum",
+    "value": "171320499641141591377"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x3607aedc1329f80af7bdd23bbf4fef3980869e7d",
+    "chain": "arbitrum",
+    "value": "200938944"
+  },
+  {
+    "token": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+    "user": "0x2c5650f9ebe5e584a525e425125fd02a64c88285",
+    "chain": "arbitrum",
+    "value": "153428237066975461147"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb94f291cd800c0bf289d34a7a986dda680df23e0",
+    "chain": "arbitrum",
+    "value": "196843507"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xf695d8782c86eb415e6bdc1290c52d9c0fbdc85c",
+    "chain": "arbitrum",
+    "value": "165464053382935374295"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x0a1b0506e6aebabdd3df585f2ed5dc90c28a4c17",
+    "chain": "arbitrum",
+    "value": "191930438"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0x7beea2911053c0d74814bfd1d512cd65f052797b",
+    "chain": "arbitrum",
+    "value": "101380292507738503"
+  },
+  {
+    "token": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+    "user": "0x10367cda35bfadc293dd1587671e96ebefdc1751",
+    "chain": "arbitrum",
+    "value": "143782434808259705041"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0x43d4ef6a9b8072d615d4fa965befb2d929c9eb01",
+    "chain": "arbitrum",
+    "value": "2413475150808268440950760"
+  },
+  {
+    "token": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+    "user": "0x77e8e466a2b0223596671f56e6a238561c8d5bfe",
+    "chain": "arbitrum",
+    "value": "136336702202341528233"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xa3d0445390e9366897ae54c507adb4979f9dd252",
+    "chain": "arbitrum",
+    "value": "151281285467744402034"
+  },
+  {
+    "token": "0x27d8de4c30ffde34e982482ae504fc7f23061f61",
+    "user": "0xa4d14e092ef5b4ef49034a6a2bb196cc3f0e8018",
+    "chain": "arbitrum",
+    "value": "339617224488925496947"
+  },
+  {
+    "token": "0xe021047851012d8e981ebd9f3c2cbb8945e996da",
+    "user": "0x84b8da634d034ff8067503cea37828c77a9cbeab",
+    "chain": "arbitrum",
+    "value": "151000000000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x369fa1c5c8396b9e298edd78175e41fb6d54b5bd",
+    "chain": "arbitrum",
+    "value": "154845097"
+  },
+  {
+    "token": "0xdd8e557c8804d326c72074e987de02a23ae6ef84",
+    "user": "0xaaddb51bc84cf64333f6d578e946e9bb4b6d9e4a",
+    "chain": "arbitrum",
+    "value": "48554249339965263714385"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb92aedc6e9c2f2a71415abb0b0e797a476746aad",
+    "chain": "arbitrum",
+    "value": "153178738"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x68e9dac7f8fa2e5f6c823df82c91ac0f132ec7e4",
+    "chain": "arbitrum",
+    "value": "145448499"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x6613a1521394c2f17c7d705e48279e44c2a01936",
+    "chain": "arbitrum",
+    "value": "144122485"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x2424b91ff5707aebb6f564aba7587ba8cd5fd34c",
+    "chain": "arbitrum",
+    "value": "143823842"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5e65ec69c1185e232c07e00b524cab21af6a6887",
+    "chain": "arbitrum",
+    "value": "141956811"
+  },
+  {
+    "token": "0x12f7cf4f2e3f87678ec5207fc920c815e31524df",
+    "user": "0x67620b481820ecdf10c84adef15b2dfadaa1acf7",
+    "chain": "arbitrum",
+    "value": "638997863414099020724"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x17fd24095c4b8b6bb6872fcd71ebf0bbb2c18484",
+    "chain": "arbitrum",
+    "value": "120000000000000000000"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0x63850e79c616a95bee46424857b3d0453fc54b84",
+    "chain": "arbitrum",
+    "value": "1849689432306314684639844"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xcecd0cb7dc5d4e91bdf733e0e473e951dd6ec410",
+    "chain": "arbitrum",
+    "value": "135649440"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xda7336a76f72719b779428b2b8551f05f67934e0",
+    "chain": "arbitrum",
+    "value": "135000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x2acb748062533c0a4443eaa4d5dd1b76e131fa05",
+    "chain": "arbitrum",
+    "value": "134823002"
+  },
+  {
+    "token": "0x155f0dd04424939368972f4e1838687d6a831151",
+    "user": "0x8998f5250750923e2cdb575c183342d123e9a600",
+    "chain": "arbitrum",
+    "value": "1650007599655521691055600852"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x7694cb49b9093723ab506650f6464cc0232bfe18",
+    "chain": "arbitrum",
+    "value": "132878687"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5839133c68004e4a4606804fb61b6bb69de3e004",
+    "chain": "arbitrum",
+    "value": "132421298"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x9c606534a36a8d773c2a3c15ac986dd45fd7b25c",
+    "chain": "arbitrum",
+    "value": "126673390"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5a27d75640e47a5e132f3a48d505eea579ac6d5a",
+    "chain": "arbitrum",
+    "value": "124910000"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0x62055bfc47fa20b588ff2d5593593daf3d645225",
+    "chain": "arbitrum",
+    "value": "66803361929399308"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xeae6a372adf2c359f9670356079d8fe74ba6f21b",
+    "chain": "arbitrum",
+    "value": "122642085"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xbdc5f12295762db42776b7c3a27853fbc074d6c6",
+    "chain": "arbitrum",
+    "value": "122003758"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x32907f39e956f1d0aef681958ac08916192f60bc",
+    "chain": "arbitrum",
+    "value": "121830802"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xa30b673453694396844e743ba038735679fecf3c",
+    "chain": "arbitrum",
+    "value": "100596571523687984507"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x1d22b5ed8c3844d6dbb52b951aa61f92c1309755",
+    "chain": "arbitrum",
+    "value": "100000000000000000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x598aaed86042795cf66c1361cbda1b39d6b6ef3f",
+    "chain": "arbitrum",
+    "value": "116542776"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xfb3b907090eb7a58dbf9899d8cbc5326ab442a74",
+    "chain": "arbitrum",
+    "value": "95106355373579829502"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x25dfb28f649ec7c5e53a254368a4083494570a39",
+    "chain": "arbitrum",
+    "value": "111470084"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xa79a03f478c0faa849cf8702d2a5d506a6c43bbf",
+    "chain": "arbitrum",
+    "value": "109436132"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x2bcf51d4419328702bf41a8498f20dfd906e9fc1",
+    "chain": "arbitrum",
+    "value": "108383737"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x7beebfe3966f80f29aac654e7a5a3008f3897464",
+    "chain": "arbitrum",
+    "value": "90861370000000000000"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0xcd4a476b5c4714326d71e2d8e8c69c3b936b479c",
+    "chain": "arbitrum",
+    "value": "117302731905887870264"
+  },
+  {
+    "token": "0x12f7cf4f2e3f87678ec5207fc920c815e31524df",
+    "user": "0x9fa275256fb6ce2cc1c3f97be93e53915894f2e4",
+    "chain": "arbitrum",
+    "value": "480957998760209915270"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x81116f9cd03684afbfb1c9030cb9e8843bb73948",
+    "chain": "arbitrum",
+    "value": "103934115"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x8f791c0592db171d84167d10baa70fd6dd26705c",
+    "chain": "arbitrum",
+    "value": "122224145"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xdaaf02ae5e124760476892bc2324cce04b5fc597",
+    "chain": "arbitrum",
+    "value": "87000000000000000000"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0xce8de4419629f2f5d9c9c1757b55421778ca27ed",
+    "chain": "arbitrum",
+    "value": "1346475006805892269610550"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x881ed1971672569d0ae89541ad22fdf9c700a957",
+    "chain": "arbitrum",
+    "value": "100541538"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x681ae646cf03bb51102be192d5c8429da9e7d281",
+    "chain": "arbitrum",
+    "value": "98258769"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xa70685a9c1a9f106624a05427865c9b8962fb6f0",
+    "chain": "arbitrum",
+    "value": "83500000000000000000"
+  },
+  {
+    "token": "0xde4cd6f2e2d647e708abb0c039404b24a2827c35",
+    "user": "0x58e2eb90a3c7c202e8a35981fd2b89db76d3cf20",
+    "chain": "arbitrum",
+    "value": "325363525007023130990751"
+  },
+  {
+    "token": "0xc4252d819bdffb1f58be84fe79b8554a8fd2bff7",
+    "user": "0x7b14180a7396ac0fec6a5a4e87ff7c03777b3288",
+    "chain": "arbitrum",
+    "value": "1729984109285563"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x4b95b6f09e7b4598d99abce4f52e42b8428b7d20",
+    "chain": "arbitrum",
+    "value": "74302879"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x05f6ccf599d7db52d51180c9f61f04359ae3dea0",
+    "chain": "arbitrum",
+    "value": "70140038"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x0b85bd1e45c84fe62556a7a351a101c9601c2be3",
+    "chain": "arbitrum",
+    "value": "66020213"
+  },
+  {
+    "token": "0x3082cc23568ea640225c2467653db90e9250aaa0",
+    "user": "0x0a6a6fa8dd2799372f20a191c98d59c0ecfc7212",
+    "chain": "arbitrum",
+    "value": "202471403900000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x755c3b2fb886a8d980ac2c684d9c176268a676a2",
+    "chain": "arbitrum",
+    "value": "64287718"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x494b30993e033d35367ed6cbe6f3857b28c3d629",
+    "chain": "arbitrum",
+    "value": "60226292"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x130bed625a0e68a63fd7053072ce89559d33a046",
+    "chain": "arbitrum",
+    "value": "58304924"
+  },
+  {
+    "token": "0x2a35c341f4dcf2d18e0fb38e0df50e8a47af1368",
+    "user": "0x0c8f6197db498c96fe8fedb174e0bc163a8f46c9",
+    "chain": "arbitrum",
+    "value": "70661850498043492463896"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xe5845761e7773976055f2559ca54be41f09d9e88",
+    "chain": "arbitrum",
+    "value": "48000000000000000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x97585a5d8adbfe0b1d2d0786ef527b85aad21f39",
+    "chain": "arbitrum",
+    "value": "55155984"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x00c75c19a4cd3586280f980bafe09236235324d2",
+    "chain": "arbitrum",
+    "value": "55000000"
+  },
+  {
+    "token": "0x2d1cd95648d95619b826317876b74244eaebbaa2",
+    "user": "0xe918f7ddc2ddc2563e922b19ef61fdbb75c59a16",
+    "chain": "arbitrum",
+    "value": "2714394069921595246585934"
+  },
+  {
+    "token": "0xd474e6c0930e3b1b999e7b093abcf1a38018d4f4",
+    "user": "0xf225576f14f52d242917cfa0ccf0ccb501f00a7f",
+    "chain": "arbitrum",
+    "value": "500000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x041fc0ba13e01925df08966996d4faad03a6a8f5",
+    "chain": "arbitrum",
+    "value": "51363782"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x2a23d58ea4b5cc2e01ef53ea5de51447c2528f16",
+    "chain": "arbitrum",
+    "value": "50000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x530cfdf08e0da2f0c75b750c62244e7336922518",
+    "chain": "arbitrum",
+    "value": "1147870932"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x9e8ab4db87b33d3566948d2ad33c57a678b47f44",
+    "chain": "arbitrum",
+    "value": "48871904"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x2bc2d445fe62335f2d095ff00a0288d05b384381",
+    "chain": "arbitrum",
+    "value": "41577116003753019001"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x111fbf7b389e024d09f35fb091d7d4479b321b0a",
+    "chain": "arbitrum",
+    "value": "100309126"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xeeb3561174685f0f4134a447d6ec4350fe51c31c",
+    "chain": "arbitrum",
+    "value": "48050833"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xf169e1467101b3c73df8fab36668461fbc470a7e",
+    "chain": "arbitrum",
+    "value": "50072291"
+  },
+  {
+    "token": "0xe021047851012d8e981ebd9f3c2cbb8945e996da",
+    "user": "0xa4da42dcd48b50cf3ba8e0133005f68ff25af64d",
+    "chain": "arbitrum",
+    "value": "44885658560922"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x37e5e5c36d747b144f51e9098d3c12cbb1452e88",
+    "chain": "arbitrum",
+    "value": "40336951000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x7f45365dc364891cb9438e7b8fa8d4c660369496",
+    "chain": "arbitrum",
+    "value": "43083771"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x5868a67b8df3a166f777bb884899fb5330fb10c2",
+    "chain": "arbitrum",
+    "value": "36000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xbd4ae4b7a120f4d5d8f5068e4a98c5512491ae78",
+    "chain": "arbitrum",
+    "value": "41789313"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5c26990418b7bc9ee34db0e22cda939706a66a4f",
+    "chain": "arbitrum",
+    "value": "41387611"
+  },
+  {
+    "token": "0x92ff97307c56fba6bf921b92d7620333048f97d9",
+    "user": "0x46fbd54a54133120806cb14f6908f4094faa427e",
+    "chain": "arbitrum",
+    "value": "460765739399237225630478"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0x76c4cefba6379975b0665abbd2919997bc47a765",
+    "chain": "arbitrum",
+    "value": "544026303619504319011719"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb045e0864a78aac6055754784fe417bf6ef9c792",
+    "chain": "arbitrum",
+    "value": "40192505"
+  },
+  {
+    "token": "0x6694340fc020c5e6b96567843da2df01b2ce1eb6",
+    "user": "0xee62dcb6b2cf5761710d4f99b045b1fe1157d071",
+    "chain": "arbitrum",
+    "value": "50149800000000000000"
+  },
+  {
+    "token": "0x4b2ffa43269d7690afae0f255956489a393f6199",
+    "user": "0x9549946f808896169d431436f7ab0293d5029e8a",
+    "chain": "arbitrum",
+    "value": "1414402690312338554770"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x100ade551e6b78a930852779626ca434419247f2",
+    "chain": "arbitrum",
+    "value": "41500000000000000000"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0x07f354516d480c772c2c17df661096ec7b2decc1",
+    "chain": "arbitrum",
+    "value": "503676800885411864833534"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xe7ca65aab44fab46361614145a26f6f26fa27b01",
+    "chain": "arbitrum",
+    "value": "30914095320485793056"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0x7d1d6bdd366cdf86f0ef1f659e5db93d132d59c7",
+    "chain": "arbitrum",
+    "value": "17977947481576564"
+  },
+  {
+    "token": "0x539bde0d7dbd336b79148aa742883198bbf60342",
+    "user": "0x494dc353bbbe32d5e64922d0c4a09e8339e95289",
+    "chain": "arbitrum",
+    "value": "25000000000000000000"
+  },
+  {
+    "token": "0x02150e97271fdc0d6e3a16d9094a0948266f07dd",
+    "user": "0x0239f16f160360f095ec1f223efeccc13f181208",
+    "chain": "arbitrum",
+    "value": "56142328107846692530000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x01dbb440b09965b937da3af71e53051ed028d9bd",
+    "chain": "arbitrum",
+    "value": "31215882"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x23defc2ca207e7fbd84ae43b00048fb5cb4db5b2",
+    "chain": "arbitrum",
+    "value": "30608951"
+  },
+  {
+    "token": "0x4dad357726b41bb8932764340ee9108cc5ad33a0",
+    "user": "0xceb3e685565e50a06162f29387cd11da349e49b3",
+    "chain": "arbitrum",
+    "value": "42013426950993045131242"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xcd20691ddb24a9eda66af3cfeee668e1285d836d",
+    "chain": "arbitrum",
+    "value": "25000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x94a75148d12dcbdb7de12a68709e55d66407b54f",
+    "chain": "arbitrum",
+    "value": "28888469"
+  },
+  {
+    "token": "0xb986c0736caf7dfd11757c340df72fb71669b250",
+    "user": "0x0aeb69d1f1b8a223acedca163e293d108f478a35",
+    "chain": "arbitrum",
+    "value": "1494000000000000000000"
+  },
+  {
+    "token": "0x6694340fc020c5e6b96567843da2df01b2ce1eb6",
+    "user": "0x3e5c995b0847883c8ac38f530e152dcfc99ce2b7",
+    "chain": "arbitrum",
+    "value": "33961462222485844987"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x08e75b866a99b736bd977fa29b23e7115f2a930c",
+    "chain": "arbitrum",
+    "value": "26259432"
+  },
+  {
+    "token": "0x2e80259c9071b6176205ff5f5eb6f7ec8361b93f",
+    "user": "0xb31cc9d3cdd3b84718ca73202a79b54bdb65e0b4",
+    "chain": "arbitrum",
+    "value": "1033519252698871273654"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xa6790c0c1c9f8d56b4e50e63ff5874db1bb32fa2",
+    "chain": "arbitrum",
+    "value": "36235164"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xe2adf8b22acf982166ea8890cbd9c846ef5c5715",
+    "chain": "arbitrum",
+    "value": "25000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x1af4faaeadd15af4af8352859079131aa6a3e93a",
+    "chain": "arbitrum",
+    "value": "24999014"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x90f6bd67569a87e2ea07803696e08b17b90d0efc",
+    "chain": "arbitrum",
+    "value": "25000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xef73c9f1cbdf71817e35ccdd30961cdd19a895d8",
+    "chain": "arbitrum",
+    "value": "24974471"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x206379b941a46a068d987e8020458333c3aa4c43",
+    "chain": "arbitrum",
+    "value": "24971801"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x3e62ba9315c7b323ba28fb1650155c3ebe2607f1",
+    "chain": "arbitrum",
+    "value": "21110000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x1e40c8f30f50cd86676736482c2039f5af88de4a",
+    "chain": "arbitrum",
+    "value": "21040000000000000000"
+  },
+  {
+    "token": "0xb98058640970d8aa7bbce3b067b2d63c14143786",
+    "user": "0x8e51df95c6a4a5de87a51c2a0ffa8da8b856a540",
+    "chain": "arbitrum",
+    "value": "12826730193581259783728"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x03c361bbe95ef30399ec2fa4a7bbf9e80d00823a",
+    "chain": "arbitrum",
+    "value": "20758302574352301207"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0x01d89b56300f98060cfbafc90b50d1f0379756eb",
+    "chain": "arbitrum",
+    "value": "13000000000000000"
+  },
+  {
+    "token": "0x15316d2438a8d7d534e4233b8e0edacd64c9fcde",
+    "user": "0x5be5adfbe1106912eeb74d6e34210d7353f2a2a0",
+    "chain": "arbitrum",
+    "value": "18964681344389736172165"
+  },
+  {
+    "token": "0x4b2ffa43269d7690afae0f255956489a393f6199",
+    "user": "0x34d06c6b7bb0345188838a793d47ec3a43edd546",
+    "chain": "arbitrum",
+    "value": "845677526392648583627"
+  },
+  {
+    "token": "0xc02cf6730c0304b91b542c32f1e4c4d7ecedccc2",
+    "user": "0x3d0ab9d4abdfba9e1794fa824a76aa24f1e240e6",
+    "chain": "arbitrum",
+    "value": "161608975791937"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x77253ba371e67c02c6568bd69c38b8a3cec54a77",
+    "chain": "arbitrum",
+    "value": "19000000000000000000"
+  },
+  {
+    "token": "0x6694340fc020c5e6b96567843da2df01b2ce1eb6",
+    "user": "0xdbe2bdd87b5d0e4356c97562b96de52d8e1f9c51",
+    "chain": "arbitrum",
+    "value": "28209137492395426895"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x12acf59105e965f980bb6ae009517b6fe7031f17",
+    "chain": "arbitrum",
+    "value": "22000000"
+  },
+  {
+    "token": "0xf97f4df75117a78c1a5a0dbb814af92458539fb4",
+    "user": "0xe20abe8a2c0f60a547619ffb37a7eb491865b579",
+    "chain": "arbitrum",
+    "value": "3000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x2f48d83f374a0e0ca939947f1b673f368dc8bf7a",
+    "chain": "arbitrum",
+    "value": "20950989"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xdf8c014a6b68c66d5c774f3097edbc917944baa0",
+    "chain": "arbitrum",
+    "value": "20370575"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x0365f0d71df76e108ff47a26ae1427a9f602bf74",
+    "chain": "arbitrum",
+    "value": "20000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xe20abe8a2c0f60a547619ffb37a7eb491865b579",
+    "chain": "arbitrum",
+    "value": "20000000"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x707265e09f4a471340e4fb3ae2ea6791a0866d82",
+    "chain": "arbitrum",
+    "value": "14240627027029447832"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x7b43c813dddaa35f20d97d4a3687e5dad45698f8",
+    "chain": "arbitrum",
+    "value": "20011322"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x1120adf5557e7e0d922eff950a676032d725b7a3",
+    "chain": "arbitrum",
+    "value": "19512492"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x249f8bdb4da334e986f82532c73ef887f9d2fc34",
+    "chain": "arbitrum",
+    "value": "18872002"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x5c26990418b7bc9ee34db0e22cda939706a66a4f",
+    "chain": "arbitrum",
+    "value": "18766946"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0x0df5283ba7e4ef17530bc4bd801d0aa7e97c8e9f",
+    "chain": "arbitrum",
+    "value": "10003773724811327"
+  },
+  {
+    "token": "0x6694340fc020c5e6b96567843da2df01b2ce1eb6",
+    "user": "0x575aa7253d95707e1027b7d3cd8d084f81ef6753",
+    "chain": "arbitrum",
+    "value": "23088647323050748679"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0xa785750e133e76d516c8d91346769a65e06cecdd",
+    "chain": "arbitrum",
+    "value": "9700000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x068bfda0f6d24af87b20b8fe8bdfd32c5939a977",
+    "chain": "arbitrum",
+    "value": "15000000000000000000"
+  },
+  {
+    "token": "0xd4d42f0b6def4ce0383636770ef773390d85c61a",
+    "user": "0xd21fca204f3da7f0edb2e6d04c7889303f5cbb57",
+    "chain": "arbitrum",
+    "value": "15459043497457956813"
+  },
+  {
+    "token": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+    "user": "0x23defc2ca207e7fbd84ae43b00048fb5cb4db5b2",
+    "chain": "arbitrum",
+    "value": "16709243214413350097"
+  },
+  {
+    "token": "0xabeac6f9eb05f28aefbfccef7f58463386a4c501",
+    "user": "0xc40d0fdbb1c143d627243b5f9dce9984a8019dbb",
+    "chain": "arbitrum",
+    "value": "217610521447801727604687"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5771011e035b03a282a2561e3ef1a0a0b5a191e2",
+    "chain": "arbitrum",
+    "value": "15930000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xa49009fadd2d95a65ed94b876c98e835fe52483d",
+    "chain": "arbitrum",
+    "value": "13000000000000000000"
+  },
+  {
+    "token": "0xadfe668abf66014ade1363c7b8f5d4d4a6931356",
+    "user": "0x30da14e3f22b95fb926754e0d308714005ff1825",
+    "chain": "arbitrum",
+    "value": "466757233015046295488"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x406f65c14760f2ca9699ed4cd97a475bc7524d94",
+    "chain": "arbitrum",
+    "value": "14844906"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x5619fd6404819684a78e966376888e95a7f28c9d",
+    "chain": "arbitrum",
+    "value": "14399047"
+  },
+  {
+    "token": "0x80c833c20f2cc804259b1b627300238e9e9b9d25",
+    "user": "0x76b746ffd6a830edaf32caffda3838668eb5fec4",
+    "chain": "arbitrum",
+    "value": "421550221493"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x83dba32e3f3b04d9f7e2bf4132571804227c5276",
+    "chain": "arbitrum",
+    "value": "11000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x1f8b0c05d0c0942bcb1ba11937bdee5fa269191d",
+    "chain": "arbitrum",
+    "value": "11000000000000000000"
+  },
+  {
+    "token": "0xaa54e84a3e6e5a80288d2c2f8e36ea5ca3a3ca30",
+    "user": "0x5c732943e1cd9e2e929a317ee330b04bf1ca8af2",
+    "chain": "arbitrum",
+    "value": "1312567309976589"
+  },
+  {
+    "token": "0xadfe668abf66014ade1363c7b8f5d4d4a6931356",
+    "user": "0xf802bc40b6bfe6f39582848850fca3eb3ffc0ccb",
+    "chain": "arbitrum",
+    "value": "375199930801504628873"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x13cbb36ba6346a71fdba8b4721c35e36461f5328",
+    "chain": "arbitrum",
+    "value": "13383916189372373645"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x2b50566f44b8b1c96d00ce6b93387130f1a86510",
+    "chain": "arbitrum",
+    "value": "12000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x358cc8663eaa37085f563f1bf78e07857e412de0",
+    "chain": "arbitrum",
+    "value": "10000000000000000000"
+  },
+  {
+    "token": "0xd474e6c0930e3b1b999e7b093abcf1a38018d4f4",
+    "user": "0x59696b34ee1a26ae2ded15d25140a95edd80c368",
+    "chain": "arbitrum",
+    "value": "112505624841868171946"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb179fb15ddc89b3bbe64cba864089751fb7b769f",
+    "chain": "arbitrum",
+    "value": "11315769"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x9be43e2c8bd94e1145868bfd06fb6e3d4ae26da3",
+    "chain": "arbitrum",
+    "value": "9408797986136235020"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xe8025d5307b21753570bb777b49bb8d269728abc",
+    "chain": "arbitrum",
+    "value": "11000000"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x281d15a0cbed651483b4216a63318ab2a9228f68",
+    "chain": "arbitrum",
+    "value": "11000000"
+  },
+  {
+    "token": "0xc02cf6730c0304b91b542c32f1e4c4d7ecedccc2",
+    "user": "0xf060a13686020f0f6c3b52e4d7ac7c3dec6b808f",
+    "chain": "arbitrum",
+    "value": "74886675766820"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x2032a3c572ace110d0a3bfe26ba37309541733ed",
+    "chain": "arbitrum",
+    "value": "10773082"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xce40680cb3d7cbbd97fd089b1015f94f7c03d77f",
+    "chain": "arbitrum",
+    "value": "10542569"
+  },
+  {
+    "token": "0xcc8d1c05933f264f0651bf6c59a7c42f4d1d4348",
+    "user": "0xed8e10c52857e1fc2d2be52cb698a4030ed35b8f",
+    "chain": "arbitrum",
+    "value": "220090943483"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x42b3bc32db16e0dacb9fe4a1d1e323732ce8edc2",
+    "chain": "arbitrum",
+    "value": "10208376"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xea6af77d57ebd6b18603294106ff9faec0849097",
+    "chain": "arbitrum",
+    "value": "10172804"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x487055c13c107abdd8447b8ff2f71103fc4be087",
+    "chain": "arbitrum",
+    "value": "10000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xbaadc7aa3701c09d488af0e584a61a2e7e00748e",
+    "chain": "arbitrum",
+    "value": "9260106"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xb8f4b700841f18963388b7d6abe445c13e2c7b9c",
+    "chain": "arbitrum",
+    "value": "10928084513623369542"
+  },
+  {
+    "token": "0x6d038130b9b379a373b1d33a29d5904ed1bb9026",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "17806981322293700221321481"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb55b2c3608cb50675c1b6114f62fab00b5e06b35",
+    "chain": "arbitrum",
+    "value": "8903566"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0xc702442a2ac7d1a29d2866703d112ba01c812460",
+    "chain": "arbitrum",
+    "value": "12309728268322961310"
+  },
+  {
+    "token": "0xbca52f48786ba5bb9481a0493e263952de21d585",
+    "user": "0xc0c99e7da5d72f3858f96ac63831b96191e24e22",
+    "chain": "arbitrum",
+    "value": "906309375892408606517"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x80d96dc86f677338e7f1f3f0ac7930b9cc7e734e",
+    "chain": "arbitrum",
+    "value": "7719694"
+  },
+  {
+    "token": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1",
+    "user": "0xdea03571958e9a99a823bcaec77a90f154e39de3",
+    "chain": "arbitrum",
+    "value": "4000000000000000"
+  },
+  {
+    "token": "0x296a0b8847bd4ed9af71a9ef238fa5be0778b611",
+    "user": "0x14a0947b8fbebe53ad5ef8c5f80f14adbc559d53",
+    "chain": "arbitrum",
+    "value": "1144247787616718106299"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x0f831a90fd7cd559404b77d4b42aa3ef4cc28a63",
+    "chain": "arbitrum",
+    "value": "7009163"
+  },
+  {
+    "token": "0x32eb7902d4134bf98a28b963d26de779af92a212",
+    "user": "0x60dc9580d88c1b2730010ee9b95640f678c555fb",
+    "chain": "arbitrum",
+    "value": "272780933244638349"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x9cd3db077c16fa1a7cea4f4fdd8ef7b31408a470",
+    "chain": "arbitrum",
+    "value": "6853166"
+  },
+  {
+    "token": "0x93c15cd7de26f07265f0272e0b831c5d7fab174f",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "4606675098535703"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xaac7ebe781d0541fda9f0b93266d930602e6a529",
+    "chain": "arbitrum",
+    "value": "7707452975746216836"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x14274fef83714b45bf712e20ea459d6476e673b3",
+    "chain": "arbitrum",
+    "value": "6600000"
+  },
+  {
+    "token": "0x3cd1833ce959e087d0ef0cb45ed06bffe60f23ba",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "291213443462682111394"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0xc7ea9bd4134fe4f2580b0a17a4e107d4e23731b7",
+    "chain": "arbitrum",
+    "value": "6265080"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x7055c4bad53606da63ac7ecd93067994ae437e0a",
+    "chain": "arbitrum",
+    "value": "6158612"
+  },
+  {
+    "token": "0xf2dbfaab64f241d8d1ad135a5e2c343180fcb085",
+    "user": "0x2092bbdb817be666c29fbbd03fb9014476bc9240",
+    "chain": "arbitrum",
+    "value": "1009185980363"
+  },
+  {
+    "token": "0x9b60a283750862f4366f6af57bf057a9c5534e0a",
+    "user": "0x8e51df95c6a4a5de87a51c2a0ffa8da8b856a540",
+    "chain": "arbitrum",
+    "value": "25613350053977"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x82c9ab98cd0889e11b8742e15f5fb98e568bfa6d",
+    "chain": "arbitrum",
+    "value": "5000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x4429f8362093602ad2c3697e901a9f0eeb1cf036",
+    "chain": "arbitrum",
+    "value": "5000000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x40bcb8370504b89087fa8ab2e797beda827bf68b",
+    "chain": "arbitrum",
+    "value": "5000000000000000000"
+  },
+  {
+    "token": "0x0f8cc62fafb480dc85afb31859f3c8d085e9a470",
+    "user": "0x4c3d873c401f302690ab99906fff258e20915ef3",
+    "chain": "arbitrum",
+    "value": "638349649197424713252054642"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xf7f49c509960b8bdbf3c142f0665f21b540aecc7",
+    "chain": "arbitrum",
+    "value": "4819348951686455482"
+  },
+  {
+    "token": "0x67c31056358b8977ea95a3a899dd380d4bced706",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "1146584345761503418390972"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x9deca5df023c518140e27727008633e5f6ad1816",
+    "chain": "arbitrum",
+    "value": "4544902248674537888"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xf9b0c8672df39e30aa8bbc73804cc761cf3f3716",
+    "chain": "arbitrum",
+    "value": "5207521"
+  },
+  {
+    "token": "0x32eb7902d4134bf98a28b963d26de779af92a212",
+    "user": "0x7427b2a4884a6f799b85ae2292a2bf1ee1f018f7",
+    "chain": "arbitrum",
+    "value": "200000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xadd5b0b6b1e59f8c9ff9403ba224b950f8593a17",
+    "chain": "arbitrum",
+    "value": "5000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x6686e6e1da5b7af665e05adf0f66dd6648e0192e",
+    "chain": "arbitrum",
+    "value": "4985882"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x92b1b95ea45809187d5eafb827c606fa99a31c8f",
+    "chain": "arbitrum",
+    "value": "4000000000000000000"
+  },
+  {
+    "token": "0x876ec6be52486eeec06bc06434f3e629d695c6ba",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "100685183968965751455"
+  },
+  {
+    "token": "0xadfe668abf66014ade1363c7b8f5d4d4a6931356",
+    "user": "0xc8402eb3402c3a3dd8a47643303aa669c27e086e",
+    "chain": "arbitrum",
+    "value": "153344369791666666401"
+  },
+  {
+    "token": "0xbcc9c1763d54427bdf5efb6e9eb9494e5a1fbabf",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "89065456907094591116"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xfe71606ff0d7ebbbeaed320a542290939d0703ed",
+    "chain": "arbitrum",
+    "value": "3745192335571977288"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x380958e46bfaccc27faebabc334e3269f259c324",
+    "chain": "arbitrum",
+    "value": "4200000"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x1999d591b23ff368b88206eec69fc22e536753b8",
+    "chain": "arbitrum",
+    "value": "4481209951580878806"
+  },
+  {
+    "token": "0xa0eebb0e5c3859a1c5412c2380c074f2f6725e2e",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "52271288214712124"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xde686f8cb17a6e7a8ee3a5d9fa4ae13ed023be50",
+    "chain": "arbitrum",
+    "value": "3200000000000000000"
+  },
+  {
+    "token": "0xadfe668abf66014ade1363c7b8f5d4d4a6931356",
+    "user": "0xfdfe3486d9a62cbd8370f74327147d76e27d5ed8",
+    "chain": "arbitrum",
+    "value": "109755763831018518298"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x6353b79b6bcf139b8ab9de3875cd362f7c5c7e1c",
+    "chain": "arbitrum",
+    "value": "3000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xfedc1a1312b9dcb34d1f0dcc87e970ed2aef10fd",
+    "chain": "arbitrum",
+    "value": "3506909"
+  },
+  {
+    "token": "0x9e724698051da34994f281bd81c3e7372d1960ae",
+    "user": "0x11ab03b2f668c60a1c547688f366fc5b9d42a6b9",
+    "chain": "arbitrum",
+    "value": "52168485368061963800"
+  },
+  {
+    "token": "0x6694340fc020c5e6b96567843da2df01b2ce1eb6",
+    "user": "0x7579bc277007e44ac8e0f350c128ca24f6e926e8",
+    "chain": "arbitrum",
+    "value": "4000000000000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xbf4236e4eaae375bfb756d1ed880066f079d4f83",
+    "chain": "arbitrum",
+    "value": "3102189"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xbdd974c9081b38392fc2ea125f933666f0cb25b7",
+    "chain": "arbitrum",
+    "value": "3085553"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x3cf406ed3c45ce1afeebc154eb54dc3cab788eb8",
+    "chain": "arbitrum",
+    "value": "3000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xd6dc4a8465b36e4af645dd83a39c5ccc18b22313",
+    "chain": "arbitrum",
+    "value": "3000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x34b43d0c14232511f1db3619fe409cf15788cbcc",
+    "chain": "arbitrum",
+    "value": "3000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5bbb65fe6e990f2dcdf95fe7e71f07264c5993ac",
+    "chain": "arbitrum",
+    "value": "17401755150"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xa59647648d34815fa2b15f506e9ac7e5aa79babd",
+    "chain": "arbitrum",
+    "value": "26492114034465402593"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x27d7de0bb23b5eecd7fa89044de52fbf861500a6",
+    "chain": "arbitrum",
+    "value": "42728786823714443965"
+  },
+  {
+    "token": "0xee9857de0e55d4a54d36a5a5a73a15e57435fdca",
+    "user": "0x101b5dc072c0aa45380959853fbde92a6d53aabf",
+    "chain": "arbitrum",
+    "value": "33973173041932349180"
+  },
+  {
+    "token": "0xe021047851012d8e981ebd9f3c2cbb8945e996da",
+    "user": "0xa629bb1bff3e528a9e89ccb7ebfe0ae0b0427bf9",
+    "chain": "arbitrum",
+    "value": "1495799399568"
+  },
+  {
+    "token": "0xadfe668abf66014ade1363c7b8f5d4d4a6931356",
+    "user": "0x6e103c6681a8462296e99057ebdeaf4936ae77f1",
+    "chain": "arbitrum",
+    "value": "445506312471064814008"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x930715929a28f977be9f150bd4181da727a43811",
+    "chain": "arbitrum",
+    "value": "806641314314250425"
+  },
+  {
+    "token": "0x458a2df1a5c74c5dc9ed6e01dd1178e6d353243b",
+    "user": "0x2092bbdb817be666c29fbbd03fb9014476bc9240",
+    "chain": "arbitrum",
+    "value": "987629865922758793292686"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0xe45b12eb6ec0bdf49eda66125e04afdc2afd7988",
+    "chain": "arbitrum",
+    "value": "1986069813361347097"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x4a3f23974ae67d4f656720463bbd44223d9cd078",
+    "chain": "arbitrum",
+    "value": "116250"
+  },
+  {
+    "token": "0xa9f5606c3e6aab998fd4f4bc54a18d9fe13a0dd8",
+    "user": "0x8000793e138b814201748af7f9a3ee3aa24833c9",
+    "chain": "arbitrum",
+    "value": "2997244345295211408"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x92911da1d892436ef9a06fffc4926e90adda6c5d",
+    "chain": "arbitrum",
+    "value": "3393891130081249557"
+  },
+  {
+    "token": "0x119bea704a521816f92e0d2d85bd9be304b214bb",
+    "user": "0x8f765107c5e9fdfbabb349700f64c2edf79a5666",
+    "chain": "arbitrum",
+    "value": "8372604819247425150099"
+  },
+  {
+    "token": "0xdd69db25f6d620a7bad3023c5d32761d353d3de9",
+    "user": "0xbe398bb77318b58612ef5cb920dbbc2350bf3230",
+    "chain": "arbitrum",
+    "value": "3133357067147117501"
+  },
+  {
+    "token": "0x50b871fb5bba2895425e5fc6eba219197f21d6d5",
+    "user": "0x2375590a85dcea1533df94e7dfa0aadc936cb68f",
+    "chain": "arbitrum",
+    "value": "186592465753424657535"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x0e12a60e425dd1464a93cfcaa3e647ac01065aee",
+    "chain": "arbitrum",
+    "value": "1386466881247998293"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0xc7e68b3fd66d959120c01d0b2cb6a1ba5e1eb0b6",
+    "chain": "arbitrum",
+    "value": "3141925308800746901"
+  },
+  {
+    "token": "0xd3c66e09a66eb90879768e81971ce2c3f83ceeef",
+    "user": "0x02bb53c87b767ec61235e706678ef89abf41600c",
+    "chain": "arbitrum",
+    "value": "6432468008472126637"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x346422f94794f1edaab0c5b5638fe00d35c73726",
+    "chain": "arbitrum",
+    "value": "73279178718014"
+  },
+  {
+    "token": "0x6e0efbb4de17eec00fba09a14ccac2d92b0ac6b3",
+    "user": "0x9deca5df023c518140e27727008633e5f6ad1816",
+    "chain": "arbitrum",
+    "value": "176990164665532206898009773"
+  },
+  {
+    "token": "0xe78987ba38658607358d054224fd1580d1a5ad13",
+    "user": "0xa5e693e7b3261fd0aa6bb55aad01444384903161",
+    "chain": "arbitrum",
+    "value": "129429120"
+  },
+  {
+    "token": "0xee9857de0e55d4a54d36a5a5a73a15e57435fdca",
+    "user": "0x448b0b3088ade825ea3dda7867b2843205817f83",
+    "chain": "arbitrum",
+    "value": "10000000000000000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x1adbaf7efc9830b50203cf83719f02468aaa5ed0",
+    "chain": "arbitrum",
+    "value": "100000000000000000"
+  },
+  {
+    "token": "0xdd8e557c8804d326c72074e987de02a23ae6ef84",
+    "user": "0xa629bb1bff3e528a9e89ccb7ebfe0ae0b0427bf9",
+    "chain": "arbitrum",
+    "value": "107876907980375099642"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x4ef5a7217519d5f2312955226a6f6c228762dd52",
+    "chain": "arbitrum",
+    "value": "500000000000000000"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0xb421be240188b04f70a06f61c9bb9d85b5a7c1aa",
+    "chain": "arbitrum",
+    "value": "102744203874146160"
+  },
+  {
+    "token": "0xc02cf6730c0304b91b542c32f1e4c4d7ecedccc2",
+    "user": "0x3f7b6ba6b0de1e8499702fb3cf618e158d920671",
+    "chain": "arbitrum",
+    "value": "5000000000000"
+  },
+  {
+    "token": "0xc02cf6730c0304b91b542c32f1e4c4d7ecedccc2",
+    "user": "0x9c487fe60e5f9de5a4a4d3922b9b3eb1ac2accb9",
+    "chain": "arbitrum",
+    "value": "6000000000000"
+  },
+  {
+    "token": "0xd4d42f0b6def4ce0383636770ef773390d85c61a",
+    "user": "0x550c85b8b7a92bcc5ccd5bdb351b8abf88eb9f29",
+    "chain": "arbitrum",
+    "value": "908812696792249926"
+  },
+  {
+    "token": "0x7ca7eaca7b62c1c2a8106a5c9094186895155c17",
+    "user": "0x9fa275256fb6ce2cc1c3f97be93e53915894f2e4",
+    "chain": "arbitrum",
+    "value": "572742192530"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x5514ed483bdd30d105d611f252b03c68f26288f6",
+    "chain": "arbitrum",
+    "value": "2400940"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x41234912f0009f1409e422b0bd709658b8bacbc2",
+    "chain": "arbitrum",
+    "value": "999000"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x3409d07c07114d8d43cb62e1fc97a9606e51e49b",
+    "chain": "arbitrum",
+    "value": "12859555508593837300"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xb2f6ec5df70a01cd4419e2988248620b71eeac54",
+    "chain": "arbitrum",
+    "value": "157468736"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x0d9c95b4c7fc61d25d1e450e32f8d0b1fb8abb37",
+    "chain": "arbitrum",
+    "value": "200000000000000000"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x3be172f551f181900d6ecbb28c99731db043eaa0",
+    "chain": "arbitrum",
+    "value": "4401133251504802234"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x9939d60e5f6202f866dcc7d2c2cbf3150401752a",
+    "chain": "arbitrum",
+    "value": "344505"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x78eb8fcf4a76489731aef8f5a04d6c23ccd07587",
+    "chain": "arbitrum",
+    "value": "7331615"
+  },
+  {
+    "token": "0x296a0b8847bd4ed9af71a9ef238fa5be0778b611",
+    "user": "0x0290408c3fcfef015a3c503bbccf150eae1f39a5",
+    "chain": "arbitrum",
+    "value": "328778328115255043871"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x0290408c3fcfef015a3c503bbccf150eae1f39a5",
+    "chain": "arbitrum",
+    "value": "1765218513689007451"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x9bd2db8815b7f9e7c173f0e27f7c723eeaecba46",
+    "chain": "arbitrum",
+    "value": "3981"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x21ce3c4f7a5de46b4065b151c8e89d3ad804ec42",
+    "chain": "arbitrum",
+    "value": "711377391299266055"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x6f55acb6979fd25d36f9306551eae07f01e6d5f5",
+    "chain": "arbitrum",
+    "value": "8509835665638536986"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x055d0191fab4fe979bec79533f2653ba69c87be8",
+    "chain": "arbitrum",
+    "value": "5121415341570930954"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x46b1d16b376b43cebb546869e5bb134c65707bde",
+    "chain": "arbitrum",
+    "value": "24573527777174857097"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x28e5d92148aa12b0fccd268ff643be86bbb5265e",
+    "chain": "arbitrum",
+    "value": "16054999551712890872"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0xdcf7f5a871c97df8cff0c5f60efeb4e39c4399cf",
+    "chain": "arbitrum",
+    "value": "24608433413905445722"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x6e1868498f39fde4bbcfc1ff839a07d0168d05b7",
+    "chain": "arbitrum",
+    "value": "5586730637658724923382"
+  },
+  {
+    "token": "0xfd086bc7cd5c481dcc9c85ebe478a1c0b69fcbb9",
+    "user": "0x42af703afbc127748207709d59943bcddb5c13c9",
+    "chain": "arbitrum",
+    "value": "1000000000"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xe438733d9641740a7d398ff6d24cf9fee4a7a29e",
+    "chain": "arbitrum",
+    "value": "2000000"
+  },
+  {
+    "token": "0x51318b7d00db7acc4026c88c3952b66278b6a67f",
+    "user": "0x4679c6a025c3385e6b842dfa7a3d2831fa3b1ac5",
+    "chain": "arbitrum",
+    "value": "3505422492718119903"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x33570a77aeb521d0de2df79624523019f1aef23b",
+    "chain": "arbitrum",
+    "value": "425744400"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x337ba3d050e01c229b4cd8dbec2d246d24947912",
+    "chain": "arbitrum",
+    "value": "305500000"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x31fcab10d352736de364a39320362c4e7a0aed50",
+    "chain": "arbitrum",
+    "value": "7922778104559173854"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x399d6600285e4831e11b99538f0ef18df42bb8af",
+    "chain": "arbitrum",
+    "value": "558591072"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x27774c0f6729470bdac97c3363cdb3970137dfec",
+    "chain": "arbitrum",
+    "value": "2354151"
+  },
+  {
+    "token": "0xbc0a588120ab8b913436d342a702c92611c9af6a",
+    "user": "0x960d6e044d485937aa9067c3d0872d34437c11af",
+    "chain": "arbitrum",
+    "value": "1320605242913058161"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x5267102e95054db96f343027bcbbeccf853699a3",
+    "chain": "arbitrum",
+    "value": "109273273"
+  },
+  {
+    "token": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+    "user": "0x30a0f17225acef7772e3dd76ac487ab7a7380811",
+    "chain": "arbitrum",
+    "value": "179111509910754290938"
+  },
+  {
+    "token": "0x31c91d8fb96bff40955dd2dbc909b36e8b104dde",
+    "user": "0xa74eceae9c7670b019e0890881598b4c398d1c01",
+    "chain": "arbitrum",
+    "value": "6121804178495538420"
+  },
+  {
+    "token": "0x2404572eaa937c5a64c84ee597faae4c13823782",
+    "user": "0xd377cffcc52c16bf6e9840e77f78f42ddb946568",
+    "chain": "arbitrum",
+    "value": "15008780487804878048778"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x153c516d1f9e7f9b1990510257870fd5a0544704",
+    "chain": "arbitrum",
+    "value": "164824"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0xba85d0a411269af4dbb1541ba0619b92261e71d2",
+    "chain": "arbitrum",
+    "value": "16211360"
+  },
+  {
+    "token": "0xaa54e84a3e6e5a80288d2c2f8e36ea5ca3a3ca30",
+    "user": "0x8c9d01b898f19618fd2c50bf53848fef6aed6a65",
+    "chain": "arbitrum",
+    "value": "845482193443785"
+  },
+  {
+    "token": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f",
+    "user": "0x0128f0112c3d8c862b3578e284d1025e8bdb5cbf",
+    "chain": "arbitrum",
+    "value": "45750"
+  },
+  {
+    "token": "0xff970a61a04b1ca14834a43f5de4533ebddb5cc8",
+    "user": "0x7101a4ecfa458cb1685ccad745a9bab5b96a7915",
+    "chain": "arbitrum",
+    "value": "1021737"
+  },
+  {
+    "token": "0x912ce59144191c1204e64559fe8253a0e49e6548",
+    "user": "0x9f5eb6d9e23a8442062c4ec3e68bf83d121bd609",
+    "chain": "arbitrum",
+    "value": "1012187011836413395"
+  }
+]

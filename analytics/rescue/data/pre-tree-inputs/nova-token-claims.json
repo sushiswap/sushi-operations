@@ -1,0 +1,176 @@
+[
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x87257f4919eed021f240a9b130d2558ec0115556",
+    "chain": "nova",
+    "value": "322019"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x90927e80b6c37e6e8905d179bb2acf8feb902f03",
+    "chain": "nova",
+    "value": "16668"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x55c7fe832626839c32f3d30bb6537d53a06722cc",
+    "chain": "nova",
+    "value": "387481"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0xa9080708f0a07441c8ce7b2ab618c4c5b611c084",
+    "chain": "nova",
+    "value": "73010"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0xb3a4e8ade7ee18ca770cbfb61cc8b2a5b75c9fa9",
+    "chain": "nova",
+    "value": "11415755"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x3ee42d76d92e62839ec3638600da4dbd43e11e1f",
+    "chain": "nova",
+    "value": "563532"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x422125476a8b5c696a0866c31c7d65a53d551c38",
+    "chain": "nova",
+    "value": "18549805"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x14448debb3ceb52334c14bc615761c55fb1c50db",
+    "chain": "nova",
+    "value": "28014452"
+  },
+  {
+    "token": "0xf823c3cd3cebe0a1fa952ba88dc9eef8e0bf46ad",
+    "user": "0x422125476a8b5c696a0866c31c7d65a53d551c38",
+    "chain": "nova",
+    "value": "114347442355570141"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x0935c90400d95fc6757d07904b9ba88a0b447012",
+    "chain": "nova",
+    "value": "10283"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0xaefcd0f8a1cbd231cecaa9bfd9ffb82a6eaaa462",
+    "chain": "nova",
+    "value": "345581"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x8e3f0e695b11d694a7ee7ea5cc45e441c157e295",
+    "chain": "nova",
+    "value": "810292"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x493496f63277008ac1722ceed5c36b29fcb2d820",
+    "chain": "nova",
+    "value": "1367837"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x953bfcf51638b336f07dffd28ecfaef96711508c",
+    "chain": "nova",
+    "value": "198906"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x016d9a478996396aac038c2f504963150f43c8b6",
+    "chain": "nova",
+    "value": "104683"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x9af9c34ae11ff3f67d5b203a2e47a58703360606",
+    "chain": "nova",
+    "value": "1503184"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x38fa5f8bcb88e04fea9881056379198f3d2d5a28",
+    "chain": "nova",
+    "value": "1503184"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x01c208f6fc0702de0370b80a77fe749b7eff6985",
+    "chain": "nova",
+    "value": "1503184"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x667d5ea79fd770b5f8b5c8ac97cfd302d1e2a284",
+    "chain": "nova",
+    "value": "1503184"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x2ede9c4ddce76d6cf995c89802455e77e687aadd",
+    "chain": "nova",
+    "value": "1502071"
+  },
+  {
+    "token": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1",
+    "user": "0xcd5f705fb26400966142f662a28591fd551c61a1",
+    "chain": "nova",
+    "value": "204901882083360"
+  },
+  {
+    "token": "0x52484e1ab2e2b22420a25c20fa49e173a26202cd",
+    "user": "0x10e1c3fea111d8327d42bff0fd6de51a20b1cf30",
+    "chain": "nova",
+    "value": "262"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x971db54a4bb5f3870c3034c4c3c570497034aaed",
+    "chain": "nova",
+    "value": "3778465"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0xa6af0479e3e3ebeeaba50bc1b8e7c39c3ac6d063",
+    "chain": "nova",
+    "value": "207790524"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x711a1d62b89b8da1a182673eaa08aef16e2db136",
+    "chain": "nova",
+    "value": "19844297"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0xf3bfdd95f63901f718537aa9dc058fdae2e9c472",
+    "chain": "nova",
+    "value": "85287144"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0xb81bb73632c64c69616cddd289f5da64a99495b5",
+    "chain": "nova",
+    "value": "2072151"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0x57ab819f4ccfa96c248dce35e3d9613d1248d5bc",
+    "chain": "nova",
+    "value": "414036"
+  },
+  {
+    "token": "0x750ba8b76187092b0d1e87e28daaf484d1b5273b",
+    "user": "0xd705c025fb3ea424ee8c6d813325bca417476402",
+    "chain": "nova",
+    "value": "3000000"
+  }
+]
