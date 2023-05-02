@@ -14,6 +14,9 @@ with open(file_path, 'r') as csvfile:
         notes = row['Notes']
         amount = float(row['Amount'].replace(',', ''))
 
+        if 'TRUE' in row['Sent']:
+            continue
+
         if 'stable' in notes:
             if chain == 'bsc':
                 token_name = 'USDT'
