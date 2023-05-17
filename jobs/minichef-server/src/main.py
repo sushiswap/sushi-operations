@@ -121,7 +121,7 @@ def main():
             "from": OPS_ADDRESS,
             "nonce": w3.eth.get_transaction_count(OPS_ADDRESS),
             "maxFeePerGas": next_gas_price,
-            "gas": 5000000,
+            "gas": 3000000,
             "value": total_eth_to_send,
         }
     )
