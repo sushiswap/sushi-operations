@@ -2,11 +2,12 @@ import os
 
 MAINNET_RPC_URL = os.environ["MAINNET_RPC_URL"]
 ARBITRUM_RPC_URL = os.environ["ARBITRUM_RPC_URL"]
+POLYGON_RPC_URL = os.environ["POLYGON_RPC_URL"]
 
 RPC_URL = {
     "mainnet": MAINNET_RPC_URL,
     "arbitrum": ARBITRUM_RPC_URL,
-    "polygon": "https://polygon-rpc.com",
+    "polygon": POLYGON_RPC_URL,
     "fantom": "https://1rpc.io/ftm",
     "boba": "https://mainnet.boba.network",
     "nova": "https://nova.arbitrum.io/rpc",
