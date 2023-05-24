@@ -21,11 +21,14 @@ run-arbitrum-read-only:
 run-polygon-read-only:
 	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain polygon --full --read
 
+run-fantom-read-only:
+	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain fantom --full --read
+
 run-polygon:
 	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain polygon --full
 
-run-moonriver:
-	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain moonriver --full
+run-alt:
+	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain gnosis --full
 
 
 run:
