@@ -28,7 +28,7 @@ run-polygon:
 	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain polygon --full
 
 run-alt:
-	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain fantom --full
+	docker run --env-file .env -it --rm sushi-operations-weth-maker-job --chain moonriver --full
 
 
 run:

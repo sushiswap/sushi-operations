@@ -21,27 +21,21 @@ def main(timestamp_start, timestamp_end):
 
     print("Pulling data from classic AMM graph endpoints...")
     for network in CLASSIC_AMM_SUBGRAPH:
-        swaps = fetch_swaps_data_classic(
-            network, timestamp_start, timestamp_end
-        )
+        swaps = fetch_swaps_data_classic(network, timestamp_start, timestamp_end)
         print(f"Found {len(swaps)} swaps on {network}...")
         users_list += [swap["sender"] for swap in swaps]
         # print(swaps)
 
     print("Pulling data from trident AMM graph endpoints...")
     for network in TRIDENT_AMM_SUBGRAPH:
-        swaps = fetch_swaps_data_trident(
-            network, timestamp_start, timestamp_end
-        )
+        swaps = fetch_swaps_data_trident(network, timestamp_start, timestamp_end)
         print(f"Found {len(swaps)} swaps on {network}...")
         users_list += [swap["sender"] for swap in swaps]
         # print(swaps)
 
     print("Pulling data from v3 AMM graph endpoints...")
     for network in V3_AMM_SUBGRAPH:
-        swaps = fetch_swaps_data_v3(
-            network, timestamp_start, timestamp_end
-        )
+        swaps = fetch_swaps_data_v3(network, timestamp_start, timestamp_end)
         print(f"Found {len(swaps)} swaps on {network}...")
         users_list += [swap["sender"] for swap in swaps]
         # print(swaps)
