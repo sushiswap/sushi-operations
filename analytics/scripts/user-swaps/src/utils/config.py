@@ -44,3 +44,11 @@ V3_AMM_SUBGRAPH = {
     "zkevm": "https://api.studio.thegraph.com/query/32073/v3-polygon-zkevm/v0.0.2",
     "thundercore": "https://graph-node.thundercore.com/subgraphs/name/sushi-v3/v3-thundercore",
 }
+
+ROUTE_PROCESSOR_SUBGRAPH = {
+    "thundercore": "https://graph-node.thundercore.com/subgraphs/name/sushiswap/routeprocessor3-thundercore",
+}
+
+WRAPPED_NATIVE_ADDRESS = {
+    "thundercore": "0x413cefea29f2d07b8f2acfa69d92466b9535f717",
+}
