@@ -93,6 +93,8 @@ def pull_swaps(network, token_addresses, minUSDAmount, timestamp_start, timestam
         route["from"]
         for route in filtered_minAmount_routes
     ]
+
+    user_addresses = list(set(user_addresses))
     
     swaps_output_file_path = "./data/" + network + "-swaps" + "-" + str(timestamp_start) + "-" + str(timestamp_end) + ".txt"
     with open(swaps_output_file_path, "w") as f:
@@ -101,15 +103,18 @@ def pull_swaps(network, token_addresses, minUSDAmount, timestamp_start, timestam
 
     #print(user_addresses)
 
-def pull_mints(network, timestamp_start, timestamp_end):
+def pull_mints(network, minUSD, timestamp_start, timestamp_end):
     print("Pulling mint data...")
     mints = fetch_mint_data_v3(network, timestamp_start, timestamp_end)
-    print(f"Found {len(mints)} mints...")
+    print(f"Found {len(mints)} mints...")  
 
     user_addresses = [
         mint["origin"]
         for mint in mints
+        if float(mint["amountUSD"]) >= minUSD
     ]
+
+    user_addresses = list(set(user_addresses))
 
     mints_output_file_path = "./data/" + network + "-mints" + "-" + str(timestamp_start) + "-" + str(timestamp_end) + ".txt"
     with open(mints_output_file_path, "w") as f:
@@ -128,4 +133,4 @@ if __name__ == "__main__":
     #pull_swaps_amms(args.start, args.end)
     
     pull_swaps("thundercore", ["0x413cefea29f2d07b8f2acfa69d92466b9535f717"], 10, 1686009600, 1686628160)
-    pull_mints("thundercore", 1686009600, 1686628160)
+    pull_mints("thundercore", 10, 1686009600, 1686628160)
