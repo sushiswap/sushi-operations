@@ -132,5 +132,5 @@ if __name__ == "__main__":
 
     #pull_swaps_amms(args.start, args.end)
     
-    pull_swaps("thundercore", ["0x413cefea29f2d07b8f2acfa69d92466b9535f717"], 10, 1686009600, 1686628160)
-    pull_mints("thundercore", 10, 1686009600, 1686628160)
+    pull_swaps("thundercore", ["0x413cefea29f2d07b8f2acfa69d92466b9535f717"], 10, 1686009600, 1686700799)
+    pull_mints("thundercore", 10, 1686009600, 1686700799)
