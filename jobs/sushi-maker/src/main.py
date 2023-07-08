@@ -423,9 +423,9 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
                 tx_hash, timeout=1200)
         except:
             print(
-                f"Transaction taking longer than expected, waiting 3 minutes: {tx_hash.hex()}"
+                f"Transaction taking longer than expected, waiting 1.5 minutes: {tx_hash.hex()}"
             )
-            time.sleep(180)
+            time.sleep(90)
             tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
 
         print(f"Burn chunk {i} executed successfully in tx: {tx_hash.hex()}")
