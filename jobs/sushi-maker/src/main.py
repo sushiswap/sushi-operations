@@ -140,11 +140,11 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
                 unwind_data["tokenB"] = lp_token["pair"]["token0"]["id"]
                 unwind_data["amount"] = lp_token_balance
                 unwind_data["minOut_lowSlippage"] = int(
-                    (token1_amount - (token1_amount * 0.005))
+                    (token1_amount - (token1_amount * 2 * 0.005))
                     * pow(10, int(lp_token["pair"]["token1"]["decimals"]))
                 )
                 unwind_data["minOut_highSlippage"] = int(
-                    (token1_amount - (token1_amount * 0.5))
+                    (token1_amount - (token1_amount * 2 * 0.5))
                     * pow(10, int(lp_token["pair"]["token1"]["decimals"]))
                 )
                 break
@@ -154,11 +154,11 @@ def full_breakdown(w3, chain, lp_tokens_data, read_only):
                 unwind_data["tokenB"] = lp_token["pair"]["token1"]["id"]
                 unwind_data["amount"] = lp_token_balance
                 unwind_data["minOut_lowSlippage"] = int(
-                    (token0_amount - (token0_amount * 0.001))
+                    (token0_amount - (token0_amount * 2 * 0.001))
                     * pow(10, int(lp_token["pair"]["token0"]["decimals"]))
                 )
                 unwind_data["minOut_highSlippage"] = int(
-                    (token0_amount - (token0_amount * 0.01))
+                    (token0_amount - (token0_amount * 2 * 0.01))
                     * pow(10, int(lp_token["pair"]["token0"]["decimals"]))
                 )
                 break
