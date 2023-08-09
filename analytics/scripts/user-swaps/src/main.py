@@ -132,5 +132,39 @@ if __name__ == "__main__":
 
     #pull_swaps_amms(args.start, args.end)
     
-    pull_swaps("thundercore", ["0x413cefea29f2d07b8f2acfa69d92466b9535f717"], 10, 1686009600, 1686700799)
-    pull_mints("thundercore", 10, 1686009600, 1686700799)
+    '''pull_swaps(
+        "base",
+        [
+            "0x8544fe9d190fd7ec52860abbf45088e81ee24a8c",
+            "0x4200000000000000000000000000000000000006",
+            "0x27d2decb4bfc9c76f0309b8E88dec3a601fe25a8",
+            "0x0fa70e156cd3b03ac4080bfe55bd8ab50f5bcb98",
+            "0xeb466342c4d449bc9f53a865d5cb90586f405215",
+            "0x23ee2343b892b1bb63503a4fabc840e0e2c6810f",
+            "0x22dc834c3ff3e45f484bf24B9b07b851b981900f",
+            "0xe1f9ac62a2f34881f6fe0f84322de9d7024c2b8e",
+            "0x966053115156a8279a986ed9400ac602fb2f5800",
+            "0xd54a26aca1e4055ce99499945ff6a8b52d163d5a",
+            "0x50c5725949a6f0c72e6c4a641f24049a917db0cb",
+            "0xc2106ca72996e49bbadcb836eec52b765977fd20",
+        ],
+        10,
+        1691107200,
+        1692403200
+    )
+    pull_mints("base", 10, 1691107200, 1692403200)
+    '''
+
+    pull_swaps(
+        "core",
+        [
+            "0x204e2d49b7cda6d93301bcf667a2da28fb0e5780",
+            "0x40375c92d9faf44d2f9db9bd9ba41a3317a2404f",
+            "0x900101d06a7426441ae63e9ab3b9b0f63be145f1",
+            "0xa4151b2b3e269645181dccf2d426ce75fcbdeca9",
+        ],
+        10,
+        1690934400,
+        1692316800
+    )
+    pull_mints("core", 10, 1690934400, 1692316800)

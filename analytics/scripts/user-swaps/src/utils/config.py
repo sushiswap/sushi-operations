@@ -43,12 +43,18 @@ V3_AMM_SUBGRAPH = {
     "polyogn": "https://api.thegraph.com/subgraphs/name/sushi-v3/v3-polygon",
     "zkevm": "https://api.studio.thegraph.com/query/32073/v3-polygon-zkevm/v0.0.2",
     "thundercore": "https://graph-node.thundercore.com/subgraphs/name/sushi-v3/v3-thundercore",
+    "core": "https://thegraph.coredao.org/subgraphs/name/sushi-v3/v3-core",
+    "base": "https://api.studio.thegraph.com/query/32073/v3-base/v0.0.1",
 }
 
 ROUTE_PROCESSOR_SUBGRAPH = {
     "thundercore": "https://graph-node.thundercore.com/subgraphs/name/sushiswap/routeprocessor3-thundercore",
+    "core": "https://thegraph.coredao.org/subgraphs/name/sushiswap/routeprocessor3-core",
+    "base": "https://api.thegraph.com/subgraphs/name/jiro-ono/routeprocessor3-base",
 }
 
 WRAPPED_NATIVE_ADDRESS = {
     "thundercore": "0x413cefea29f2d07b8f2acfa69d92466b9535f717",
+    "core": "0x40375C92d9FAf44d2f9db9Bd9ba41a3317a2404f",
+    "base": "0x4200000000000000000000000000000000000006",
 }
