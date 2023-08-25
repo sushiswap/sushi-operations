@@ -131,8 +131,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     #pull_swaps_amms(args.start, args.end)
-    
-    '''pull_swaps(
+
+    '''
+    pull_swaps(
         "base",
         [
             "0x8544fe9d190fd7ec52860abbf45088e81ee24a8c",
@@ -154,7 +155,7 @@ if __name__ == "__main__":
     )
     pull_mints("base", 10, 1691107200, 1692403200)
     '''
-
+    
     pull_swaps(
         "core",
         [
@@ -167,4 +168,5 @@ if __name__ == "__main__":
         1690934400,
         1692316800
     )
-    pull_mints("core", 10, 1690934400, 1692316800)
+    pull_mints("core", 5, 1690934400, 1692316800)
+    

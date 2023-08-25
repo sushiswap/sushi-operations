@@ -4,7 +4,7 @@ build:
 	docker build -t sushi-operations-airdrop-job .
 
 run-image:
-	docker run --env-file .env -it --rm sushi-operations-airdrop-job --network thundercore --token 0xabd380327fe66724ffda91a87c772fb8d00be488 --amount 24
+	docker run --env-file .env -it --rm sushi-operations-airdrop-job --network core --token 0x40375C92d9FAf44d2f9db9Bd9ba41a3317a2404f --amount 50
 
 run:
-	python src/main.py --network thundercore --token 0xabd380327fe66724ffda91a87c772fb8d00be488 --amount 24
+	python src/main.py --network core --token 0x40375C92d9FAf44d2f9db9Bd9ba41a3317a2404f --amount 50
