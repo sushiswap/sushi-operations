@@ -198,6 +198,36 @@ def fetch_routes(network, timestamp_start, timestamp_end):
 
     return routes
 
+def fetch_v2_current_prices(network, tokens):
+    token_price_query = """query($tokens: [String!]!) {
+        tokens(where: {id_in: $tokens}) {
+            id
+            decimals
+            derivedETH
+        }
+        bundle(id: "1") {
+            ethPrice
+        }
+    }
+    """
+
+    variables = {
+        "tokens": tokens,
+    }
+    result = requests.post(
+        CLASSIC_AMM_SUBGRAPH[network],
+        json={"query": token_price_query, "variables": variables},
+    )
+    data = json.loads(result.text)
+
+    token_prices = {key: {} for key in tokens}
+    for token in data["data"]["tokens"]:
+        token_prices[token["id"]]['usdPrice'] = float(token["derivedETH"]) * float(data["data"]["bundle"]["ethPrice"])
+        token_prices[token["id"]]['decimals'] = token["decimals"]
+    
+    return token_prices
+
+
 def fetch_v3_current_prices(network, tokens):
     token_price_query = """query($tokens: [String!]!) {
         tokens(where: {id_in: $tokens}) {
